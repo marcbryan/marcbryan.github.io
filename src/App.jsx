@@ -23,12 +23,15 @@ const theme = createTheme({
 });
 
 function App() {
+  const userLang = navigator.language || navigator.userLanguage;
+
   const [count, setCount] = useState(0)
+  const [lang, setLang] = useState(userLang.includes('en') ? 'en' : 'es');
 
   return (
     <>
       <ThemeProvider theme={theme}>
-        <ResponsiveAppBar></ResponsiveAppBar>
+        <ResponsiveAppBar lang={lang} setLang={setLang}></ResponsiveAppBar>
       </ThemeProvider>
       <div id="container">
         <div>
@@ -52,6 +55,7 @@ function App() {
           Click on the Vite and React logos to learn more
         </p>
       </div>
+      <h2 style={{textAlign: 'center'}}>Language: {lang}</h2>
     </>
   )
 }

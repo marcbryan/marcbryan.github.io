@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useState } from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -12,11 +13,25 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import HomeIcon from '@mui/icons-material/Home';
+import ListItemText from '@mui/material/ListItemText';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import "/node_modules/flag-icons/css/flag-icons.min.css";
 
 const pages = ['About me', 'Portfolio', 'About this page'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+// const options = ['Spanish', 'Catalan', 'English'];
+const languages = [
+  { lang: 'es', code: 'es', value: 'Spanish' },
+  { lang: 'cat', code: 'es-ct', value: 'Catalan' },
+  { lang: 'en', code: 'gb', value: 'English' }
+]
 
-function ResponsiveAppBar() {
+function getCode(newLang) {
+  return languages.find(obj => { return obj.lang === newLang }).code;
+}
+
+function ResponsiveAppBar({ lang, setLang }) {
+  const [code, setCode] = useState(getCode(lang));
+
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -35,11 +50,22 @@ function ResponsiveAppBar() {
     setAnchorElUser(null);
   };
 
+  const onClickMenuItem = (event) => {
+    const { newLang } = event.currentTarget.dataset;
+    setLang(newLang);
+    setCode(getCode(newLang));
+    handleCloseUserMenu;
+  };
+
   return (
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <HomeIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          <Tooltip title="Home">
+            <IconButton href="/" color="inherit">
+              <HomeIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} href="/" />
+            </IconButton>
+          </Tooltip>
           <Typography
             variant="h6"
             noWrap
@@ -61,9 +87,7 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
-              aria-label="account of current user"
               aria-controls="menu-appbar"
-              aria-haspopup="true"
               onClick={handleOpenNavMenu}
               color="inherit"
             >
@@ -126,9 +150,10 @@ function ResponsiveAppBar() {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
+            <Tooltip title="Select language">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                {/**<Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />**/}
+                <span className={`fi fi-${code}`}></span>
               </IconButton>
             </Tooltip>
             <Menu
@@ -147,9 +172,12 @@ function ResponsiveAppBar() {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
+              {languages.map((language) => (
+                <MenuItem key={language.lang} data-new-lang={language.lang} onClick={onClickMenuItem}>
+                  <ListItemIcon>
+                  <span className={`fi fi-${language.code}`}></span>
+                  </ListItemIcon>
+                  <ListItemText>{language.value}</ListItemText>
                 </MenuItem>
               ))}
             </Menu>
