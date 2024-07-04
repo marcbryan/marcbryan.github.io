@@ -1,7 +1,10 @@
-import { useState } from 'react'
-import ResponsiveAppBar from './components/ResponsiveAppBar'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useState } from 'react';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import ResponsiveAppBar from './components/ResponsiveAppBar';
+import Home from './pages/Home';
+import AboutMe from './pages/AboutMe';
+import Portfolio from './pages/Portfolio';
+import AboutPage from './pages/AboutPage';
 import './App.css'
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
@@ -22,39 +25,32 @@ const theme = createTheme({
   }
 });
 
+const pages = [
+  { name: 'About me', route: '/about-me' }, 
+  { name: 'Portfolio', route: '/portfolio' }, 
+  { name: 'About this page', route: '/about' }
+];
+
+const pages2 = [...pages];
+pages2.unshift({ name: "Home", route: "/" });
+
 function App() {
   const userLang = navigator.language || navigator.userLanguage;
-
-  const [count, setCount] = useState(0)
-  const [lang, setLang] = useState(userLang.includes('en') ? 'en' : 'es');
+  const [lang, setLang] = useState(userLang.includes('en') ? 'EN' : 'ES');
 
   return (
     <>
-      <ThemeProvider theme={theme}>
-        <ResponsiveAppBar lang={lang} setLang={setLang}></ResponsiveAppBar>
-      </ThemeProvider>
-      <div id="container">
-        <div>
-          <a href="https://vitejs.dev" target="_blank">
-            <img src={viteLogo} className="logo" alt="Vite logo" />
-          </a>
-          <a href="https://react.dev" target="_blank">
-            <img src={reactLogo} className="logo react" alt="React logo" />
-          </a>
-        </div>
-        <h1>Vite + React</h1>
-        <div className="card">
-          <button onClick={() => setCount((count) => count + 1)}>
-            count is {count}
-          </button>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test HMR
-          </p>
-        </div>
-        <p className="read-the-docs">
-          Click on the Vite and React logos to learn more
-        </p>
-      </div>
+      <BrowserRouter>
+        <ThemeProvider theme={theme}>
+          <ResponsiveAppBar lang={lang} setLang={setLang} pages={pages} pages2={pages2}></ResponsiveAppBar>
+        </ThemeProvider>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about-me" element={<AboutMe />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/about" element={<AboutPage />} />
+        </Routes>
+      </BrowserRouter>
       <h2 style={{textAlign: 'center'}}>Language: {lang}</h2>
     </>
   )
