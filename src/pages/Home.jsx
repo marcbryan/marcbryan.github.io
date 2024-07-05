@@ -1,14 +1,15 @@
 import { useState } from 'react';
+import { useTranslation } from "react-i18next";
 import reactLogo from '../assets/react.svg';
 import viteLogo from '/vite.svg';
 
 function Home() {
   const [count, setCount] = useState(0);
+  const { t } = useTranslation();
 
   return (
     <main>
-      <h1>Hello world!</h1>
-      <span>Select another language</span>
+      <h1>{t("home")}</h1>
 
       <div id="container">
         <div>

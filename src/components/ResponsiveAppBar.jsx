@@ -2,6 +2,7 @@ import * as React from 'react';
 import { useState } from 'react';
 import { LANGUAGES } from '../constants';
 import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -23,6 +24,7 @@ function getCode(newLang) {
 }
 
 function ResponsiveAppBar({ lang, setLang, pages, pages2 }) {
+  const { i18n, t } = useTranslation();
   const [code, setCode] = useState(getCode(lang));
 
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -47,6 +49,7 @@ function ResponsiveAppBar({ lang, setLang, pages, pages2 }) {
     const { newLang } = event.currentTarget.dataset;
     setLang(newLang);
     setCode(getCode(newLang));
+    i18n.changeLanguage(newLang);
     handleCloseUserMenu;
   };
 
@@ -54,7 +57,7 @@ function ResponsiveAppBar({ lang, setLang, pages, pages2 }) {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Tooltip title="Home">
+          <Tooltip title={t("home")}>
             <IconButton sx={{ display: { xs: 'none', md: 'flex' } }} color="inherit" component={NavLink} to="/">
               <HomeIcon />
             </IconButton>
@@ -88,9 +91,9 @@ function ResponsiveAppBar({ lang, setLang, pages, pages2 }) {
               }}
             >
               {pages2.map((page) => (
-                <MenuItem key={page.name} onClick={handleCloseNavMenu} component={NavLink} to={page.route}>
+                <MenuItem key={page.key} onClick={handleCloseNavMenu} component={NavLink} to={page.route}>
                   <Typography textAlign="center">
-                    {page.name}
+                    {t(page.key)}
                   </Typography>
                 </MenuItem>            
               ))}
@@ -99,19 +102,19 @@ function ResponsiveAppBar({ lang, setLang, pages, pages2 }) {
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
-                key={page.name}
+                key={page.key}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
                 component={NavLink}
                 to={page.route}
               >
-                {page.name}
+                {t(page.key)}
               </Button>
             ))}
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Select language">
+            <Tooltip title={t("chooseLang")}>
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <span className={`fi fi-${code}`}></span>
               </IconButton>
@@ -137,7 +140,7 @@ function ResponsiveAppBar({ lang, setLang, pages, pages2 }) {
                   <ListItemIcon>
                     <span className={`fi fi-${language.code}`}></span>
                   </ListItemIcon>
-                  <ListItemText>{language.label}</ListItemText>
+                  <ListItemText>{t(language.lang)}</ListItemText>
                 </MenuItem>
               ))}
             </Menu>

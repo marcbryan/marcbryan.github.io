@@ -26,13 +26,13 @@ const theme = createTheme({
 });
 
 const pages = [
-  { name: 'About me', route: '/about-me' }, 
-  { name: 'Portfolio', route: '/portfolio' }, 
-  { name: 'About this page', route: '/about' }
+  { key: 'aboutMe', route: '/about-me' }, 
+  { key: 'portfolio', route: '/portfolio' }, 
+  { key: 'aboutPage', route: '/about' }
 ];
 
 const pages2 = [...pages];
-pages2.unshift({ name: "Home", route: "/" });
+pages2.unshift({ key: 'home', route: '/' });
 
 function App() {
   const userLang = navigator.language || navigator.userLanguage;
