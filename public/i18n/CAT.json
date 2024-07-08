@@ -1,10 +1,20 @@
 {
   "home": "Inici",
   "aboutMe": "Sobre mi",
-  "portfolio": "Portfolio",
+  "portfolio": "Portfoli",
   "aboutPage": "Sobre aquesta pàgina",
   "chooseLang": "Tria un idioma",
   "ES": "Castellà",
   "CAT": "Català",
-  "EN": "Anglès"
+  "EN": "Anglès",
+  "aboutPage_intro": "Introducció",
+  "aboutPage_text1": "Aquest pàgina està construïda amb <strong>Vite</strong> i <strong>React</strong> (JS). També he utilizat HTML i CSS.",
+  "aboutPage_text2": "Per al disseny he utilitzat els components de <strong>Material Design</strong> (<1>MUI a React</1>) i també he agafat idees dels següents portfolis:",
+  "aboutPage_text3": "Totes les idees que se m'han acudit les he pogut desenvolupar.",
+  "aboutPage_reasons": "Raons",
+  "aboutPage_text4": "Tenia moltes ganes d'utilitzar React, ja coneixia aquest framework perquè es un dels més populars de Frontend però mai l'havia utilitzat. Per aquesta raó, em vaig veure un <1>curs de Udemy</1> que em va ajudar bastant a entendre les funcionalitats bàsiques.",
+  "aboutPage_text5": "Per una altra banda, he utilitzat Vite per reduir els temps d'espera a l'hora de desenvolupar, ja que els canvis es veuen al guardar.",
+  "aboutPage_resources": "Recursos",
+  "aboutPage_doubtsProblems": "Dubtes/Problemes",
+  "aboutPage_text6": "Per resoldre els dubtes i problemes que he tingut, he buscat a Google i a StackOverflow."
 }

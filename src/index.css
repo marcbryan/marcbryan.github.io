@@ -36,7 +36,7 @@ h1 {
   line-height: 1.1;
 }
 
-#container button {
+div.container button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -47,11 +47,11 @@ h1 {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-#container button:hover {
+div.container button:hover {
   border-color: #646cff;
 }
-#container button:focus,
-#container button:focus-visible {
+div.container button:focus,
+div.container button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
@@ -63,7 +63,7 @@ h1 {
   a:hover {
     color: #747bff;
   }
-  #container button {
+  div.container button {
     background-color: #f9f9f9;
   }
 }

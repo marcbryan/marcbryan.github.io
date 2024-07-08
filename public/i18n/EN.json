@@ -6,5 +6,15 @@
   "chooseLang": "Choose language",
   "ES": "Spanish",
   "CAT": "Catalan",
-  "EN": "English"
+  "EN": "English",
+  "aboutPage_intro": "Introduction",
+  "aboutPage_text1": "This page is built with <strong>Vite</strong> and <strong>React</strong> (JS). I also used HTML and CSS.",
+  "aboutPage_text2": "For the design I used the <strong>Material Design</strong> (<1>MUI in React</1>) components, and I also took ideas from the following portfolios:",
+  "aboutPage_text3": "I have been able to develop all the ideas that I had.",
+  "aboutPage_reasons": "Reasons",
+  "aboutPage_text4": "I really wanted to use React, I knew this framework because it is one of the most popular in Frontend, but I never used it. For this reason, I watched a <1>Udemy course</1> (it's in Spanish) that helped me to understand the basics of this framework.",
+  "aboutPage_text5": "On the other hand, I used Vite to reduce wait times while developing, since you can see the changes after saving.",
+  "aboutPage_resources": "Resources",
+  "aboutPage_doubtsProblems": "Doubts/Problems",
+  "aboutPage_text6": "To resolve the doubts and problems that I had, I searched on Google and StackOverflow."
 }

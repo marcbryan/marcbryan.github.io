@@ -11,7 +11,7 @@ function Home() {
     <main>
       <h1>{t("home")}</h1>
 
-      <div id="container">
+      <div className="container" style={{textAlign: "center"}}>
         <div>
           <a href="https://vitejs.dev" target="_blank">
             <img src={viteLogo} className="logo" alt="Vite logo" />
