@@ -7,6 +7,21 @@
   "ES": "Castellà",
   "CAT": "Català",
   "EN": "Anglès",
+  "DAM": "DAM",
+  "DAM_name": "Desenvolupament d'aplicacions multiplataforma",
+  "DAM_link": "https://triaeducativa.gencat.cat/ca/estudis/?desenvolupament-aplicacions-multiplataforma&p_id=219",
+  "DAW": "DAW",
+  "DAW_name": "Desenvolupament d'aplicacions web",
+  "DAW_link": "https://triaeducativa.gencat.cat/ca/estudis/?desenvolupament-aplicacions-web&p_id=770",
+  "portfolio_text1": "En aquesta pàgina trobaràs els projectes que he fet (projectes personals, acadèmics o en grup). També els pot trobar al meu GitHub:",
+  "portfolio_projects": "Projectes",
+  "portfolio_gp": "Projectes en grup",
+  "portfolio_numPersons": "Núm. persones",
+  "portfolio_knowMore": "Coneix més",
+  "portfolio_seeProject": "Veure projecte",
+  "portfolio_projectImg": "Imatge del projecte",
+  "portfolio_buttonGroup_ariaLabel": "Grup de botons amb un menú desplegable",
+  "portfolio_arrowButton_ariaLabel": "Tria un repositori",
   "aboutPage_intro": "Introducció",
   "aboutPage_text1": "Aquest pàgina està construïda amb <strong>Vite</strong> i <strong>React</strong> (JS). També he utilizat HTML i CSS.",
   "aboutPage_text2": "Per al disseny he utilitzat els components de <strong>Material Design</strong> (<1>MUI a React</1>) i també he agafat idees dels següents portfolis:",
@@ -16,5 +31,149 @@
   "aboutPage_text5": "Per una altra banda, he utilitzat Vite per reduir els temps d'espera a l'hora de desenvolupar, ja que els canvis es veuen al guardar.",
   "aboutPage_resources": "Recursos",
   "aboutPage_doubtsProblems": "Dubtes/Problemes",
-  "aboutPage_text6": "Per resoldre els dubtes i problemes que he tingut, he buscat a Google i a StackOverflow."
+  "aboutPage_text6": "Per resoldre els dubtes i problemes que he tingut, he buscat a Google i a StackOverflow.",
+  "projects": [
+    {
+      "name": "Pràctica EPCSD",
+      "description": "Pràctica de l'assignatura \"Enginyeria del programari de components i sistemes distribuïts\" on vaig desenvolupar les funcionalitats de 3 microserveis.",
+      "type": ["Backend"],
+      "tags": ["Java", "Spring", "Microserveis"],
+      "repository": [
+        "https://github.com/marcbryan/spring-2024-productcatalog",
+        "https://github.com/marcbryan/spring-2024-user",
+        "https://github.com/marcbryan/spring-2024-notification"
+      ],
+      "imageURL": "",
+      "webURL": ""
+    },
+    {
+      "name": "Pràctica 2 DED",
+      "description": "Pràctica de l'assignatura \"Disseny d'estructures de dades\" on vaig implementar funcionalitats seguint <a href='https://ca.wikipedia.org/wiki/Desenvolupament_guiat_per_proves'>TDD</a>.",
+      "type": [],
+      "tags": ["Java"],
+      "repository": "https://github.com/marcbryan/23-24-2-PR2",
+      "imageURL": "",
+      "webURL": ""
+    },
+    {
+      "name": "Pràctica 1 DED",
+      "description": "Pràctica de l'assignatura \"Disseny d'estructures de dades\" on vaig crear diferents <Tooltip title='Tipus abstracte de dades' text='TADs'>TADs</Tooltip> i funcionalitats seguint <a href='https://ca.wikipedia.org/wiki/Desenvolupament_guiat_per_proves'>TDD</a>.",
+      "type": [],
+      "tags": ["Java"],
+      "repository": "https://github.com/marcbryan/23-24-2-PR1",
+      "imageURL": "",
+      "webURL": ""
+    },
+    {
+      "name": "TresEnRatllaJS",
+      "description": "Joc del tres en ratlla amb Javascript.",
+      "type": [],
+      "tags": ["JS", "HTML", "CSS"],
+      "repository": "https://github.com/marcbryan/TresEnRayaJS",
+      "imageURL": "",
+      "webURL": ""
+    },
+    {
+      "name": "PenjatJS",
+      "description": "Joc del penjat amb Javascript. També amb ASP.NET en aquest <a href='https://github.com/marcbryan/Ahorcado-ASP.NET'>repositori</a>.",
+      "type": [],
+      "tags": ["JS", "HTML", "CSS"],
+      "repository": "https://github.com/marcbryan/AhorcadoJS",
+      "imageURL": "",
+      "webURL": "https://marcbryan.github.io/AhorcadoJS/"
+    },
+    {
+      "name": "AppHosital",
+      "description": "Aplicació de gestió d'un hospital amb Windows Forms.",
+      "type": [],
+      "tags": [".NET", "C#", "Windows Forms"],
+      "repository": "https://github.com/marcbryan/AppHospital",
+      "imageURL": "",
+      "webURL": ""
+    }
+  ],
+  "groupProjects": [
+    {
+      "name": "EatNow",
+      "description": "Projecte final del Bootcamp .NET, és una aplicació per fer reserves i gestionar restaurants.",
+      "type": ["Frontend", "Backend"],
+      "tags": [".NET", "ASP.NET Core MVC", "C#", "HTML", "CSS", "JS", "SQL"],
+      "repository": "https://github.com/Far9554/EatNow",
+      "imageURL": "",
+      "webURL": "",
+      "numPersons": 4
+    },
+    {
+      "name": "ProyectoF",
+      "description": "Projecte final de <LinkTooltip text='DAW'></LinkTooltip> (Grau Superior), és una aplicació per comprar entrades d'events.",
+      "moreInfo": "Els meus dos companys es van encarregar de crear l'<a href='https://github.com/MarcMartinezM/Proyecto-Final-Proyecto-F' target='_blank'>app Android</a>, jo vaig desenvolupar la web i el backend, que servia per proveir les dades a l'app i a la web.",
+      "type": ["Frontend", "Backend"],
+      "tags": ["Angular", "NodeJS", "TS", "JS", "HTML", "CSS", "MongoDB"],
+      "repository": "https://github.com/marcbryan/ProyectoF",
+      "imageURL": "",
+      "webURL": "",
+      "numPersons": 3
+    },
+    {
+      "name": "Mensakas",
+      "description": "Projecte que vaig fer a <LinkTooltip text='DAW'></LinkTooltip> (Grau Superior), és una aplicació per fer comandes (estil Glovo).",
+      "type": ["Frontend", "Backend"],
+      "tags": ["Laravel", "PHP", "HTML", "CSS", "JS"],
+      "repository": "https://github.com/marcbryan/proyecto-mensakas",
+      "imageURL": "",
+      "webURL": "",
+      "numPersons": 2
+    },
+    {
+      "name": "AJAX Kahoot",
+      "description": "Projecte que vaig fer a <LinkTooltip text='DAW'></LinkTooltip> (Grau Superior), és una aplicació per fer qüestionaris com Kahoot.",
+      "type": ["Frontend", "Backend"],
+      "tags": ["PHP", "JS", "HTML", "CSS", "SQL"],
+      "repository": "https://github.com/gooicoo/Ajax-Kahoot",
+      "imageURL": "",
+      "webURL": "",
+      "numPersons": 3
+    },
+    {
+      "name": "Terminal Fallout",
+      "description": "Projecte que vaig fer a <LinkTooltip text='DAW'></LinkTooltip> (Grau Superior), és un joc semblant al terminal del joc Fallout.",
+      "type": ["Frontend"],
+      "tags": ["PHP", "JS", "HTML", "CSS"],
+      "repository": "https://github.com/davidencinamartinez/Terminal_Fallout",
+      "imageURL": "",
+      "webURL": "",
+      "numPersons": 3
+    },
+    {
+      "name": "SynergyET",
+      "description": "Projecte final de <LinkTooltip text='DAM'></LinkTooltip> (Grau Superior), és una aplicació semblant a Moodle però a Android.",
+      "type": [],
+      "tags": ["Java", "Android", "Firebase"],
+      "repository": "https://github.com/marcbryan/SynergyET",
+      "imageURL": "",
+      "webURL": "",
+      "numPersons": 2
+    },
+    {
+      "name": "Gestor Scrum",
+      "description": "Projecte que vaig fer a <LinkTooltip text='DAM'></LinkTooltip> (Grau Superior), és una aplicació per gestionar les tasques com a un tauler de Scrum.",
+      "type": [],
+      "tags": ["Java", "Hibernate", "JavaFX"],
+      "repository": "https://github.com/marcbryan/Proyecto2_Scrum",
+      "imageURL": "",
+      "webURL": "",
+      "numPersons": 3
+    },
+    {
+      "name": "Configurador de cotxes",
+      "description": "Projecte que vaig fer a <LinkTooltip text='DAM'></LinkTooltip> (Grau Superior), és una aplicació per configurar un cotxe i comprar-ho.",
+      "moreInfo": "És similar al que faries a una pàgina de qualsevol marca de cotxes.",
+      "type": [],
+      "tags": ["Java", "JavaFX", "XML"],
+      "repository": "https://github.com/asantamans/ams2project",
+      "imageURL": "",
+      "webURL": "",
+      "numPersons": 3
+    }
+  ]
 }

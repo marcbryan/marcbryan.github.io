@@ -3,3 +3,5 @@ export const LANGUAGES = [
   { lang: 'CAT', code: 'es-ct' },
   { lang: 'EN', code: 'gb' }
 ];
+
+export const FRONTEND = "Frontend";

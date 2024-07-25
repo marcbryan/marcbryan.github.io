@@ -7,6 +7,18 @@
   "ES": "Spanish",
   "CAT": "Catalan",
   "EN": "English",
+  "DAM_name": "Cross-platform application development",
+  "DAW_name": "Web application development",
+  "CFGS_more": "(Superior Grade in Spain), like NVQ 4 in UK or Junior College in the US.",
+  "portfolio_text1": "In this page you will find the projects I did (personal projects, academics or in group). You can also find them in my GitHub:",
+  "portfolio_projects": "Projects",
+  "portfolio_gp": "Group projects",
+  "portfolio_numPersons": "Num. persons",
+  "portfolio_knowMore": "Know more",
+  "portfolio_seeProject": "See project",
+  "portfolio_projectImg": "Project image",
+  "portfolio_buttonGroup_ariaLabel": "Button group with a nested menu",
+  "portfolio_arrowButton_ariaLabel": "Select a repository",
   "aboutPage_intro": "Introduction",
   "aboutPage_text1": "This page is built with <strong>Vite</strong> and <strong>React</strong> (JS). I also used HTML and CSS.",
   "aboutPage_text2": "For the design I used the <strong>Material Design</strong> (<1>MUI in React</1>) components, and I also took ideas from the following portfolios:",
@@ -16,5 +28,149 @@
   "aboutPage_text5": "On the other hand, I used Vite to reduce wait times while developing, since you can see the changes after saving.",
   "aboutPage_resources": "Resources",
   "aboutPage_doubtsProblems": "Doubts/Problems",
-  "aboutPage_text6": "To resolve the doubts and problems that I had, I searched on Google and StackOverflow."
+  "aboutPage_text6": "To resolve the doubts and problems that I had, I searched on Google and StackOverflow.",
+  "projects": [
+    {
+      "name": "SECDS Practice",
+      "description": "Practice of the subject \"Software engineering of components and distributed systems\" where I had to develop the functionalities of 3 microservices.",
+      "type": ["Backend"],
+      "tags": ["Java", "Spring", "Microservices"],
+      "repository": [
+        "https://github.com/marcbryan/spring-2024-productcatalog",
+        "https://github.com/marcbryan/spring-2024-user",
+        "https://github.com/marcbryan/spring-2024-notification"
+      ],
+      "imageURL": "",
+      "webURL": ""
+    },
+    {
+      "name": "DSD Practice 2",
+      "description": "Practice of the subject \"Data structures design\" where I had to implement functionalities following <a href='https://en.wikipedia.org/wiki/Test-driven_development'>TDD</a>.",
+      "type": [],
+      "tags": ["Java"],
+      "repository": "https://github.com/marcbryan/23-24-2-PR2",
+      "imageURL": "",
+      "webURL": ""
+    },
+    {
+      "name": "DSD Practice 1",
+      "description": "Practice of the subject \"Data structures design\" where I had to create some <Tooltip title='Abstract data type' text='ADTs'>ADTs</Tooltip> and functionalities following <a href='https://en.wikipedia.org/wiki/Test-driven_development'>TDD</a>.",
+      "type": [],
+      "tags": ["Java"],
+      "repository": "https://github.com/marcbryan/23-24-2-PR1",
+      "imageURL": "",
+      "webURL": ""
+    },
+    {
+      "name": "TicTacToeJS",
+      "description": "Tic-Tac-Toe game in Javascript.",
+      "type": [],
+      "tags": ["JS", "HTML", "CSS"],
+      "repository": "https://github.com/marcbryan/TresEnRayaJS",
+      "imageURL": "",
+      "webURL": ""
+    },
+    {
+      "name": "HangmanJS",
+      "description": "Hangman game in Javascript. Also in ASP.NET in this <a href='https://github.com/marcbryan/Ahorcado-ASP.NET'>repository</a>.",
+      "type": [],
+      "tags": ["JS", "HTML", "CSS"],
+      "repository": "https://github.com/marcbryan/AhorcadoJS",
+      "imageURL": "",
+      "webURL": "https://marcbryan.github.io/AhorcadoJS/"
+    },
+    {
+      "name": "HositalApp",
+      "description": "Hospital management application with Windows Forms.",
+      "type": [],
+      "tags": [".NET", "C#", "Windows Forms"],
+      "repository": "https://github.com/marcbryan/AppHospital",
+      "imageURL": "",
+      "webURL": ""
+    }
+  ],
+  "groupProjects": [
+    {
+      "name": "EatNow",
+      "description": "Final project of the .NET Bootcamp, it's an application to make reservations and manage restaurants.",
+      "type": ["Frontend", "Backend"],
+      "tags": [".NET", "ASP.NET Core MVC", "C#", "HTML", "CSS", "JS", "SQL"],
+      "repository": "https://github.com/Far9554/EatNow",
+      "imageURL": "",
+      "webURL": "",
+      "numPersons": 4
+    },
+    {
+      "name": "ProyectoF",
+      "description": "Final project of <Tooltip text='WAD'>WAD</Tooltip>, it's an application to buy event tickets.",
+      "moreInfo": "My two schoolmates developed the <a href='https://github.com/MarcMartinezM/Proyecto-Final-Proyecto-F' target='_blank'>Android app</a>, I developed the website and the backend, which provided the data to the app and the website.",
+      "type": ["Frontend", "Backend"],
+      "tags": ["Angular", "NodeJS", "TS", "JS", "HTML", "CSS", "MongoDB"],
+      "repository": "https://github.com/marcbryan/ProyectoF",
+      "imageURL": "",
+      "webURL": "",
+      "numPersons": 3
+    },
+    {
+      "name": "Mensakas",
+      "description": "Project that I did in <Tooltip text='WAD'>WAD</Tooltip>, it's an application to make orders (like Glovo).",
+      "type": ["Frontend", "Backend"],
+      "tags": ["Laravel", "PHP", "HTML", "CSS", "JS"],
+      "repository": "https://github.com/marcbryan/proyecto-mensakas",
+      "imageURL": "",
+      "webURL": "",
+      "numPersons": 2
+    },
+    {
+      "name": "AJAX Kahoot",
+      "description": "Project that I did in <Tooltip text='WAD'>WAD</Tooltip>, it's an application to make questionnaries like Kahoot.",
+      "type": ["Frontend", "Backend"],
+      "tags": ["PHP", "JS", "HTML", "CSS", "SQL"],
+      "repository": "https://github.com/gooicoo/Ajax-Kahoot",
+      "imageURL": "",
+      "webURL": "",
+      "numPersons": 3
+    },
+    {
+      "name": "Fallout Terminal",
+      "description": "Project that I did in <Tooltip text='WAD'>WAD</Tooltip>, it's a game that looks like the terminal from the game Fallout.",
+      "type": ["Frontend"],
+      "tags": ["PHP", "JS", "HTML", "CSS"],
+      "repository": "https://github.com/davidencinamartinez/Terminal_Fallout",
+      "imageURL": "",
+      "webURL": "",
+      "numPersons": 3
+    },
+    {
+      "name": "SynergyET",
+      "description": "Final project of <Tooltip text='CPAD'>CPAD</Tooltip>, it's an application similar to Moodle but in Android.",
+      "type": [],
+      "tags": ["Java", "Android", "Firebase"],
+      "repository": "https://github.com/marcbryan/SynergyET",
+      "imageURL": "",
+      "webURL": "",
+      "numPersons": 2
+    },
+    {
+      "name": "Scrum management",
+      "description": "Project that I did in <Tooltip text='CPAD'>CPAD</Tooltip>, it's an application to manage the tasks like in a Scrum board.",
+      "type": [],
+      "tags": ["Java", "Hibernate", "JavaFX"],
+      "repository": "https://github.com/marcbryan/Proyecto2_Scrum",
+      "imageURL": "",
+      "webURL": "",
+      "numPersons": 3
+    },
+    {
+      "name": "Car configurator",
+      "description": "Project that I did in <Tooltip text='CPAD'>CPAD</Tooltip>, it's an application to configure a car and buy it.",
+      "moreInfo": "It's similar to what you would do in any car brand website.",
+      "type": [],
+      "tags": ["Java", "JavaFX", "XML"],
+      "repository": "https://github.com/asantamans/ams2project",
+      "imageURL": "",
+      "webURL": "",
+      "numPersons": 3
+    }
+  ]
 }

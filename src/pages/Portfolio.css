@@ -1,0 +1,11 @@
+h1:first-child {
+  margin-top: 0;
+}
+
+.top-container > p {
+  margin-bottom: 0.5em;
+}
+
+.top-container a {
+  align-self: center;
+}
