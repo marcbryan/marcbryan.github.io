@@ -26,12 +26,14 @@
   "aboutPage_text1": "Esta página está construida con <strong>Vite</strong> y <strong>React</strong> (JS). También he utilizado HTML y CSS.",
   "aboutPage_text2": "Para el diseño he utilizado los componentes de <strong>Material Design</strong> (<1>MUI en React</1>) y también he cogido ideas de los siguientes portfolios:",
   "aboutPage_text3": "Todas las ideas que se me han ocurrido las he podido desarrollar.",
+  "aboutPage_repository": "Repositorio",
+  "aboutPage_text4": "En este repositorio encontrarás el código fuente del portfolio:",
   "aboutPage_reasons": "Razones",
-  "aboutPage_text4": "Tenía muchas ganas utilizar React, ya conocía este framework porque es uno de los más populares de Frontend pero nunca lo había utilizado. Por esta razón, me vi un <1>curso de Udemy</1> que me ayudó bastante a entender las funcionalidades básicas.",
-  "aboutPage_text5": "Por otro lado, he utilizado Vite para acortar tiempos de espera a la hora de desarrollar, ya que los cambios se ven al guardar.",
+  "aboutPage_text5": "Tenía muchas ganas utilizar React, ya conocía este framework porque es uno de los más populares de Frontend pero nunca lo había utilizado. Por esta razón, me vi un <1>curso de Udemy</1> que me ayudó bastante a entender las funcionalidades básicas.",
+  "aboutPage_text6": "Por otro lado, he utilizado Vite para acortar tiempos de espera a la hora de desarrollar, ya que los cambios se ven al guardar.",
   "aboutPage_resources": "Recursos",
   "aboutPage_doubtsProblems": "Dudas/Problemas",
-  "aboutPage_text6": "Para resolver las dudas y problemas que he tenido, he buscado en Google y en StackOverflow.",
+  "aboutPage_text7": "Para resolver las dudas y problemas que he tenido, he buscado en Google y en StackOverflow.",
   "projects": [
     {
       "name": "Práctica ISCSD",
