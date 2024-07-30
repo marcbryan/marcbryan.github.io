@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import { useTranslation } from "react-i18next";
+import { useTitle } from "../App";
 import reactLogo from '../assets/react.svg';
 import viteLogo from '/vite.svg';
 
 function Home() {
   const [count, setCount] = useState(0);
   const { t } = useTranslation();
+  useTitle(`${t("home")} | ${t("title")}`);
 
   return (
     <main>

@@ -1,10 +1,12 @@
 import { useTranslation, Trans } from "react-i18next";
+import { useTitle } from "../App";
 import reactLogo from '../assets/react.svg';
 import viteLogo from '/vite.svg';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
 function AboutPage() {
   const { t } = useTranslation();
+  useTitle(`${t("aboutPage")} | ${t("title")}`);
 
   return (
     <main className="container">

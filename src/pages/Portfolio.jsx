@@ -1,11 +1,13 @@
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { useTitle } from "../App";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import MultipleItemsCarousel from "../components/MultipleItemsCarousel";
 import './Portfolio.css';
 
 function Portfolio() {
   const { t } = useTranslation();
+  useTitle(`${t("portfolio")} | ${t("title")}`);
 
   useEffect(() => {
     const scrollers = document.querySelectorAll(".scroller");
