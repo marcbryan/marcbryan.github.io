@@ -6,25 +6,12 @@ import Divider from '@mui/material/Divider';
 import { TECHNOLOGIES } from '../constants';
 import StackIcon from "tech-stack-icons";
 import { Tooltip } from "@mui/material";
+import Scroller from "../components/Scroller";
 import LinkTooltip from "../components/LinkTooltip";
 import TextTooltip from "../components/TextTooltip";
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 import "./AboutMe.css";
-
-function Technologies({ariaHidden}) {
-  const height = 52.75;
-  
-  return TECHNOLOGIES.map((tech, techIndex) => {
-    return (
-      <Tooltip key={techIndex} title={tech.name} aria-hidden={ariaHidden ? "true" : undefined}>
-        {tech.tsIcon != null ?
-          <div><StackIcon name={tech.tsIcon} style={{ width:`${height}px`, height:`${height}px` }} /></div> :
-          <img src={tech.imageURL} alt={tech.name} height={`${height}px`} /> }
-      </Tooltip>
-    )
-  })
-}
 
 function Academics({academics}) {
   return (
@@ -113,13 +100,18 @@ function AboutMe() {
         <img className="grades" src={`/src/assets/${t("aboutMe_gradesFile")}`} />
       </Zoom>
       <p>{t("aboutMe_text3")}</p>
-      <div className="d-flex custom-scrollbar scroller" data-animated={!window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "true" : undefined}>
-        <div className="d-flex scroller-inner technologies" data-elements={TECHNOLOGIES.length}>
-          <Technologies />
-          {!window.matchMedia("(prefers-reduced-motion: reduce)").matches ?
-          <Technologies ariaHidden="true" /> : ""}
-        </div>
-      </div>
+      <Scroller dataPause="true" style={{"--_gap": "0.5rem"}}>
+        {TECHNOLOGIES.map((tech, techIndex) => {
+          const height = 52.75;
+          return (
+            <Tooltip key={techIndex} title={tech.name}>
+              {tech.tsIcon != null ?
+                <div><StackIcon name={tech.tsIcon} style={{ width:`${height}px`, height:`${height}px` }} /></div> :
+                <img src={tech.imageURL} alt={tech.name} height={`${height}px`} /> }
+            </Tooltip>
+          )
+        })}
+      </Scroller>
       <p className="relevant-links">{t("aboutMe_relevantLinks")}</p>
       <div className="relevant-links">
         <div className="d-flex">

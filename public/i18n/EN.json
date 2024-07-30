@@ -12,7 +12,7 @@
   "DAW_name": "Web application development",
   "CFGS_more": "(Superior Grade in Spain), like NVQ 4 in UK or Junior College in the US.",
   "aboutMe_summary": "Summary",
-  "aboutMe_text1": "I'm Marc Boakye, Full Stack Developer since I studied <Tooltip title='{{DAM_name}} {{CFGS_more}}' text='CPAD' bold='true'></Tooltip> and <Tooltip title='{{DAW_name}} {{CFGS_more}}' text='WAD' bold='true'></Tooltip>. I did a 3x2, that means that in three years I obtained both degrees.<br/> At the present, I'm studying Computer Engineering at <Tooltip title='Universitat Oberta de Catalunya' text='UOC'></Tooltip>, I choosed the Software Engineering branch. At the end of September I will start my last year, I have one subject left and the Bachelor’s Thesis. The end is close!",
+  "aboutMe_text1": "I'm Marc Boakye, Full Stack Developer since I studied <Tooltip title='{{DAM_name}} {{CFGS_more}}' text='CPAD' bold='true'></Tooltip> and <Tooltip title='{{DAW_name}} {{CFGS_more}}' text='WAD' bold='true'></Tooltip>. I did a 3x2, that means that in three years I obtained both degrees.<br/> At the present, I'm studying Computer Engineering at <Tooltip title='Universitat Oberta de Catalunya' text='UOC'></Tooltip>, I chose the Software Engineering branch. At the end of September I will start my last year, I have one subject left and the Bachelor’s Thesis. The end is close!",
   "aboutMe_text2": "This last semester has been the one where I have gotten my best grades:",
   "aboutMe_text3": "Technologies that I used during this time:",
   "aboutMe_relevantLinks": "Relevant links:",
@@ -185,8 +185,8 @@
     },
     {
       "name": "ProyectoF",
-      "description": "Final project of <Tooltip text='WAD'>WAD</Tooltip>, it's an application to buy event tickets.",
-      "moreInfo": "My two schoolmates developed the <a href='https://github.com/MarcMartinezM/Proyecto-Final-Proyecto-F' target='_blank'>Android app</a>, I developed the website and the backend, which provided the data to the app and the website.",
+      "description": "Final project of <Tooltip title='{{DAW_name}} {{CFGS_more}}' text='WAD'>WAD</Tooltip>, it's an application to buy event tickets.",
+      "moreInfo": "My two schoolmates developed the <a href='https://github.com/MarcMartinezM/Proyecto-Final-Proyecto-F' target='_blank' rel='noopener noreferrer'>Android app</a>, I developed the website and the backend, which provided the data to the app and the website.",
       "type": ["Frontend", "Backend"],
       "tags": ["Angular", "NodeJS", "TS", "JS", "HTML", "CSS", "MongoDB"],
       "repository": "https://github.com/marcbryan/ProyectoF",
@@ -196,7 +196,7 @@
     },
     {
       "name": "Mensakas",
-      "description": "Project that I did in <Tooltip text='WAD'>WAD</Tooltip>, it's an application to make orders (like Glovo).",
+      "description": "Project that I did in <Tooltip title='{{DAW_name}} {{CFGS_more}}' text='WAD'>WAD</Tooltip>, it's an application to make orders (like Glovo).",
       "type": ["Frontend", "Backend"],
       "tags": ["Laravel", "PHP", "HTML", "CSS", "JS"],
       "repository": "https://github.com/marcbryan/proyecto-mensakas",
@@ -206,7 +206,7 @@
     },
     {
       "name": "AJAX Kahoot",
-      "description": "Project that I did in <Tooltip text='WAD'>WAD</Tooltip>, it's an application to make questionnaries like Kahoot.",
+      "description": "Project that I did in <Tooltip title='{{DAW_name}} {{CFGS_more}}' text='WAD'>WAD</Tooltip>, it's an application to make questionnaries like Kahoot.",
       "type": ["Frontend", "Backend"],
       "tags": ["PHP", "JS", "HTML", "CSS", "SQL"],
       "repository": "https://github.com/gooicoo/Ajax-Kahoot",
@@ -216,7 +216,7 @@
     },
     {
       "name": "Fallout Terminal",
-      "description": "Project that I did in <Tooltip text='WAD'>WAD</Tooltip>, it's a game that looks like the terminal from the game Fallout.",
+      "description": "Project that I did in <Tooltip title='{{DAW_name}} {{CFGS_more}}' text='WAD'>WAD</Tooltip>, it's a game that looks like the terminal from the game Fallout.",
       "type": ["Frontend"],
       "tags": ["PHP", "JS", "HTML", "CSS"],
       "repository": "https://github.com/davidencinamartinez/Terminal_Fallout",
@@ -226,7 +226,7 @@
     },
     {
       "name": "SynergyET",
-      "description": "Final project of <Tooltip text='CPAD'>CPAD</Tooltip>, it's an application similar to Moodle but in Android.",
+      "description": "Final project of <Tooltip title='{{DAM_name}} {{CFGS_more}}' text='CPAD'>CPAD</Tooltip>, it's an application similar to Moodle but in Android.",
       "type": [],
       "tags": ["Java", "Android", "Firebase"],
       "repository": "https://github.com/marcbryan/SynergyET",
@@ -236,7 +236,7 @@
     },
     {
       "name": "Scrum management",
-      "description": "Project that I did in <Tooltip text='CPAD'>CPAD</Tooltip>, it's an application to manage the tasks like in a Scrum board.",
+      "description": "Project that I did in <Tooltip title='{{DAM_name}} {{CFGS_more}}' text='CPAD'>CPAD</Tooltip>, it's an application to manage the tasks like in a Scrum board.",
       "type": [],
       "tags": ["Java", "Hibernate", "JavaFX"],
       "repository": "https://github.com/marcbryan/Proyecto2_Scrum",
@@ -246,7 +246,7 @@
     },
     {
       "name": "Car configurator",
-      "description": "Project that I did in <Tooltip text='CPAD'>CPAD</Tooltip>, it's an application to configure a car and buy it.",
+      "description": "Project that I did in <Tooltip title='{{DAM_name}} {{CFGS_more}}' text='CPAD'>CPAD</Tooltip>, it's an application to configure a car and buy it.",
       "moreInfo": "It's similar to what you would do in any car brand website.",
       "type": [],
       "tags": ["Java", "JavaFX", "XML"],

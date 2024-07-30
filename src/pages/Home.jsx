@@ -11,7 +11,7 @@ function Home() {
 
   return (
     <main>
-      <h1>{t("home")}</h1>
+      <h1 style={{ padding: "2rem", paddingBottom: 0 }}>{t("home")}</h1>
 
       <div className="container" style={{textAlign: "center"}}>
         <div>

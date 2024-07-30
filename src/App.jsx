@@ -61,7 +61,6 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
         </Routes>
       </BrowserRouter>
-      <h2 style={{textAlign: 'center'}}>Language: {lang}</h2>
     </>
   )
 }

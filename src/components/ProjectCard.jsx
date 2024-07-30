@@ -11,10 +11,13 @@ import Tooltip from '@mui/material/Tooltip';
 import { useTranslation, Trans } from 'react-i18next';
 import GitHubUniverse from '../assets/github-universe.png';
 import SplitButton from './SplitButton';
+import Scroller from './Scroller';
+import LinkTooltip from "../components/LinkTooltip";
+import TextTooltip from "../components/TextTooltip";
 import parse from 'html-react-parser';
 import { FRONTEND } from '../constants';
-import './ProjectCard.css';
 import { t } from 'i18next';
+import './ProjectCard.css';
 
 let isHTML = RegExp.prototype.test.bind(/(<([^>]+)>)/i);
 
@@ -33,6 +36,10 @@ function Description({project}) {
         <Trans 
           i18nKey={project}
           components={{ a: <a target="_blank" rel="noopener noreferrer" />, Tooltip: <TextTooltip /> }}
+          values={{
+            DAM_name: t("DAM_name"),
+            DAW_name: t("DAW_name")
+          }}
         >
           {project.description}
         </Trans>
@@ -43,6 +50,12 @@ function Description({project}) {
         <Trans 
           i18nKey={project}
           components={{ LinkTooltip: <LinkTooltip /> }}
+          values={{ 
+            DAM_name: t("DAM_name"),
+            DAW_name: t("DAW_name"),
+            DAM_link: t("DAM_link"),
+            DAW_link: t("DAW_link")
+          }}
         >
           {project.description}
         </Trans>
@@ -63,6 +76,11 @@ function Description({project}) {
         <Trans 
           i18nKey={project}
           components={{ Tooltip: <TextTooltip /> }}
+          values={{ 
+            CFGS_more: t("CFGS_more"),
+            DAM_name: t("DAM_name"),
+            DAW_name: t("DAW_name")
+          }}
         >
           {project.description}
         </Trans>
@@ -73,50 +91,15 @@ function Description({project}) {
     return project.description;
 }
 
-function TextTooltip({title, text}) {
-  if (title == null)
-    title = getTitleKey(text) + " " + t("CFGS_more");
-
-  return (
-    <Tooltip title={title} style={{ cursor: "initial" }}>
-      <span>{text}</span>
-    </Tooltip>
-  )
-}
-
-function LinkTooltip({href, title, text}) {
-  return (
-    <Tooltip title={ title == null ? getTitleKey(text) : title }>
-      <a href={href == null ? getHrefKey(text) : href } target="_blank" rel="noopener noreferrer">{text}</a>
-    </Tooltip>
-  )
-}
-
-function getTitleKey(text) {
-  if (text === "DAW" || text === "WAD")
-    return t("DAW_name");
-  else
-    return t("DAM_name");
-}
-
-function getHrefKey(text) {
-  if (text === "DAW" || text === "WAD")
-    return t("DAW_link");
-  else
-    return t("DAM_link");
-}
-
 function Tags({project}) {
   let length = project.tags.length;
   if (length > 5) {
     return (
-      <div className="d-flex custom-scrollbar scroller">
-        <div className="d-flex scroller-inner" data-elements={project.tags.length}>
-          {project.tags.map((tag, tagIndex) => (
-            <Chip key={tagIndex} label={tag} color="primary" />
-          ))}
-        </div>
-      </div>
+      <Scroller>
+        {project.tags.map((tag, tagIndex) => (
+          <Chip key={tagIndex} label={tag} color="primary" />
+        ))}
+      </Scroller>
     )
   }
   else {

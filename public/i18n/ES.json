@@ -188,8 +188,8 @@
     },
     {
       "name": "ProyectoF",
-      "description": "Proyecto final de <LinkTooltip text='DAW'></LinkTooltip> (Grado Superior), es una aplicación para comprar entradas de eventos.",
-      "moreInfo": "Mis dos compañeros se encargaron de crear la <a href='https://github.com/MarcMartinezM/Proyecto-Final-Proyecto-F' target='_blank'>app Android</a>, yo desarrollé la web y el backend, que servía para proveer los datos a la app y a la web.",
+      "description": "Proyecto final de <LinkTooltip title='{{DAW_name}}' href='{{DAW_link}}' text='DAW'></LinkTooltip> (Grado Superior), es una aplicación para comprar entradas de eventos.",
+      "moreInfo": "Mis dos compañeros se encargaron de crear la <a href='https://github.com/MarcMartinezM/Proyecto-Final-Proyecto-F' target='_blank' rel='noopener noreferrer'>app Android</a>, yo desarrollé la web y el backend, que servía para proveer los datos a la app y a la web.",
       "type": ["Frontend", "Backend"],
       "tags": ["Angular", "NodeJS", "TS", "JS", "HTML", "CSS", "MongoDB"],
       "repository": "https://github.com/marcbryan/ProyectoF",
@@ -199,7 +199,7 @@
     },
     {
       "name": "Mensakas",
-      "description": "Proyecto que realicé en <LinkTooltip text='DAW'></LinkTooltip> (Grado Superior), es una aplicación para hacer pedidos (estilo Glovo).",
+      "description": "Proyecto que realicé en <LinkTooltip title='{{DAW_name}}' href='{{DAW_link}}' text='DAW'></LinkTooltip> (Grado Superior), es una aplicación para hacer pedidos (estilo Glovo).",
       "type": ["Frontend", "Backend"],
       "tags": ["Laravel", "PHP", "HTML", "CSS", "JS"],
       "repository": "https://github.com/marcbryan/proyecto-mensakas",
@@ -209,7 +209,7 @@
     },
     {
       "name": "AJAX Kahoot",
-      "description": "Proyecto que realicé en <LinkTooltip text='DAW'></LinkTooltip> (Grado Superior), es una aplicación para hacer cuestionarios como Kahoot.",
+      "description": "Proyecto que realicé en <LinkTooltip title='{{DAW_name}}' href='{{DAW_link}}' text='DAW'></LinkTooltip> (Grado Superior), es una aplicación para hacer cuestionarios como Kahoot.",
       "type": ["Frontend", "Backend"],
       "tags": ["PHP", "JS", "HTML", "CSS", "SQL"],
       "repository": "https://github.com/gooicoo/Ajax-Kahoot",
@@ -219,7 +219,7 @@
     },
     {
       "name": "Terminal Fallout",
-      "description": "Proyecto que realicé en <LinkTooltip text='DAW'></LinkTooltip> (Grado Superior), es un juego parecido al terminal del juego Fallout.",
+      "description": "Proyecto que realicé en <LinkTooltip title='{{DAW_name}}' href='{{DAW_link}}' text='DAW'></LinkTooltip> (Grado Superior), es un juego parecido al terminal del juego Fallout.",
       "type": ["Frontend"],
       "tags": ["PHP", "JS", "HTML", "CSS"],
       "repository": "https://github.com/davidencinamartinez/Terminal_Fallout",
@@ -229,7 +229,7 @@
     },
     {
       "name": "SynergyET",
-      "description": "Proyecto final de <LinkTooltip text='DAM'></LinkTooltip> (Grado Superior), es una aplicación similar a Moodle pero en Android.",
+      "description": "Proyecto final de <LinkTooltip title='{{DAM_name}}' href='{{DAM_link}}' text='DAM'></LinkTooltip> (Grado Superior), es una aplicación similar a Moodle pero en Android.",
       "type": [],
       "tags": ["Java", "Android", "Firebase"],
       "repository": "https://github.com/marcbryan/SynergyET",
@@ -239,7 +239,7 @@
     },
     {
       "name": "Gestor Scrum",
-      "description": "Proyecto que realicé en <LinkTooltip text='DAM'></LinkTooltip> (Grado Superior), es una aplicación para gestionar las tareas como en un panel de Scrum.",
+      "description": "Proyecto que realicé en <LinkTooltip title='{{DAM_name}}' href='{{DAM_link}}' text='DAM'></LinkTooltip> (Grado Superior), es una aplicación para gestionar las tareas como en un panel de Scrum.",
       "type": [],
       "tags": ["Java", "Hibernate", "JavaFX"],
       "repository": "https://github.com/marcbryan/Proyecto2_Scrum",
@@ -249,7 +249,7 @@
     },
     {
       "name": "Configurador de coches",
-      "description": "Proyecto que realicé en <LinkTooltip text='DAM'></LinkTooltip> (Grado Superior), es una aplicación para configurar un coche y comprarlo.",
+      "description": "Proyecto que realicé en <LinkTooltip title='{{DAM_name}}' href='{{DAM_link}}' text='DAM'></LinkTooltip> (Grado Superior), es una aplicación para configurar un coche y comprarlo.",
       "moreInfo": "Es similar a lo que harías en una página de cualquier marca de coches.",
       "type": [],
       "tags": ["Java", "JavaFX", "XML"],
