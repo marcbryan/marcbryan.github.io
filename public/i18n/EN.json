@@ -1,4 +1,5 @@
 {
+  "title": "Marc's Portfolio",
   "home": "Home",
   "aboutMe": "About me",
   "portfolio": "Portfolio",
@@ -10,6 +11,16 @@
   "DAM_name": "Cross-platform application development",
   "DAW_name": "Web application development",
   "CFGS_more": "(Superior Grade in Spain), like NVQ 4 in UK or Junior College in the US.",
+  "aboutMe_summary": "Summary",
+  "aboutMe_text1": "I'm Marc Boakye, Full Stack Developer since I studied <Tooltip title='{{DAM_name}} {{CFGS_more}}' text='CPAD' bold='true'></Tooltip> and <Tooltip title='{{DAW_name}} {{CFGS_more}}' text='WAD' bold='true'></Tooltip>. I did a 3x2, that means that in three years I obtained both degrees.<br/> At the present, I'm studying Computer Engineering at <Tooltip title='Universitat Oberta de Catalunya' text='UOC'></Tooltip>, I choosed the Software Engineering branch. At the end of September I will start my last year, I have one subject left and the Bachelor’s Thesis. The end is close!",
+  "aboutMe_text2": "This last semester has been the one where I have gotten my best grades:",
+  "aboutMe_text3": "Technologies that I used during this time:",
+  "aboutMe_relevantLinks": "Relevant links:",
+  "aboutMe_academicTraining": "Academic training",
+  "aboutMe_additionalTraining": "Additional training",
+  "aboutMe_professionalExperience": "Professional experience",
+  "aboutMe_languages": "Languages",
+  "aboutMe_gradesFile": "grades.png",
   "portfolio_text1": "In this page you will find the projects I did (personal projects, academics or in group). You can also find them in my GitHub:",
   "portfolio_projects": "Projects",
   "portfolio_gp": "Group projects",
@@ -31,6 +42,76 @@
   "aboutPage_resources": "Resources",
   "aboutPage_doubtsProblems": "Doubts/Problems",
   "aboutPage_text7": "To resolve the doubts and problems that I had, I searched on Google and StackOverflow.",
+  "academicTraining": [
+    {
+      "name": "Bachelor's Degree in Computer Engineering",
+      "school": "Universitat Oberta de Catalunya",
+      "years": "2021 - Present",
+      "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAilBMVEV29P8ePpgGDYAAAH9hyOp07/9z7v9n1fAAAHomT5xy7P9y7f9z7f8YMpAAAHQAAG8jSJV18v918f9t4fkAAHVaut4aN5EgQpZdwuV39/9TrNYXMYojSptCiL0AAHAgQZFw5/wqV580a6woVKAUKoctXaNWstlMnss4c7IvY6ULGYARI4Y+gLkaN4ut4uclAAABdElEQVR4AV2PB3LEIAxFtQXjlRWxYHl77/X+1wsyHg/Jp/NUAQbD0dgUthxOABGrosJOhAA/zGNjrOOpp+CxJh8UYIUUofA4RChT75uZc26+8EQVReVwuXIiLOyaQKoqQdNCXAtvtnPhOVJMXhQKJXlO7E72Bg5rcXVReDwcADbMjfdjx8eF4xPQ8ixu7HF7KUvw2x1f6/rIu23TQjizW4SNE2YwloWjpLQtRIXjWNrwegb0q3LHvBuulrfec3zm3WoJgOTt/fG4W29izufSLKfi7I+42lCEZAKAN2RsKa9F3QylxItWHCGSTt3McyfyFnGPZQsROkRRxu4dM7tJDR1EIoVqguGwOj1Pt4NRaEMBlKsIABAKgivzB2vAvyJUhcaJfNcprI4ud+Lho9kVdkCNVMopNI/jFar0matSHHxhoM/zX9EL1Ct3xqq/KkxZe476Sk9Ib6xalleVPNPIhZg26D/yanVD6mFukhfUNxNZ9kLCX/gHKjY+ls/IAAAAAElFTkSuQmCC"
+    },
+    {
+      "name": "Superior grade in Web Application Development",
+      "school": "IES Esteve Terradas i Illa",
+      "location": "Cornellá de Llobregat",
+      "years": "2019 - 2020",
+      "src": "src/assets/logos/esteve-terradas.png"
+    },
+    {
+      "name": "Superior grade in Cross-Platform Application Development",
+      "school": "IES Esteve Terradas i Illa",
+      "location": "Cornellá de Llobregat",
+      "years": "2017 - 2019",
+      "src": "/src/assets/logos/esteve-terradas.png"
+    }
+  ],
+  "additionalTraining": [
+    {
+      "name": ".NET Developer Bootcamp (336 hours)",
+      "school": "Fundación Esplai",
+      "location": "Barcelona",
+      "years": "September - December 2023",
+      "details": [
+        "Coding with C#",
+        "SQL databases (SQL Server)",
+        "Front End development",
+        "ASP.NET"
+      ],
+      "src": "/src/assets/logos/fundacion-esplai.png"
+    }
+  ],
+  "experience": [
+    {
+      "job": "Web Developer",
+      "company": "tradEAsy, S.L.",
+      "years": "2019 - 2020",
+      "details": [
+        "Coding with PHP",
+        "Web design JavaScript, HTML and CSS",
+        "Use of SQL database",
+        "Work/coordination managed with Trello"
+      ],
+      "src": "/src/assets/logos/tradEAsy.png"
+    },
+    {
+      "job": "Android Developer",
+      "company": "YesLifeWork, S.L.",
+      "years": "2018 - 2019",
+      "details": [
+        "Coding an app with Java using Android Studio",
+        "Teamwork of 7 persons"
+      ]
+    }
+  ],
+  "myLanguages": [
+    {
+      "lang": "<span className='fi fi-es'></span>Spanish / <span className='fi fi-es-ct'></span>Catalan",
+      "level": "Native"
+    },
+    {
+      "lang": "<span className='fi fi-gb'></span>English",
+      "level": "Intermediate"
+    }
+  ],
   "projects": [
     {
       "name": "SECDS Practice",

@@ -1,4 +1,5 @@
 {
+  "title": "Portfoli Marc",
   "home": "Inici",
   "aboutMe": "Sobre mi",
   "portfolio": "Portfoli",
@@ -13,6 +14,16 @@
   "DAW": "DAW",
   "DAW_name": "Desenvolupament d'aplicacions web",
   "DAW_link": "https://triaeducativa.gencat.cat/ca/estudis/?desenvolupament-aplicacions-web&p_id=770",
+  "aboutMe_summary": "Resum",
+  "aboutMe_text1": "Sóc Marc Boakye, Programador Full Stack ja que vaig estudiar <LinkTooltip title=\"{{DAM_name}}\" href='{{DAM_link}}' text='DAM'></LinkTooltip> i <LinkTooltip title=\"{{DAW_name}}\" href='{{DAW_link}}' text='DAW'></LinkTooltip>. Vaig fer un 3x2, és a dir, en tres anys vaig aconseguir les dues titulacions.<br/> Actualment estic estudiant Enginyeria Informàtica a la <Tooltip title='Universitat Oberta de Catalunya' text='UOC'></Tooltip>, he triat la branca d'Enginyeria del Software. A finals de setembre començo el meu últim any, em queda una assignatura i el <Tooltip title='Treball de Fi de Grau' text='TFG'></Tooltip>. Ja queda poc!",
+  "aboutMe_text2": "Aquest últim semestre ha estat el que he tret les meves millors notes:",
+  "aboutMe_text3": "Tecnologies que he utilitzat durant aquest temps:",
+  "aboutMe_relevantLinks": "Enllaços d'interès:",
+  "aboutMe_academicTraining": "Formació acadèmica",
+  "aboutMe_additionalTraining": "Formació complementària",
+  "aboutMe_professionalExperience": "Experiència professional",
+  "aboutMe_languages": "Idiomes",
+  "aboutMe_gradesFile": "notes.png",
   "portfolio_text1": "En aquesta pàgina trobaràs els projectes que he fet (projectes personals, acadèmics o en grup). També els pot trobar al meu GitHub:",
   "portfolio_projects": "Projectes",
   "portfolio_gp": "Projectes en grup",
@@ -34,6 +45,76 @@
   "aboutPage_resources": "Recursos",
   "aboutPage_doubtsProblems": "Dubtes/Problemes",
   "aboutPage_text7": "Per resoldre els dubtes i problemes que he tingut, he buscat a Google i a StackOverflow.",
+  "academicTraining": [
+    {
+      "name": "Grau d'Enginyeria Informàtica",
+      "school": "Universitat Oberta de Catalunya",
+      "years": "2021 - Actualitat",
+      "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAilBMVEV29P8ePpgGDYAAAH9hyOp07/9z7v9n1fAAAHomT5xy7P9y7f9z7f8YMpAAAHQAAG8jSJV18v918f9t4fkAAHVaut4aN5EgQpZdwuV39/9TrNYXMYojSptCiL0AAHAgQZFw5/wqV580a6woVKAUKoctXaNWstlMnss4c7IvY6ULGYARI4Y+gLkaN4ut4uclAAABdElEQVR4AV2PB3LEIAxFtQXjlRWxYHl77/X+1wsyHg/Jp/NUAQbD0dgUthxOABGrosJOhAA/zGNjrOOpp+CxJh8UYIUUofA4RChT75uZc26+8EQVReVwuXIiLOyaQKoqQdNCXAtvtnPhOVJMXhQKJXlO7E72Bg5rcXVReDwcADbMjfdjx8eF4xPQ8ixu7HF7KUvw2x1f6/rIu23TQjizW4SNE2YwloWjpLQtRIXjWNrwegb0q3LHvBuulrfec3zm3WoJgOTt/fG4W29izufSLKfi7I+42lCEZAKAN2RsKa9F3QylxItWHCGSTt3McyfyFnGPZQsROkRRxu4dM7tJDR1EIoVqguGwOj1Pt4NRaEMBlKsIABAKgivzB2vAvyJUhcaJfNcprI4ud+Lho9kVdkCNVMopNI/jFar0matSHHxhoM/zX9EL1Ct3xqq/KkxZe476Sk9Ib6xalleVPNPIhZg26D/yanVD6mFukhfUNxNZ9kLCX/gHKjY+ls/IAAAAAElFTkSuQmCC"
+    },
+    {
+      "name": "Grau Superior de Desenvolupament d'Aplicacions Web",
+      "school": "IES Esteve Terradas i Illa",
+      "location": "Cornellà de Llobregat",
+      "years": "2019 - 2020",
+      "src": "src/assets/logos/esteve-terradas.png"
+    },
+    {
+      "name": "Grau Superior de Desenvolupament d'Aplicacions Multiplataforma",
+      "school": "IES Esteve Terradas i Illa",
+      "location": "Cornellà de Llobregat",
+      "years": "2017 - 2019",
+      "src": "/src/assets/logos/esteve-terradas.png"
+    }
+  ],
+  "additionalTraining": [
+    {
+      "name": "Bootcamp Programador .NET (336 hores)",
+      "school": "Fundació Esplai",
+      "location": "Barcelona",
+      "years": "Setembre - Desembre 2023",
+      "details": [
+        "Programació amb C#",
+        "Bases de dades SQL (SQL Server)",
+        "Desenvolupament Front End",
+        "ASP.NET"
+      ],
+      "src": "/src/assets/logos/fundacion-esplai.png"
+    }
+  ],
+  "experience": [
+    {
+      "job": "Desenvolupador web",
+      "company": "tradEAsy, S.L.",
+      "years": "2019 - 2020",
+      "details": [
+        "Programació amb PHP",
+        "Disseny web amb JavaScript, HTML i CSS",
+        "Ús de base de dades SQL",
+        "Treball/coordinació gestionat amb Trello"
+      ],
+      "src": "/src/assets/logos/tradEAsy.png"
+    },
+    {
+      "job": "Desenvolupador Android",
+      "company": "YesLifeWork, S.L.",
+      "years": "2018 - 2019",
+      "details": [
+        "Programació amb Java d'una app utilitzant Android Studio",
+        "Treball en equip de 7 persones"
+      ]
+    }
+  ],
+  "myLanguages": [
+    {
+      "lang": "<span className='fi fi-es'></span>Castellà / <span className='fi fi-es-ct'></span>Català",
+      "level": "Natiu"
+    },
+    {
+      "lang": "<span className='fi fi-gb'></span>Anglès",
+      "level": "Intermedi"
+    }
+  ],
   "projects": [
     {
       "name": "Pràctica EPCSD",

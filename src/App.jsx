@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ResponsiveAppBar from './components/ResponsiveAppBar';
 import Home from './pages/Home';
@@ -33,6 +33,16 @@ const pages = [
 
 const pages2 = [...pages];
 pages2.unshift({ key: 'home', route: '/' });
+
+export function useTitle(title) {
+  useEffect(() => {
+    const prevTitle = document.title
+    document.title = title
+    return () => {
+      document.title = prevTitle
+    }
+  })
+}
 
 function App() {
   const userLang = navigator.language || navigator.userLanguage;

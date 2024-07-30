@@ -1,0 +1,83 @@
+img.grades {
+  max-width: 100%;
+}
+
+div > h4 {
+  margin-bottom: 0;
+}
+
+div > p {
+  margin-top: 0;
+}
+
+.academics > div > img, .additional-training > div > img, .experience > div > img {
+  width: 26px;
+  height: 26px;
+  margin-right: 0.25em;
+}
+
+.academics:not(:last-child) p, .additional-training p, .experience p {
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0.5em;
+  padding-inline-start: 20px;
+}
+
+.additional-training > p, .experience > p {
+  margin-bottom: 0;
+}
+
+p.relevant-links {
+  margin-bottom: 0.5em;
+}
+
+div.relevant-links {
+  margin-bottom: 1em;
+}
+
+div.d-flex > a {
+  align-self: center;
+}
+
+.lang-div span.fi {
+  margin-right: 0.25rem;
+}
+
+/* Estilos scroller */
+
+.scroller {
+  max-width: max-content;
+}
+
+.scroller-inner {
+  gap: 0.25rem;
+  flex-wrap: wrap;
+}
+
+.scroller[data-animated="true"] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller[data-animated="true"] .scroller-inner {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll 40s linear infinite;
+}
+
+.scroller[data-animated="true"] .scroller-inner:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  to {
+    transform: translateX(calc(-50% - 0.25rem));
+  }
+}
+
+.technologies {
+  gap: 0.5rem !important;
+}
