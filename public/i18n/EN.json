@@ -11,6 +11,9 @@
   "DAM_name": "Cross-platform application development",
   "DAW_name": "Web application development",
   "CFGS_more": "(Superior Grade in Spain), like NVQ 4 in UK or Junior College in the US.",
+  "home_position": "Full Stack Developer",
+  "home_aboutMe": "Student of Computer Engineering at Universitat Oberta de Catalunya. Very motivated to learn and grow professionally.",
+  "home_featuredProjects": "Featured projects",
   "aboutMe_summary": "Summary",
   "aboutMe_text1": "I'm Marc Boakye, Full Stack Developer since I studied <Tooltip title='{{DAM_name}} {{CFGS_more}}' text='CPAD' bold='true'></Tooltip> and <Tooltip title='{{DAW_name}} {{CFGS_more}}' text='WAD' bold='true'></Tooltip>. I did a 3x2, that means that in three years I obtained both degrees.<br/> At the present, I'm studying Computer Engineering at <Tooltip title='Universitat Oberta de Catalunya' text='UOC'></Tooltip>, I chose the Software Engineering branch. At the end of September I will start my last year, I have one subject left and the Bachelor’s Thesis. The end is close!",
   "aboutMe_text2": "This last semester has been the one where I have gotten my best grades:",
@@ -176,6 +179,7 @@
     {
       "name": "EatNow",
       "description": "Final project of the .NET Bootcamp, it's an application to make reservations and manage restaurants.",
+      "shortDescription": "Final project of the .NET Bootcamp",
       "type": ["Frontend", "Backend"],
       "tags": [".NET", "ASP.NET Core MVC", "C#", "HTML", "CSS", "JS", "SQL"],
       "repository": "https://github.com/Far9554/EatNow",
@@ -186,6 +190,7 @@
     {
       "name": "ProyectoF",
       "description": "Final project of <Tooltip title='{{DAW_name}} {{CFGS_more}}' text='WAD'>WAD</Tooltip>, it's an application to buy event tickets.",
+      "shortDescription": "Final project of WAD",
       "moreInfo": "My two schoolmates developed the <a href='https://github.com/MarcMartinezM/Proyecto-Final-Proyecto-F' target='_blank' rel='noopener noreferrer'>Android app</a>, I developed the website and the backend, which provided the data to the app and the website.",
       "type": ["Frontend", "Backend"],
       "tags": ["Angular", "NodeJS", "TS", "JS", "HTML", "CSS", "MongoDB"],
@@ -227,6 +232,7 @@
     {
       "name": "SynergyET",
       "description": "Final project of <Tooltip title='{{DAM_name}} {{CFGS_more}}' text='CPAD'>CPAD</Tooltip>, it's an application similar to Moodle but in Android.",
+      "shortDescription": "Final project of CPAD",
       "type": [],
       "tags": ["Java", "Android", "Firebase"],
       "repository": "https://github.com/marcbryan/SynergyET",

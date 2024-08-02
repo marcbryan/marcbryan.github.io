@@ -54,7 +54,7 @@ function ResponsiveAppBar({ lang, setLang, pages, pages2 }) {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="sticky">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Tooltip title={t("home")}>
@@ -104,7 +104,7 @@ function ResponsiveAppBar({ lang, setLang, pages, pages2 }) {
               <Button
                 key={page.key}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ color: 'white', display: 'block' }}
                 component={NavLink}
                 to={page.route}
               >

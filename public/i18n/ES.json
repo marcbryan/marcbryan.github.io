@@ -14,6 +14,9 @@
   "DAW": "DAW",
   "DAW_name": "Desarrollo de aplicaciones web",
   "DAW_link": "https://todofp.es/que-estudiar/ciclos/informatica-comunicaciones/des-aplicaciones-web.html",
+  "home_position": "Desarrollador Full Stack",
+  "home_aboutMe": "Estudiante de Ingeniería Informática en la Universitat Oberta de Catalunya. Muy motivado por aprender y crecer profesionalmente.",
+  "home_featuredProjects": "Proyectos destacados",
   "aboutMe_summary": "Resumen",
   "aboutMe_text1": "Soy Marc Boakye, Programador Full Stack ya que estudié <LinkTooltip title='{{DAM_name}}' href='{{DAM_link}}' text='DAM'></LinkTooltip> y <LinkTooltip title='{{DAW_name}}' href='{{DAW_link}}' text='DAW'></LinkTooltip>. Hice un 3x2, es decir, en tres años conseguí las dos titulaciones.<br/> Actualmente estoy estudiando Ingeniería Informática en la <Tooltip title='Universitat Oberta de Catalunya' text='UOC'></Tooltip>, elegí la rama de Ingeniería del Software. A final de septiembre empiezo mi último año, me queda una asignatura y el <Tooltip title='Trabajo de Fin de Grado' text='TFG'></Tooltip>. ¡Ya queda poco!",
   "aboutMe_text2": "Este último semestre ha sido el que he sacado mis mejores notas:",
@@ -179,6 +182,7 @@
     {
       "name": "EatNow",
       "description": "Proyecto final del Bootcamp .NET, es una aplicación para hacer reservas y gestionar restaurantes.",
+      "shortDescription": "Proyecto final del Bootcamp .NET",
       "type": ["Frontend", "Backend"],
       "tags": [".NET", "ASP.NET Core MVC", "C#", "HTML", "CSS", "JS", "SQL"],
       "repository": "https://github.com/Far9554/EatNow",
@@ -189,6 +193,7 @@
     {
       "name": "ProyectoF",
       "description": "Proyecto final de <LinkTooltip title='{{DAW_name}}' href='{{DAW_link}}' text='DAW'></LinkTooltip> (Grado Superior), es una aplicación para comprar entradas de eventos.",
+      "shortDescription": "Proyecto final de DAW",
       "moreInfo": "Mis dos compañeros se encargaron de crear la <a href='https://github.com/MarcMartinezM/Proyecto-Final-Proyecto-F' target='_blank' rel='noopener noreferrer'>app Android</a>, yo desarrollé la web y el backend, que servía para proveer los datos a la app y a la web.",
       "type": ["Frontend", "Backend"],
       "tags": ["Angular", "NodeJS", "TS", "JS", "HTML", "CSS", "MongoDB"],
@@ -230,6 +235,7 @@
     {
       "name": "SynergyET",
       "description": "Proyecto final de <LinkTooltip title='{{DAM_name}}' href='{{DAM_link}}' text='DAM'></LinkTooltip> (Grado Superior), es una aplicación similar a Moodle pero en Android.",
+      "shortDescription": "Proyecto final de DAM",
       "type": [],
       "tags": ["Java", "Android", "Firebase"],
       "repository": "https://github.com/marcbryan/SynergyET",

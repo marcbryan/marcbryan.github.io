@@ -1,0 +1,84 @@
+main.home > .container {
+  align-self: center;
+  flex-direction: column;
+}
+
+main.home .top-container {
+  margin-bottom: 2em;
+  gap: 64px;
+}
+
+main.home .top-container > div {
+  align-self: center;
+}
+
+main.home .top-container h1 {
+  margin-bottom: 0.25em;
+}
+
+main.home .top-container h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+main.home .top-container p {
+  margin-bottom: 0.5em;
+}
+
+main.home .top-container img.profile-pic {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+main.home .buttons > a {
+  color: inherit;
+}
+
+main.home .buttons > a:hover {
+  color: inherit!important;
+}
+
+main.home .buttons > a:first-child {
+  margin-left: -11px;
+}
+
+main.home .featuredProjects {
+  gap: 1em;
+  margin-top: 1em;
+}
+
+@media (max-width: 849px) {
+  main.home .top-container {
+    gap: 32px;
+  }
+
+  main.home .featuredProjects {
+    flex-direction: column;
+    width: 345px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 690px) {
+  main.home .container > .top-container {
+    flex-direction: column-reverse;
+    margin-bottom: 0.5em;
+    gap: 1em;
+  }
+
+  main.home .top-container img.profile-pic {
+    width: 12em;
+    height: 12em;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 426px) {
+  main.home .featuredProjects {
+    width: initial;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
