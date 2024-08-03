@@ -1,0 +1,49 @@
+main.about-page > h2:first-of-type {
+  margin-top: 0;
+}
+
+main.about-page > p:nth-of-type(1) {
+  margin: 0;
+}
+
+main.about-page > p:nth-of-type(2) {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+main.about-page > p:nth-last-of-type(4) {
+  margin-bottom: 0.5em;
+}
+
+main.about-page ul {
+  margin: 0;
+  padding-inline-start: 20px;
+}
+
+main.about-page .logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+main.about-page .logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+main.about-page .logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  main.about-page .react.logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}

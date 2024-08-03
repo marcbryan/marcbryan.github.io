@@ -1,5 +1,6 @@
 import { useTranslation, Trans } from "react-i18next";
 import { useTitle } from "../App";
+import IconButton from '@mui/material/IconButton';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Divider from '@mui/material/Divider';
@@ -76,7 +77,7 @@ function AboutMe() {
   useTitle(`${t("aboutMe")} | ${t("title")}`);
 
   return (
-    <main className="container">
+    <main className="about-me container">
       <h1>{t("aboutMe")}</h1>
       <h2>{t("aboutMe_summary")}</h2>
       <p>
@@ -113,15 +114,17 @@ function AboutMe() {
         })}
       </Scroller>
       <p className="relevant-links">{t("aboutMe_relevantLinks")}</p>
-      <div className="relevant-links">
-        <div className="d-flex">
-          <LinkedInIcon fontSize="large" sx={{ mr: 1 }} />
-          <a href="https://linkedin.com/in/marc-bryan-boakye-flores" target="_blank" rel="noopener noreferrer">LinkedIn</a> 
-        </div>
-        <div className="d-flex">
-          <GitHubIcon fontSize="large" sx={{ mr: 1 }} />
-          <a href="https://github.com/marcbryan" target="_blank" rel="noopener noreferrer">GitHub</a>
-        </div>
+      <div className="social-buttons">
+        <Tooltip title="LinkedIn">
+          <IconButton component="a" href="https://linkedin.com/in/marc-bryan-boakye-flores" target="_blank" rel="noopener noreferrer">
+            <LinkedInIcon fontSize="large" />
+          </IconButton>
+        </Tooltip>
+        <Tooltip title="GitHub">
+          <IconButton component="a" href="https://github.com/marcbryan" target="_blank" rel="noopener noreferrer">              
+            <GitHubIcon fontSize="large" />
+          </IconButton>
+        </Tooltip>
       </div>
       <Divider />
       <h2>{t("aboutMe_academicTraining")}</h2>

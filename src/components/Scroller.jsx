@@ -4,7 +4,6 @@ import "./Scroller.css";
 export default function Scroller({ children, dataPause, dataDirection, dataSpeed, style }) {
   let notReducedMotion = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   let copy = [];
-  console.log(style);
 
   return (
     <div 

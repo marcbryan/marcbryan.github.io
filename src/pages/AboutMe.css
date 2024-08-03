@@ -1,46 +1,46 @@
-img.grades {
+main.about-me img.grades {
   max-width: 100%;
 }
 
-div > h4 {
-  margin-bottom: 0;
+main.about-me div > h4 {
+  margin-bottom: 2px;
 }
 
-div > p {
+main.about-me div > p {
   margin-top: 0;
 }
 
-.academics > div > img, .additional-training > div > img, .experience > div > img {
+main.about-me .academics > div > img, main.about-me .additional-training > div > img, main.about-me .experience > div > img {
   width: 26px;
   height: 26px;
   margin-right: 0.25em;
 }
 
-.academics:not(:last-child) p, .additional-training p, .experience p {
+main.about-me .academics:not(:last-child) p, main.about-me .additional-training p, main.about-me .experience p {
   margin-bottom: 0;
 }
 
-ul {
+main.about-me ul {
   margin-top: 0.5em;
   padding-inline-start: 20px;
 }
 
-.additional-training > p, .experience > p {
+main.about-me .additional-training > p, main.about-me .experience > p {
   margin-bottom: 0;
 }
 
-p.relevant-links {
-  margin-bottom: 0.5em;
+main.about-me p.relevant-links {
+  margin-bottom: 0;
 }
 
-div.relevant-links {
-  margin-bottom: 1em;
+main.about-me main.about-me div.social-buttons {
+  margin-bottom: 2px;
 }
 
-div.d-flex > a {
+main.about-me div.d-flex > a {
   align-self: center;
 }
 
-.lang-div span.fi {
+main.about-me .lang-div span.fi {
   margin-right: 0.25rem;
 }

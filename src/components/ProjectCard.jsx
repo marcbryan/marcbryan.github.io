@@ -8,13 +8,13 @@ import Typography from '@mui/material/Typography';
 import Chip from '@mui/material/Chip';
 import GroupIcon from '@mui/icons-material/Group';
 import Tooltip from '@mui/material/Tooltip';
+import Link from '@mui/material/Link';
 import { useTranslation, Trans } from 'react-i18next';
-import GitHubUniverse from '../assets/github-universe.png';
+import GitHubUniverse from '../assets/github_universe.png';
 import SplitButton from './SplitButton';
 import Scroller from './Scroller';
 import LinkTooltip from "../components/LinkTooltip";
 import TextTooltip from "../components/TextTooltip";
-import parse from 'html-react-parser';
 import { FRONTEND } from '../constants';
 import { t } from 'i18next';
 import './ProjectCard.css';
@@ -35,7 +35,7 @@ function Description({project}) {
       return (
         <Trans 
           i18nKey={project}
-          components={{ a: <a target="_blank" rel="noopener noreferrer" />, Tooltip: <TextTooltip /> }}
+          components={{ a: <Link target="_blank" rel="noopener noreferrer" />, Tooltip: <TextTooltip /> }}
           values={{
             DAM_name: t("DAM_name"),
             DAW_name: t("DAW_name")
@@ -65,7 +65,7 @@ function Description({project}) {
       return (
         <Trans 
           i18nKey={project}
-          components={{ a: <a target="_blank" rel="noopener noreferrer" /> }}
+          components={{ a: <Link target="_blank" rel="noopener noreferrer" /> }}
         >
           {project.description}
         </Trans>
@@ -138,11 +138,23 @@ function Actions({project, t}) {
 
 function ActionButtons({project, t}) {
   if (project.moreInfo != null) {
+    let moreInfo = null;
+    if (project.moreInfo.includes("</a>")) {
+      moreInfo = (
+        <Trans 
+          i18nKey={project}
+          components={{ a: <a target="_blank" rel="noopener noreferrer" className="tooltip-link" /> }}
+        >
+          {project.moreInfo}
+        </Trans>
+      )
+    }
+
     if (project.webURL != null && project.webURL != "") {
       return (
         <>
           <RepositoryButton project={project} />
-          <Tooltip disableFocusListener title={parse(project.moreInfo)}>
+          <Tooltip disableFocusListener title={moreInfo != null ? moreInfo : project.moreInfo}>
             <Button size="small" sx={{ cursor: "initial" }}>{t("portfolio_knowMore")}</Button>
           </Tooltip>
           <Tooltip disableFocusListener title={t("portfolio_seeProject")}>
@@ -155,7 +167,7 @@ function ActionButtons({project, t}) {
       return (
         <>
           <RepositoryButton project={project} />
-          <Tooltip disableFocusListener title={parse(project.moreInfo)}>
+          <Tooltip disableFocusListener title={moreInfo != null ? moreInfo : project.moreInfo}>
             <Button size="small" sx={{ cursor: "initial" }}>{t("portfolio_knowMore")}</Button>
           </Tooltip>
         </>

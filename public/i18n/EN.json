@@ -38,6 +38,7 @@
   "aboutPage_text2": "For the design I used the <strong>Material Design</strong> (<1>MUI in React</1>) components, and I also took ideas from the following portfolios:",
   "aboutPage_text3": "I have been able to develop all the ideas that I had.",
   "aboutPage_repository": "Repository",
+  "aboutPage_GitHubRepo": "GitHub repository",
   "aboutPage_text4": "In this repository you will find the portfolio's source code:",
   "aboutPage_reasons": "Reasons",
   "aboutPage_text5": "I really wanted to use React, I knew this framework because it is one of the most popular in Frontend, but I never used it. For this reason, I watched a <1>Udemy course</1> (it's in Spanish) that helped me to understand the basics of this framework.",
@@ -57,14 +58,14 @@
       "school": "IES Esteve Terradas i Illa",
       "location": "Cornellá de Llobregat",
       "years": "2019 - 2020",
-      "src": "src/assets/logos/esteve-terradas.png"
+      "src": "src/assets/logos/esteve_terradas.png"
     },
     {
       "name": "Superior grade in Cross-Platform Application Development",
       "school": "IES Esteve Terradas i Illa",
       "location": "Cornellá de Llobregat",
       "years": "2017 - 2019",
-      "src": "/src/assets/logos/esteve-terradas.png"
+      "src": "/src/assets/logos/esteve_terradas.png"
     }
   ],
   "additionalTraining": [
@@ -79,7 +80,7 @@
         "Front End development",
         "ASP.NET"
       ],
-      "src": "/src/assets/logos/fundacion-esplai.png"
+      "src": "/src/assets/logos/fundacion_esplai.png"
     }
   ],
   "experience": [
@@ -191,7 +192,7 @@
       "name": "ProyectoF",
       "description": "Final project of <Tooltip title='{{DAW_name}} {{CFGS_more}}' text='WAD'>WAD</Tooltip>, it's an application to buy event tickets.",
       "shortDescription": "Final project of WAD",
-      "moreInfo": "My two schoolmates developed the <a href='https://github.com/MarcMartinezM/Proyecto-Final-Proyecto-F' target='_blank' rel='noopener noreferrer'>Android app</a>, I developed the website and the backend, which provided the data to the app and the website.",
+      "moreInfo": "My two schoolmates developed the <a href='https://github.com/MarcMartinezM/Proyecto-Final-Proyecto-F'>Android app</a>, I developed the website and the backend, which provided the data to the app and the website.",
       "type": ["Frontend", "Backend"],
       "tags": ["Angular", "NodeJS", "TS", "JS", "HTML", "CSS", "MongoDB"],
       "repository": "https://github.com/marcbryan/ProyectoF",

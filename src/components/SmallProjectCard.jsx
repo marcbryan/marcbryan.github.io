@@ -5,8 +5,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import { useTranslation } from 'react-i18next';
-import GitHubUniverse from '../assets/github-universe.png';
-import './ProjectCard.css';
+import GitHubUniverse from '../assets/github_universe.png';
 
 export default function SmallProjectCard({project}) {
   const { t } = useTranslation();

@@ -41,6 +41,7 @@
   "aboutPage_text2": "Para el diseño he utilizado los componentes de <strong>Material Design</strong> (<1>MUI en React</1>) y también he cogido ideas de los siguientes portfolios:",
   "aboutPage_text3": "Todas las ideas que se me han ocurrido las he podido desarrollar.",
   "aboutPage_repository": "Repositorio",
+  "aboutPage_GitHubRepo": "Repositorio GitHub",
   "aboutPage_text4": "En este repositorio encontrarás el código fuente del portfolio:",
   "aboutPage_reasons": "Razones",
   "aboutPage_text5": "Tenía muchas ganas utilizar React, ya conocía este framework porque es uno de los más populares de Frontend pero nunca lo había utilizado. Por esta razón, me vi un <1>curso de Udemy</1> que me ayudó bastante a entender las funcionalidades básicas.",
@@ -60,14 +61,14 @@
       "school": "IES Esteve Terradas i Illa",
       "location": "Cornellá de Llobregat",
       "years": "2019 - 2020",
-      "src": "src/assets/logos/esteve-terradas.png"
+      "src": "src/assets/logos/esteve_terradas.png"
     },
     {
       "name": "Grado Superior en Desarrollo de Aplicaciones Multiplataforma",
       "school": "IES Esteve Terradas i Illa",
       "location": "Cornellá de Llobregat",
       "years": "2017 - 2019",
-      "src": "/src/assets/logos/esteve-terradas.png"
+      "src": "/src/assets/logos/esteve_terradas.png"
     }
   ],
   "additionalTraining": [
@@ -82,7 +83,7 @@
         "Desarrollo Front End",
         "ASP.NET"
       ],
-      "src": "/src/assets/logos/fundacion-esplai.png"
+      "src": "/src/assets/logos/fundacion_esplai.png"
     }
   ],
   "experience": [
@@ -194,7 +195,7 @@
       "name": "ProyectoF",
       "description": "Proyecto final de <LinkTooltip title='{{DAW_name}}' href='{{DAW_link}}' text='DAW'></LinkTooltip> (Grado Superior), es una aplicación para comprar entradas de eventos.",
       "shortDescription": "Proyecto final de DAW",
-      "moreInfo": "Mis dos compañeros se encargaron de crear la <a href='https://github.com/MarcMartinezM/Proyecto-Final-Proyecto-F' target='_blank' rel='noopener noreferrer'>app Android</a>, yo desarrollé la web y el backend, que servía para proveer los datos a la app y a la web.",
+      "moreInfo": "Mis dos compañeros se encargaron de crear la <a href='https://github.com/MarcMartinezM/Proyecto-Final-Proyecto-F'>app Android</a>, yo desarrollé la web y el backend, que servía para proveer los datos a la app y a la web.",
       "type": ["Frontend", "Backend"],
       "tags": ["Angular", "NodeJS", "TS", "JS", "HTML", "CSS", "MongoDB"],
       "repository": "https://github.com/marcbryan/ProyectoF",

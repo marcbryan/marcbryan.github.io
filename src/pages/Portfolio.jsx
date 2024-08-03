@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { useTitle } from "../App";
 import GitHubIcon from '@mui/icons-material/GitHub';
+import Link from '@mui/material/Link';
 import MultipleItemsCarousel from "../components/MultipleItemsCarousel";
 import './Portfolio.css';
 
@@ -9,13 +10,13 @@ function Portfolio() {
   useTitle(`${t("portfolio")} | ${t("title")}`);
 
   return (
-    <main className="container">
+    <main className="portfolio container">
       <h1>{t("portfolio")}</h1>
       <div className="top-container">
         <p>{t("portfolio_text1")}</p>
         <div className="d-flex">
           <GitHubIcon fontSize="large" sx={{ mr: 1 }} />
-          <a href="https://github.com/marcbryan?tab=repositories" target="_blank" rel="noopener noreferrer">https://github.com/marcbryan</a>      
+          <Link href="https://github.com/marcbryan?tab=repositories" target="_blank" rel="noopener noreferrer">https://github.com/marcbryan</Link>      
         </div>
       </div>
       <h2>{t("portfolio_projects")}</h2>

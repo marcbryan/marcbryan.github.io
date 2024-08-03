@@ -55,7 +55,7 @@ function App() {
           <ResponsiveAppBar lang={lang} setLang={setLang} pages={pages} pages2={pages2}></ResponsiveAppBar>
         </ThemeProvider>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home lang={lang} />} />
           <Route path="/about-me" element={<AboutMe />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/about" element={<AboutPage />} />

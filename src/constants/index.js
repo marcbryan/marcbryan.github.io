@@ -21,7 +21,7 @@ export const TECHNOLOGIES = [
   },
   {
     name: ".NET",
-    imageURL: "/src/assets/dot-net.png" 
+    imageURL: "/src/assets/dot_net.png" 
   },
   {
     name: "PHP",
@@ -57,7 +57,7 @@ export const TECHNOLOGIES = [
   },
   {
     name: "SQL Server",
-    imageURL: "/src/assets/sql-server.png" 
+    imageURL: "/src/assets/sql_server.png" 
   },
   {
     name: "MongoDB",

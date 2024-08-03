@@ -14,6 +14,11 @@
   cursor: auto;
 }
 
-div.MuiCardActions-root a:hover {
-  color: #1976d2;
+.tooltip-link {
+  color: blue;
+  opacity: 0.8;
+}
+
+.tooltip-link:hover {
+  opacity: initial;
 }
