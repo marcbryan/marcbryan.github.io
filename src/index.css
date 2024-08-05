@@ -13,13 +13,8 @@ body, #root {
 }
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
+  --dark: #181818;
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -39,25 +34,33 @@ h1 {
   display: flex;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-
-  div.MuiDivider-root > span {
-    color: rgba(0, 0, 0, 0.6);
-  }
+body.mode-light .MuiToolbar-root a:hover {
+  opacity: 0.8;
 }
 
-@media (prefers-color-scheme: dark) {
-  hr.MuiDivider-root {
-    border-color: inherit;
-    opacity: 0.6;
-  }
+body.mode-light div.MuiDivider-root > span {
+  color: rgba(0, 0, 0, 0.6);
+}
 
-  div.MuiDivider-root::before, div.MuiDivider-root::after {
-    border-color: rgba(255, 255, 255, 0.87)!important;
-    opacity: 0.6;
-  }
+body.mode-dark div.MuiDivider-root > span {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+body.mode-dark hr.MuiDivider-root {
+  border-color: inherit;
+  opacity: 0.6;
+}
+
+body.mode-dark div.MuiDivider-root::before, body.mode-dark div.MuiDivider-root::after {
+  border-color: rgba(255, 255, 255, 0.87);
+  opacity: 0.6;
+}
+
+body.mode-dark [data-rmiz-modal-overlay="visible"] {
+  background-color: var(--dark);
+}
+
+body.mode-dark [data-rmiz-btn-zoom], body.mode-dark [data-rmiz-btn-unzoom] {
+  background-color: #fff;
+  color: var(--dark);
 }

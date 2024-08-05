@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { LANGUAGES } from '../constants';
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { useThemeContext } from '../context/ThemeContext';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -17,6 +18,9 @@ import MenuItem from '@mui/material/MenuItem';
 import HomeIcon from '@mui/icons-material/Home';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemIcon from '@mui/material/ListItemIcon';
+import { useTheme } from '@mui/material/styles';
+import LightModeOutlined from '@mui/icons-material/LightModeOutlined';
+import DarkModeOutlined from '@mui/icons-material/DarkModeOutlined';
 import "/node_modules/flag-icons/css/flag-icons.min.css";
 
 function getCode(newLang) {
@@ -24,6 +28,9 @@ function getCode(newLang) {
 }
 
 function ResponsiveAppBar({ lang, setLang, pages, pages2 }) {
+  const { mode, nextMode, toggleMode } = useThemeContext();
+  const theme = useTheme();
+
   const { i18n, t } = useTranslation();
   const [code, setCode] = useState(getCode(lang));
 
@@ -50,6 +57,7 @@ function ResponsiveAppBar({ lang, setLang, pages, pages2 }) {
     setLang(newLang);
     setCode(getCode(newLang));
     i18n.changeLanguage(newLang);
+    document.documentElement.lang = newLang.toLowerCase();
     handleCloseUserMenu;
   };
 
@@ -58,7 +66,7 @@ function ResponsiveAppBar({ lang, setLang, pages, pages2 }) {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Tooltip title={t("home")}>
-            <IconButton sx={{ display: { xs: 'none', md: 'flex' } }} color="inherit" component={NavLink} to="/">
+            <IconButton color={(mode === "light") ? 'inherit' : 'primary'} sx={{ display: { xs: 'none', md: 'flex' } }} component={NavLink} to="/">
               <HomeIcon />
             </IconButton>
           </Tooltip>
@@ -68,7 +76,7 @@ function ResponsiveAppBar({ lang, setLang, pages, pages2 }) {
               size="large"
               aria-controls="menu-appbar"
               onClick={handleOpenNavMenu}
-              color="inherit"
+              color={(mode === "light") ? 'inherit' : 'primary'}
             >
               <MenuIcon />
             </IconButton>
@@ -104,7 +112,7 @@ function ResponsiveAppBar({ lang, setLang, pages, pages2 }) {
               <Button
                 key={page.key}
                 onClick={handleCloseNavMenu}
-                sx={{ color: 'white', display: 'block' }}
+                sx={{ display: 'block', color: (mode === "light") ? 'inherit' : theme.palette.primary.main }}
                 component={NavLink}
                 to={page.route}
               >
@@ -112,7 +120,18 @@ function ResponsiveAppBar({ lang, setLang, pages, pages2 }) {
               </Button>
             ))}
           </Box>
-
+          <Box sx={{ mr: 1 }}>
+            <Tooltip title={t(`activate_${nextMode()}Mode`)}>
+              <IconButton
+                onClick={toggleMode}
+                sx={{ color: (mode === "light") ? 'inherit' : theme.palette.primary.main }}
+              >
+                {theme.palette.mode === "dark" ? 
+                  <LightModeOutlined /> :
+                  <DarkModeOutlined />}
+              </IconButton>
+            </Tooltip>
+          </Box>
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title={t("chooseLang")}>
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>

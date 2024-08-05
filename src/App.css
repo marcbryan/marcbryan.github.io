@@ -4,10 +4,6 @@
   padding: 2rem;
 }
 
-.MuiToolbar-root a:hover {
-  opacity: 0.8;
-}
-
 div.social-buttons > a {
   color: inherit;
 }

@@ -5,6 +5,7 @@ import { Tooltip } from '@mui/material';
 import IconButton from '@mui/material/IconButton';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import ProfilePic from '../assets/profile_pic.jpg';
 import Divider from '@mui/material/Divider';
 import Grid from '@mui/material/Grid';
 import SmallProjectCard from '../components/SmallProjectCard';
@@ -60,7 +61,7 @@ function Home({lang}) {
               </Tooltip>
             </div>
           </div>
-          <img className="profile-pic" src="/src/assets/profile_pic.png" />
+          <img className="profile-pic" src={ProfilePic} />
         </div>
         <Divider sx={{marginBottom: "0.5em"}}>{t("home_featuredProjects").toUpperCase()}</Divider>
         <Grid container
