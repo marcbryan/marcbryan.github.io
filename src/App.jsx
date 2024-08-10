@@ -1,4 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
+import useLocalStorage from 'use-local-storage';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ResponsiveAppBar from './components/ResponsiveAppBar';
 import Home from './pages/Home';
@@ -17,8 +19,8 @@ const pages = [
   { key: 'aboutPage', route: '/about' }
 ];
 
-const pages2 = [...pages];
-pages2.unshift({ key: 'home', route: '/' });
+const menuPages = [...pages];
+menuPages.unshift({ key: 'home', route: '/' });
 
 export function useTitle(title) {
   useEffect(() => {
@@ -31,13 +33,16 @@ export function useTitle(title) {
 }
 
 function App() {
-  const userLang = navigator.language || navigator.userLanguage;
-  const [lang, setLang] = useState(userLang.includes('en') ? 'EN' : 'ES');
+  const { i18n } = useTranslation();
+  const [lang, setLang] = useLocalStorage("i18nextLng", i18n.language);
+
+  if (lang == undefined)
+    setLang(i18n.language);
 
   return (
     <>
       <BrowserRouter>
-        <ResponsiveAppBar lang={lang} setLang={setLang} pages={pages} pages2={pages2}></ResponsiveAppBar>
+        <ResponsiveAppBar lang={lang} setLang={setLang} pages={pages} menuPages={menuPages}></ResponsiveAppBar>
         <Routes>
           <Route path="/" element={<Home lang={lang} />} />
           <Route path="/about-me" element={<AboutMe />} />

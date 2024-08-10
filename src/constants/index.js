@@ -1,3 +1,6 @@
+import DotNet from '../assets/tech_logos/dot_net.svg?react';
+import SQLServer from '../assets/tech_logos/sqlserver.svg?react';
+
 export const LANGUAGES = [
   { lang: 'ES', code: 'es' },
   { lang: 'CAT', code: 'es-ct' },
@@ -21,7 +24,9 @@ export const TECHNOLOGIES = [
   },
   {
     name: ".NET",
-    imageURL: "/src/assets/dot_net.png" 
+    SVGComponent: DotNet,
+    whiteInDarkMode: true,
+    darkModeClass: "dot-net"
   },
   {
     name: "PHP",
@@ -49,7 +54,8 @@ export const TECHNOLOGIES = [
   },
   {
     name: "GitHub",
-    tsIcon: "github"
+    tsIcon: "github",
+    whiteInDarkMode: true
   },
   {
     name: "MySQL",
@@ -57,7 +63,9 @@ export const TECHNOLOGIES = [
   },
   {
     name: "SQL Server",
-    imageURL: "/src/assets/sql_server.png" 
+    SVGComponent: SQLServer,
+    whiteInDarkMode: true,
+    darkModeClass: "sqlserver"
   },
   {
     name: "MongoDB",
@@ -109,7 +117,8 @@ export const TECHNOLOGIES = [
   },
   {
     name: "AWS",
-    tsIcon: "aws" 
+    tsIcon: "aws",
+    whiteInDarkMode: true
   },
   {
     name: "Firebase",
@@ -121,6 +130,7 @@ export const TECHNOLOGIES = [
   },
   {
     name: "Markdown",
-    tsIcon: "markdown"
+    tsIcon: "markdown",
+    whiteInDarkMode: true
   }
 ];

@@ -1,5 +1,6 @@
 import { useTranslation, Trans } from "react-i18next";
 import { useTitle } from "../App";
+import { useThemeContext } from '../context/ThemeContext';
 import IconButton from '@mui/material/IconButton';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -7,12 +8,38 @@ import Divider from '@mui/material/Divider';
 import { TECHNOLOGIES } from '../constants';
 import StackIcon from "tech-stack-icons";
 import { Tooltip } from "@mui/material";
+import { useTheme } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
 import Scroller from "../components/Scroller";
 import LinkTooltip from "../components/LinkTooltip";
 import TextTooltip from "../components/TextTooltip";
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 import "./AboutMe.css";
+
+function isDark(mode, whiteInDarkMode) {
+  if (mode == "dark" && whiteInDarkMode)
+    return true;
+  else
+    return false;
+}
+
+function TechIcon({tech, mode}) {
+  if (tech.tsIcon != null) {
+    if (tech.whiteInDarkMode != null) {
+      if (tech.tsIcon == "markdown")
+        return <StackIcon name={tech.tsIcon} className={`tech-icon${isDark(mode, tech.whiteInDarkMode) ? ' tech-icon-white tech-icon-md' : ''}`} />;
+      else
+        return <StackIcon name={tech.tsIcon} className={`tech-icon${isDark(mode, tech.whiteInDarkMode) ? ' tech-icon-white' : ''}`} />;
+    }
+    else  
+      return <StackIcon name={tech.tsIcon} className="tech-icon" />;
+  }
+  else {
+    const SVGComponent = tech.SVGComponent;
+    return <SVGComponent className={`tech-icon${isDark(mode, tech.whiteInDarkMode) ? ` tech-icon-${tech.darkModeClass}` : ''}`} />;
+  }
+}
 
 function Academics({academics}) {
   return (
@@ -76,6 +103,10 @@ function AboutMe() {
   const { t } = useTranslation();
   useTitle(`${t("aboutMe")} | ${t("title")}`);
 
+  const { mode } = useThemeContext();
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+
   return (
     <main className="about-me container">
       <h1>{t("aboutMe")}</h1>
@@ -97,18 +128,19 @@ function AboutMe() {
         />
       </p>
       <p>{t("aboutMe_text2")}</p>
-      <Zoom>
-        <img className="grades" src={`/src/assets/${t("aboutMe_gradesFile")}`} />
-      </Zoom>
+      {isMobile ? 
+        <Zoom>
+          <img className="grades" src={`/src/assets/${t("aboutMe_gradesFile")}`} />
+        </Zoom> : 
+        <img className="grades" src={`/src/assets/${t("aboutMe_gradesFile")}`} /> }
       <p>{t("aboutMe_text3")}</p>
       <Scroller dataPause="true" style={{"--_gap": "0.5rem"}}>
         {TECHNOLOGIES.map((tech, techIndex) => {
-          const height = 52.75;
           return (
             <Tooltip key={techIndex} title={tech.name}>
-              {tech.tsIcon != null ?
-                <div><StackIcon name={tech.tsIcon} style={{ width:`${height}px`, height:`${height}px` }} /></div> :
-                <img src={tech.imageURL} alt={tech.name} height={`${height}px`} /> }
+              <div>
+                <TechIcon tech={tech} mode={mode} />
+              </div>
             </Tooltip>
           )
         })}

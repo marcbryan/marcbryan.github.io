@@ -1,22 +1,22 @@
 import { useTranslation, Trans } from "react-i18next";
 import { useTitle } from "../App";
-import reactLogo from '../assets/react.svg';
-import viteLogo from '/vite.svg';
+import reactLogo from '../assets/tech_logos/react.svg';
+import viteLogo from '../assets/tech_logos/vite.svg';
 import Link from '@mui/material/Link';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import "./AboutPage.css";
 
+const portfoliosIdeas = [
+  "https://www.adhamdannaway.com",
+  "https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2023/03/image-49-1024x510.webp",
+  "https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/06/Portfolio-of-the-front-end-developer-Olaolu-Olawuyi.webp",
+  "https://codesandbox.io/s/react-dm2cx",
+]
+
 function AboutPage() {
   const { t } = useTranslation();
   useTitle(`${t("aboutPage")} | ${t("title")}`);
-
-  const portfoliosIdeas = [
-    "https://www.adhamdannaway.com",
-    "https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2023/03/image-49-1024x510.webp",
-    "https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/06/Portfolio-of-the-front-end-developer-Olaolu-Olawuyi.webp",
-    "https://codesandbox.io/s/react-dm2cx",
-  ]
-
+  
   return (
     <main className="about-page container">
       <h2>{t("aboutPage_intro")}</h2>

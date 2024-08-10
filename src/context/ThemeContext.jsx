@@ -8,7 +8,12 @@ export const ThemeContext = createContext();
 export const ThemeContextProvider = ({children}) => {
   const colorPreference = window.matchMedia("(prefers-color-scheme: dark)").matches;
   const [mode, setMode] = useLocalStorage("mode", colorPreference ? "dark" : "light");
-  document.body.classList.add(`mode-${mode}`);
+
+  if (mode == undefined)
+    setMode("light");
+
+  if (mode != undefined)
+    document.body.classList.add(`mode-${mode}`);
   
   const toggleMode = () => {
     setMode((prev) => (prev === "light" ? "dark" : "light"));

@@ -2,6 +2,28 @@ main.about-me img.grades {
   max-width: 100%;
 }
 
+main.about-me span.tech-icon, main.about-me svg.tech-icon {
+  width: 52.75px;
+  height: 52.75px;
+}
+
+main.about-me img.tech-icon {
+  height: 52.75px;
+}
+
+main.about-me .tech-icon-white > svg > path {
+  fill: white;
+}
+
+main.about-me .tech-icon-md > svg > path:first-of-type {
+  fill: none;
+  stroke: white;
+}
+
+main.about-me svg.tech-icon-dot-net > path:first-of-type, main.about-me svg.tech-icon-sqlserver > path:last-of-type {
+  fill: white;
+}
+
 main.about-me div > h4 {
   margin-bottom: 2px;
 }

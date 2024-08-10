@@ -25,8 +25,10 @@
     "react-material-ui-carousel": "^3.4.2",
     "react-medium-image-zoom": "^5.2.8",
     "react-router-dom": "^6.24.1",
+    "react-type-animation": "^3.2.0",
     "tech-stack-icons": "^2.0.3",
-    "use-local-storage": "^3.0.0"
+    "use-local-storage": "^3.0.0",
+    "vite-plugin-svgr": "^4.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",

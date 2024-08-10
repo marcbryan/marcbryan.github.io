@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { useTitle } from "../App";
 import { useMediaQuery, useTheme } from '@mui/material';
+import { TypeAnimation } from 'react-type-animation';
 import { Tooltip } from '@mui/material';
 import IconButton from '@mui/material/IconButton';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -46,7 +47,22 @@ function Home({lang}) {
         <div className="d-flex top-container">
           <div>
             <h1>Marc Boakye</h1>
-            <h2>{t("home_position")}</h2>
+            <h2>
+              {window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 
+                t("home_position") :
+                <TypeAnimation
+                  key={`typeAnimation-${lang}`}
+                  sequence={[
+                    t("home_position"),
+                    2500,
+                    t("home_position2"),
+                    2500,
+                  ]}
+                  wrapper="span"
+                  speed={40}
+                  repeat={Infinity}
+                />}
+            </h2>
             <p style={{maxWidth: lang == "ES" ? "526px" : "502px"}}>{t("home_aboutMe")}</p>
             <div className="social-buttons">
               <Tooltip title="LinkedIn">
