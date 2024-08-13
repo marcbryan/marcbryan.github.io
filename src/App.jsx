@@ -40,17 +40,15 @@ function App() {
     setLang(i18n.language);
 
   return (
-    <>
-      <BrowserRouter>
-        <ResponsiveAppBar lang={lang} setLang={setLang} pages={pages} menuPages={menuPages}></ResponsiveAppBar>
-        <Routes>
-          <Route path="/" element={<Home lang={lang} />} />
-          <Route path="/about-me" element={<AboutMe />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/about" element={<AboutPage />} />
-        </Routes>  
-      </BrowserRouter>
-    </>
+    <BrowserRouter>
+      <ResponsiveAppBar lang={lang} setLang={setLang} pages={pages} menuPages={menuPages}></ResponsiveAppBar>
+      <Routes>
+        <Route path="/" element={<Home lang={lang} />} />
+        <Route path="/about-me" element={<AboutMe lang={lang} />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/about" element={<AboutPage />} />
+      </Routes>  
+    </BrowserRouter>
   )
 }
 

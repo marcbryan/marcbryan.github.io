@@ -13,7 +13,6 @@ body, #root {
 }
 
 :root {
-  --dark: #181818;
   color-scheme: light dark;
 
   font-synthesis: none;
@@ -26,6 +25,11 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
   margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  margin-bottom: 10px;
 }
 
 .d-flex {
@@ -56,11 +60,11 @@ body.mode-dark div.MuiDivider-root::before, body.mode-dark div.MuiDivider-root::
   opacity: 0.6;
 }
 
-body.mode-dark [data-rmiz-modal-overlay="visible"] {
-  background-color: var(--dark);
+body.mode-light .swiper {
+  --swiper-pagination-color: #1976d2;
 }
 
-body.mode-dark [data-rmiz-btn-zoom], body.mode-dark [data-rmiz-btn-unzoom] {
-  background-color: #fff;
-  color: var(--dark);
+body.mode-dark .swiper {
+  --swiper-pagination-color: #90caf9;
+  --swiper-pagination-bullet-inactive-color: white;
 }

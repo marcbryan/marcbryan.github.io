@@ -24,6 +24,9 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import { useTheme } from '@mui/material/styles';
 import LightModeOutlined from '@mui/icons-material/LightModeOutlined';
 import DarkModeOutlined from '@mui/icons-material/DarkModeOutlined';
+import Fade from '@mui/material/Fade';
+import Fab from '@mui/material/Fab';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import "/node_modules/flag-icons/css/flag-icons.min.css";
 
 function getCode(newLang) {
@@ -37,6 +40,34 @@ function HideOnScroll({children}) {
     <Slide appear={false} direction="down" in={!trigger}>
       {children}
     </Slide>
+  );
+}
+
+function ScrollTop({children}) {
+  const trigger = useScrollTrigger();
+
+  const handleClick = (event) => {
+    const anchor = (event.target.ownerDocument || document).querySelector(
+      '#back-to-top-anchor',
+    );
+
+    if (anchor) {
+      anchor.scrollIntoView({
+        block: 'center',
+      });
+    }
+  };
+
+  return (
+    <Fade in={trigger}>
+      <Box
+        onClick={handleClick}
+        role="presentation"
+        sx={{ position: 'fixed', zIndex: 2, bottom: 16, right: 16 }}
+      >
+        {children}
+      </Box>
+    </Fade>
   );
 }
 
@@ -171,7 +202,6 @@ function ResponsiveAppBar({ lang, setLang, pages, menuPages }) {
                   }}
                   open={Boolean(anchorElUser)}
                   onClose={handleCloseUserMenu}
-                  disableScrollLock={true}
                 >
                   {LANGUAGES.map((language) => (
                     <MenuItem key={language.lang} data-new-lang={language.lang} onClick={onClickMenuItem}>
@@ -187,7 +217,12 @@ function ResponsiveAppBar({ lang, setLang, pages, menuPages }) {
           </Container>
         </AppBar>
       </HideOnScroll>
-      <Toolbar />
+      <Toolbar id="back-to-top-anchor" />
+      <ScrollTop>
+        <Fab size="small" aria-label={t("scrollTop_ariaLabel")}>
+          <KeyboardArrowUpIcon />
+        </Fab>
+      </ScrollTop>
     </>
   );
 }

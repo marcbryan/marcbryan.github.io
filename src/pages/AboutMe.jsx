@@ -13,8 +13,8 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import Scroller from "../components/Scroller";
 import LinkTooltip from "../components/LinkTooltip";
 import TextTooltip from "../components/TextTooltip";
-import Zoom from 'react-medium-image-zoom';
-import 'react-medium-image-zoom/dist/styles.css';
+import { Gallery, Item } from 'react-photoswipe-gallery';
+import 'photoswipe/dist/photoswipe.css';
 import "./AboutMe.css";
 
 function isDark(mode, whiteInDarkMode) {
@@ -48,15 +48,14 @@ function Academics({academics}) {
         <h4>{academic.name}</h4>
         <div className="d-flex">
           <img src={academic.src} />
-          <p>{academic.school}{ academic.location != null ? ` (${academic.location})` : "" } | {academic.years}</p>
+          <p>{academic.school}{ academic.location != null && ` (${academic.location})`} | {academic.years}</p>
         </div>
-        {academic.details != null ?
+        {academic.details != null &&
           <ul>
             {academic.details.map((detail, i) => (
               <li key={i}>{detail}</li>
             ))}
-          </ul>
-        : ""}
+          </ul>}
       </div>
     ))
   );
@@ -68,7 +67,7 @@ function ProfessionalExperience({experience}) {
       <div key={expIndex} className="experience">
         <h4>{exp.job}</h4>
         <div className="d-flex">
-          {exp.src ? <img src={exp.src} /> : ""}
+          {exp.src && <img src={exp.src} />}
           <p>{exp.company} | {exp.years}</p>
         </div>
         <ul>
@@ -99,7 +98,7 @@ function Languages({languages}) {
   )
 }
 
-function AboutMe() {
+function AboutMe({lang}) {
   const { t } = useTranslation();
   useTitle(`${t("aboutMe")} | ${t("title")}`);
 
@@ -129,10 +128,18 @@ function AboutMe() {
       </p>
       <p>{t("aboutMe_text2")}</p>
       {isMobile ? 
-        <Zoom>
-          <img className="grades" src={`/src/assets/${t("aboutMe_gradesFile")}`} />
-        </Zoom> : 
-        <img className="grades" src={`/src/assets/${t("aboutMe_gradesFile")}`} /> }
+        <Gallery>
+          <Item
+            original={`/src/assets/${t("aboutMe_gradesFile")}`}
+            width="722"
+            height={lang == "ES" ? "195" : "159"}
+          >
+            {({ ref, open }) => (
+              <img ref={ref} onClick={open} className="grades" src={`/src/assets/${t("aboutMe_gradesFile")}`} />
+            )}
+          </Item>
+        </Gallery> : 
+        <img className="grades" src={`/src/assets/${t("aboutMe_gradesFile")}`} />}
       <p>{t("aboutMe_text3")}</p>
       <Scroller dataPause="true" style={{"--_gap": "0.5rem"}}>
         {TECHNOLOGIES.map((tech, techIndex) => {

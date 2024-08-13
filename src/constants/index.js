@@ -116,6 +116,10 @@ export const TECHNOLOGIES = [
     tsIcon: "python"
   },
   {
+    name: "Laravel",
+    tsIcon: "laravel"
+  },
+  {
     name: "AWS",
     tsIcon: "aws",
     whiteInDarkMode: true

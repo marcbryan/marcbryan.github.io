@@ -16,12 +16,12 @@ export default function Scroller({ children, dataPause, dataDirection, dataSpeed
     >
       <div className="d-flex scroller-inner" data-elements={children.length}>
         {children}
-        {notReducedMotion ? 
+        {notReducedMotion && 
           (children.map((child, i) => {
             let copiedChild = React.cloneElement(child, {"aria-hidden": "true", "key": i});
             copy.push(copiedChild);
-          })) : ""}
-        {copy.length > 0 ? copy : ""}
+          }))}
+        {copy.length > 0 && copy}
       </div>
     </div>
   )

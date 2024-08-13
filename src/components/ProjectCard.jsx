@@ -9,22 +9,26 @@ import Chip from '@mui/material/Chip';
 import GroupIcon from '@mui/icons-material/Group';
 import Tooltip from '@mui/material/Tooltip';
 import Link from '@mui/material/Link';
-import { useTranslation, Trans } from 'react-i18next';
+import { t } from 'i18next';
+import { Trans } from 'react-i18next';
 import GitHubUniverse from '../assets/github_universe.png';
 import SplitButton from './SplitButton';
 import Scroller from './Scroller';
 import LinkTooltip from "../components/LinkTooltip";
 import TextTooltip from "../components/TextTooltip";
 import { FRONTEND } from '../constants';
-import { t } from 'i18next';
 import './ProjectCard.css';
 
 let isHTML = RegExp.prototype.test.bind(/(<([^>]+)>)/i);
 
-function Type({project}) {
+function Type({project, isMobile}) {
   return (
     project.type.map((type, typeIndex) => (
-      <Chip key={typeIndex} label={type} color={type == FRONTEND ? "primary" : "secondary"} />
+      isMobile ?
+        <Tooltip key={typeIndex} title={type}>
+          <Chip label={type == FRONTEND ? "Front" : "Back"} color={type == FRONTEND ? "primary" : "secondary"} />
+        </Tooltip> :
+        <Chip key={typeIndex} label={type} color={type == FRONTEND ? "primary" : "secondary"} />
     )) 
   )
 }
@@ -45,7 +49,7 @@ function Description({project}) {
         </Trans>
       )
     }
-    if (project.description.includes("</LinkTooltip>")) {
+    else if (project.description.includes("</LinkTooltip>")) {
       return (
         <Trans 
           i18nKey={project}
@@ -91,9 +95,9 @@ function Description({project}) {
     return project.description;
 }
 
-function Tags({project}) {
+function Tags({project, isMobileM}) {
   let length = project.tags.length;
-  if (length > 5) {
+  if (length > 4 || (length > 4 && isMobileM)) {
     return (
       <Scroller>
         {project.tags.map((tag, tagIndex) => (
@@ -106,7 +110,7 @@ function Tags({project}) {
     return (
       <div className="d-flex">
         {project.tags.map((tag, tagIndex) => (
-          <Chip key={tagIndex} label={tag} color="primary" sx={{ mr: 0.5 }} />
+          <Chip key={tagIndex} label={tag} color="primary" sx={tagIndex === (project.tags.length - 1) ? undefined : { mr: 0.5 }} />
         ))}
       </div>
     )
@@ -202,11 +206,9 @@ function RepositoryButton({project}) {
     return <Button size="small" href={project.repository} target="_blank">GitHub</Button>
 }
 
-export default function ProjectCard({project}) {
-  const { t } = useTranslation();
-
+export default function ProjectCard({project, isMobile, isMobileM}) {
   return (
-    <Card className="d-flex" sx={{ maxWidth: "345px", flexDirection: "column", height: "100%" }}>
+    <Card className="project-card d-flex" sx={{ maxWidth: "345px", flexDirection: "column", height: "100%" }}>
       <CardMedia
         component="img"
         sx={{ height: 140 }}
@@ -215,17 +217,17 @@ export default function ProjectCard({project}) {
       />
       <CardContent>
         <div className="d-flex">
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography gutterBottom variant="h5" component="div" sx={{ mr: "0.25rem" }}>
             {project.name}
           </Typography>
           <div className="d-flex project-type">
-            <Type project={project} />
+            <Type project={project} isMobile={isMobile} />
           </div>
         </div>
         <Typography variant="body2" color="text.secondary" sx={{ marginBottom: "0.35em" }}>
           <Description project={project}></Description>
         </Typography>
-        <Tags project={project} />
+        <Tags project={project} isMobileM={isMobileM} />
       </CardContent>
       <Actions project={project} t={t} />
     </Card>

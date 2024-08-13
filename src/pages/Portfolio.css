@@ -1,7 +1,58 @@
-main.portfolio .top-container > p {
+main.portfolio {
+  padding-bottom: 0;
+}
+
+main.portfolio > .top-container > p {
+  margin-top: 0;
   margin-bottom: 0.5em;
 }
 
-main.portfolio .top-container a {
+main.portfolio > .top-container a {
   align-self: center;
+}
+
+main.portfolio > h2:first-of-type {
+  margin-top: 1rem;
+}
+
+main.portfolio > h2:nth-of-type(2) {
+  margin-top: 0;
+}
+
+main.portfolio > .swiper {
+  max-width: 1081px;
+  padding: 0 3px;
+  padding-bottom: 35px;
+  margin: 0;
+  margin-left: -1.5px;
+}
+
+main.portfolio > .swiper .swiper-slide {
+  height: auto;
+}
+
+main.portfolio > .swiper > .swiper-pagination {
+  width: auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 1023px) {
+  main.portfolio > .swiper-projects, main.portfolio > .swiper-gp {
+    max-width: 710px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 689px) {
+  main.portfolio > .swiper-projects, main.portfolio > .swiper-gp {
+    max-width: 345px;
+  }
+}
+
+@media (max-width: 424px) {
+  main.portfolio > .swiper {
+    margin: 0;
+    margin-left: -1.5px;
+  }
 }

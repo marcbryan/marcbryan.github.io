@@ -9,15 +9,15 @@ main.home .top-container {
 }
 
 main.home .top-container h1 {
-  margin-bottom: 0.25em;
+  margin-bottom: 0.75rem;
 }
 
 main.home .top-container h2 {
   margin-top: 0;
-  margin-bottom: 1rem;
 }
 
 main.home .top-container p {
+  margin-top: 0;
   margin-bottom: 0.5em;
 }
 
@@ -54,19 +54,21 @@ main.home .top-container img.profile-pic {
   }
 }
 
-@media (max-width: 384px) {
+@media (max-width: 349px) {
   main.home h1 {
     font-size: 3em;
   }
+
   main.home h2 {
     font-size: 1.4em;
   }
 }
 
-@media (max-width: 349px) {
+@media (max-width: 334px) {
   main.home h1 {
     font-size: 2.8em;
   }
+
   main.home h2 {
     font-size: 1.3em;
   }

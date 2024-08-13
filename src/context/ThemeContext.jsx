@@ -44,7 +44,16 @@ export const ThemeContextProvider = ({children}) => {
               { backgroundColor: blue[900] } :
               { backgroundImage: 'unset' }
             }
-          }
+          },
+          ...(mode === "dark" && { 
+            MuiTooltip: {
+              styleOverrides: {
+                tooltip: {
+                  backgroundColor: "rgba(87, 99, 117, 0.92)"
+                }
+              }
+            } 
+          })
         }
       }),
     [mode]
