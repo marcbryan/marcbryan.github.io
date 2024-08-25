@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useTranslation, Trans } from "react-i18next";
 import { useTitle } from "../App";
 import { useThemeContext } from '../context/ThemeContext';
@@ -13,8 +14,9 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import Scroller from "../components/Scroller";
 import LinkTooltip from "../components/LinkTooltip";
 import TextTooltip from "../components/TextTooltip";
-import { Gallery, Item } from 'react-photoswipe-gallery';
-import 'photoswipe/dist/photoswipe.css';
+import Lightbox from 'yet-another-react-lightbox';
+import Zoom from 'yet-another-react-lightbox/plugins/zoom';
+import 'yet-another-react-lightbox/styles.css';
 import "./AboutMe.css";
 
 function isDark(mode, whiteInDarkMode) {
@@ -98,13 +100,15 @@ function Languages({languages}) {
   )
 }
 
-function AboutMe({lang}) {
+function AboutMe() {
   const { t } = useTranslation();
   useTitle(`${t("aboutMe")} | ${t("title")}`);
 
   const { mode } = useThemeContext();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+
+  const [open, setOpen] = useState(false);
 
   return (
     <main className="about-me container">
@@ -127,18 +131,23 @@ function AboutMe({lang}) {
         />
       </p>
       <p>{t("aboutMe_text2")}</p>
-      {isMobile ? 
-        <Gallery>
-          <Item
-            original={`/src/assets/${t("aboutMe_gradesFile")}`}
-            width="722"
-            height={lang == "ES" ? "195" : "159"}
-          >
-            {({ ref, open }) => (
-              <img ref={ref} onClick={open} className="grades" src={`/src/assets/${t("aboutMe_gradesFile")}`} />
-            )}
-          </Item>
-        </Gallery> : 
+      {isMobile ?
+        <>
+          <img className="grades" src={`/src/assets/${t("aboutMe_gradesFile")}`} onClick={() => setOpen(true)} />
+          <Lightbox
+            plugins={[Zoom]}
+            open={open}
+            close={() => setOpen(false)}
+            slides={[{ src: `/src/assets/${t("aboutMe_gradesFile")}` }]}
+            carousel={{ finite: true }}
+            render={{
+              buttonPrev: () => null,
+              buttonNext: () => null,
+            }}
+            styles={{ root: { "--yarl__color_backdrop": "rgba(0, 0, 0, .9)" }}}
+          />
+        </>
+        : 
         <img className="grades" src={`/src/assets/${t("aboutMe_gradesFile")}`} />}
       <p>{t("aboutMe_text3")}</p>
       <Scroller dataPause="true" style={{"--_gap": "0.5rem"}}>

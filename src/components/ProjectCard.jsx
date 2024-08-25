@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -17,6 +18,11 @@ import Scroller from './Scroller';
 import LinkTooltip from "../components/LinkTooltip";
 import TextTooltip from "../components/TextTooltip";
 import { FRONTEND } from '../constants';
+import Lightbox from 'yet-another-react-lightbox';
+import Zoom from 'yet-another-react-lightbox/plugins/zoom';
+import Counter from "yet-another-react-lightbox/plugins/counter";
+import 'yet-another-react-lightbox/styles.css';
+import "yet-another-react-lightbox/plugins/counter.css";
 import './ProjectCard.css';
 
 let isHTML = RegExp.prototype.test.bind(/(<([^>]+)>)/i);
@@ -154,7 +160,7 @@ function ActionButtons({project, t}) {
       )
     }
 
-    if (project.webURL != null && project.webURL != "") {
+    if (project.webURL != null) {
       return (
         <>
           <RepositoryButton project={project} />
@@ -179,7 +185,7 @@ function ActionButtons({project, t}) {
     }
   }
   else {
-    if (project.webURL != null && project.webURL != "") {
+    if (project.webURL != null) {
       return (
         <>
           <RepositoryButton project={project} />
@@ -207,14 +213,39 @@ function RepositoryButton({project}) {
 }
 
 export default function ProjectCard({project, isMobile, isMobileM}) {
+  const [open, setOpen] = useState(false);
+
   return (
     <Card className="project-card d-flex" sx={{ maxWidth: "345px", flexDirection: "column", height: "100%" }}>
-      <CardMedia
-        component="img"
-        sx={{ height: 140 }}
-        image={GitHubUniverse}
-        title={t("portfolio_projectImg")}
-      />
+      {project.imagesFolder != null && project.imagesExt != null ?
+        <>
+          <Tooltip title={ project.imagesExt.length > 1 ? t("portfolio_viewImages") : t("portfolio_viewImage") }>
+            <CardMedia
+              component="img"
+              sx={{ height: 140, cursor: "pointer", ...project.objectPosition != null && { objectPosition: project.objectPosition } }}
+              image={`/src/assets/projects/${project.imagesFolder}/img1.${project.imagesExt[0]}`}
+              onClick={() => setOpen(true)}
+            />
+          </Tooltip>
+          <Lightbox
+            plugins={[Zoom, Counter]}
+            open={open}
+            close={() => setOpen(false)}
+            slides={
+              project.imagesExt.map((ext, i) => {
+                return { src: `/src/assets/projects/${project.imagesFolder}/img${i+1}.${ext}` }
+              })
+            }
+            carousel={{ finite: project.imagesExt.length <= 1 }}
+            render={{
+              buttonPrev: project.imagesExt.length <= 1 ? () => null : undefined,
+              buttonNext: project.imagesExt.length <= 1 ? () => null : undefined,
+            }}
+            styles={{ root: { "--yarl__color_backdrop": "rgba(0, 0, 0, .9)" }}}
+          />
+        </>
+        :
+        <CardMedia component="img" sx={{ height: 140 }} image={GitHubUniverse} />}
       <CardContent>
         <div className="d-flex">
           <Typography gutterBottom variant="h5" component="div" sx={{ mr: "0.25rem" }}>

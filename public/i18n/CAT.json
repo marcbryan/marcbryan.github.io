@@ -34,6 +34,8 @@
   "portfolio_text1": "En aquesta pàgina trobaràs els projectes que he fet (projectes personals, acadèmics o en grup). També els pot trobar al meu GitHub:",
   "portfolio_projects": "Projectes",
   "portfolio_gp": "Projectes en grup",
+  "portfolio_viewImages": "Veure imatges del projecte",
+  "portfolio_viewImage": "Veure imatge del projecte",
   "portfolio_numPersons": "Núm. persones",
   "portfolio_knowMore": "Coneix més",
   "portfolio_seeProject": "Veure projecte",
@@ -134,8 +136,9 @@
         "https://github.com/marcbryan/spring-2024-user",
         "https://github.com/marcbryan/spring-2024-notification"
       ],
-      "imageURL": "",
-      "webURL": ""
+      "imagesFolder": "prac_iscsd",
+      "imagesExt": ["png", "png", "png", "png", "png"],
+      "objectPosition": "left"
     },
     {
       "name": "Pràctica 2 DED",
@@ -143,8 +146,9 @@
       "type": [],
       "tags": ["Java"],
       "repository": "https://github.com/marcbryan/23-24-2-PR2",
-      "imageURL": "",
-      "webURL": ""
+      "imagesFolder": "prac2_ded",
+      "imagesExt": ["png", "png", "png"],
+      "objectPosition": "left"
     },
     {
       "name": "Pràctica 1 DED",
@@ -152,25 +156,30 @@
       "type": [],
       "tags": ["Java"],
       "repository": "https://github.com/marcbryan/23-24-2-PR1",
-      "imageURL": "",
-      "webURL": ""
+      "imagesFolder": "prac1_ded",
+      "imagesExt": ["png", "png"],
+      "objectPosition": "left"
     },
     {
       "name": "TresEnRatllaJS",
       "description": "Joc del tres en ratlla amb Javascript.",
-      "type": [],
+      "type": ["Frontend"],
       "tags": ["JS", "HTML", "CSS"],
       "repository": "https://github.com/marcbryan/TresEnRayaJS",
-      "imageURL": "",
-      "webURL": ""
+      "imagesFolder": "tresenrayajs",
+      "imagesExt": ["png"],
+      "objectPosition": "top",
+      "webURL": "https://marcbryan.github.io/TresEnRayaJS/"
     },
     {
       "name": "PenjatJS",
       "description": "Joc del penjat amb Javascript. També amb ASP.NET en aquest <a href='https://github.com/marcbryan/Ahorcado-ASP.NET'>repositori</a>.",
-      "type": [],
+      "type": ["Frontend"],
       "tags": ["JS", "HTML", "CSS"],
       "repository": "https://github.com/marcbryan/AhorcadoJS",
-      "imageURL": "",
+      "imagesFolder": "ahorcadojs",
+      "imagesExt": ["png"],
+      "objectPosition": "top",
       "webURL": "https://marcbryan.github.io/AhorcadoJS/"
     },
     {
@@ -179,8 +188,9 @@
       "type": [],
       "tags": [".NET", "C#", "Windows Forms"],
       "repository": "https://github.com/marcbryan/AppHospital",
-      "imageURL": "",
-      "webURL": ""
+      "imagesFolder": "app_hospital",
+      "imagesExt": ["png", "png", "png"],
+      "objectPosition": "top"
     }
   ],
   "groupProjects": [
@@ -191,30 +201,31 @@
       "type": ["Frontend", "Backend"],
       "tags": [".NET", "ASP.NET Core MVC", "C#", "HTML", "CSS", "JS", "SQL"],
       "repository": "https://github.com/Far9554/EatNow",
-      "imageURL": "",
-      "webURL": "",
+      "imagesFolder": "eat_now",
+      "imagesExt": ["jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "png", "png", "jpg", "png", "png", "png", "png", "jpg", "jpg", "png", "png"],
+      "objectPosition": "top",
       "numPersons": 4
     },
     {
       "name": "ProyectoF",
-      "description": "Projecte final de <LinkTooltip title=\"{{DAW_name}}\" href='{{DAW_link}}' text='DAW'></LinkTooltip> (Grau Superior), és una aplicació per comprar entrades d'events.",
+      "description": "Projecte final de <LinkTooltip title=\"{{DAW_name}}\" href='{{DAW_link}}' text='DAW'></LinkTooltip> (Grau Superior), és una aplicació per veure events i les entrades comprades a l'app Android.",
       "shortDescription": "Projecte final de DAW",
       "moreInfo": "Els meus dos companys es van encarregar de crear l'<a href='https://github.com/MarcMartinezM/Proyecto-Final-Proyecto-F'>app Android</a>, jo vaig desenvolupar la web i el backend, que servia per proveir les dades a l'app i a la web.",
       "type": ["Frontend", "Backend"],
       "tags": ["Angular", "NodeJS", "TS", "JS", "HTML", "CSS", "MongoDB"],
       "repository": "https://github.com/marcbryan/ProyectoF",
-      "imageURL": "",
-      "webURL": "",
+      "imagesFolder": "proyecto_f",
+      "imagesExt": ["jpg", "png", "png", "png", "png", "jpg", "jpg", "png", "png", "jpg", "png", "png", "png"],
       "numPersons": 3
     },
     {
       "name": "Mensakas",
-      "description": "Projecte que vaig fer a <LinkTooltip title=\"{{DAW_name}}\" href='{{DAW_link}}' text='DAW'></LinkTooltip> (Grau Superior), és una aplicació per fer comandes (estil Glovo).",
+      "description": "Projecte que vaig fer a <LinkTooltip title=\"{{DAW_name}}\" href='{{DAW_link}}' text='DAW'></LinkTooltip> (Grau Superior), és una aplicació per gestionar restaurants i fer comandes (estil Glovo).",
       "type": ["Frontend", "Backend"],
       "tags": ["Laravel", "PHP", "HTML", "CSS", "JS"],
       "repository": "https://github.com/marcbryan/proyecto-mensakas",
-      "imageURL": "",
-      "webURL": "",
+      "imagesFolder": "mensakas",
+      "imagesExt": ["jpg", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png"],
       "numPersons": 2
     },
     {
@@ -223,8 +234,8 @@
       "type": ["Frontend", "Backend"],
       "tags": ["PHP", "JS", "HTML", "CSS", "SQL"],
       "repository": "https://github.com/gooicoo/Ajax-Kahoot",
-      "imageURL": "",
-      "webURL": "",
+      "imagesFolder": "ajax_kahoot",
+      "imagesExt": ["jpg", "png", "png", "png", "png", "png", "png"],
       "numPersons": 3
     },
     {
@@ -233,8 +244,8 @@
       "type": ["Frontend"],
       "tags": ["PHP", "JS", "HTML", "CSS"],
       "repository": "https://github.com/davidencinamartinez/Terminal_Fallout",
-      "imageURL": "",
-      "webURL": "",
+      "imagesFolder": "terminal_fallout",
+      "imagesExt": ["jpg", "jpg"],
       "numPersons": 3
     },
     {
@@ -244,8 +255,8 @@
       "type": [],
       "tags": ["Java", "Android", "Firebase"],
       "repository": "https://github.com/marcbryan/SynergyET",
-      "imageURL": "",
-      "webURL": "",
+      "imagesFolder": "synergy_et",
+      "imagesExt": ["jpg", "jpg", "jpg", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png"],
       "numPersons": 2
     },
     {
@@ -254,8 +265,8 @@
       "type": [],
       "tags": ["Java", "Hibernate", "JavaFX"],
       "repository": "https://github.com/marcbryan/Proyecto2_Scrum",
-      "imageURL": "",
-      "webURL": "",
+      "imagesFolder": "scrum_manager",
+      "imagesExt": ["jpg", "jpg", "jpg", "jpg", "jpg"],
       "numPersons": 3
     },
     {
@@ -265,8 +276,8 @@
       "type": [],
       "tags": ["Java", "JavaFX", "XML"],
       "repository": "https://github.com/asantamans/ams2project",
-      "imageURL": "",
-      "webURL": "",
+      "imagesFolder": "car_configurator",
+      "imagesExt": ["jpg", "png", "png", "png"],
       "numPersons": 3
     }
   ]

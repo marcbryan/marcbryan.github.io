@@ -12,11 +12,11 @@ export default function SmallProjectCard({project}) {
 
   return (
     <Card className="d-flex" sx={{ maxWidth: "345px", flexDirection: "column", height: "100%", flexGrow: 1 }}>
-      <CardActionArea href={project.repository} target="_blank" rel="noopener noreferrer">
+      <CardActionArea href={project.webURL != null ? project.webURL : project.repository} target="_blank" rel="noopener noreferrer">
         <CardMedia
           component="img"
-          sx={{ height: 140 }}
-          image={GitHubUniverse}
+          sx={{ height: 140, ...project.objectPosition != null && { objectPosition: project.objectPosition } }}
+          image={project.imagesFolder != null && project.imagesExt != null ? `/src/assets/projects/${project.imagesFolder}/img1.${project.imagesExt[0]}` : GitHubUniverse}
           title={t("portfolio_projectImg")}
         />
         <CardContent>
