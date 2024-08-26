@@ -196,7 +196,7 @@ function AboutMe() {
       <h2>{t("aboutMe_languages")}</h2>
       <Languages languages={t("myLanguages", { returnObjects: true })} />
       <Divider />
-      <h2>Aficiones</h2>
+      <h2>{t("aboutMe_hobbies")}</h2>
       <Swiper
         slidesPerView={1}
         spaceBetween={8}
