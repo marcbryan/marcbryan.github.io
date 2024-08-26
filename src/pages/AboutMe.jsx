@@ -17,6 +17,13 @@ import TextTooltip from "../components/TextTooltip";
 import Lightbox from 'yet-another-react-lightbox';
 import Zoom from 'yet-another-react-lightbox/plugins/zoom';
 import 'yet-another-react-lightbox/styles.css';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import Football from '../assets/hobbies/football.webp';
+import F1 from '../assets/hobbies/f1.webp';
+import Training from '../assets/hobbies/training.webp';
 import "./AboutMe.css";
 
 function isDark(mode, whiteInDarkMode) {
@@ -189,6 +196,28 @@ function AboutMe() {
       <h2>{t("aboutMe_languages")}</h2>
       <Languages languages={t("myLanguages", { returnObjects: true })} />
       <Divider />
+      <h2>Aficiones</h2>
+      <Swiper
+        slidesPerView={1}
+        spaceBetween={8}
+        pagination={{clickable: true}}
+        modules={[Pagination]}
+        className="swiper-hobbies"
+        style={{"--swiper-pagination-color": "white", "--swiper-pagination-bullet-inactive-color": "white"}}
+      >
+        <SwiperSlide>
+          <h4>{t("aboutMe_hobby1")}</h4>
+          <img src={Football} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <h4>F1</h4>
+          <img src={F1} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <h4>{t("aboutMe_hobby3")}</h4>
+          <img src={Training} alt="" />
+        </SwiperSlide>
+      </Swiper>
     </main>
   );
 }

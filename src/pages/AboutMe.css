@@ -70,3 +70,29 @@ main.about-me div.d-flex > a {
 main.about-me .lang-div span.fi {
   margin-right: 0.25rem;
 }
+
+main.about-me > .swiper-hobbies {
+  margin: 0;
+}
+
+main.about-me > .swiper-hobbies, main.about-me > .swiper-hobbies .swiper-slide > img {
+  width: 990px;
+  max-width: 100%;
+}
+
+main.about-me > .swiper-hobbies .swiper-slide > h4 {
+  position: absolute;
+  color: white;
+  margin: 0;
+  padding: 8px;
+}
+
+main.about-me > .swiper-hobbies .swiper-slide > img {
+  border-radius: 4px;
+}
+
+@media (max-width: 814px) {
+  main.about-me > .swiper-hobbies .swiper-slide:last-of-type > h4 {
+    background-color: rgba(0,0,0,0.5);
+  }
+}
