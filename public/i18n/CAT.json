@@ -191,6 +191,16 @@
       "imagesFolder": "app_hospital",
       "imagesExt": ["png", "png", "png"],
       "objectPosition": "top"
+    },
+    {
+      "name": "Joc de la serp",
+      "description": "Joc de la serp amb .NET (Consola).",
+      "type": [],
+      "tags": [".NET", "C#", "Consola"],
+      "repository": "https://github.com/marcbryan/SnakeGame",
+      "imagesFolder": "snake_game",
+      "imagesExt": ["png", "png", "png"],
+      "objectPosition": "left"
     }
   ],
   "groupProjects": [
