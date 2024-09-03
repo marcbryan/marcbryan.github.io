@@ -21,6 +21,7 @@
   "home_position2": "Futuro Ingeniero de Software",
   "home_aboutMe": "Estudiante de Ingeniería Informática en la Universitat Oberta de Catalunya. Muy motivado por aprender y crecer profesionalmente.",
   "home_featuredProjects": "Proyectos destacados",
+  "home_loading": "Cargando...",
   "aboutMe_summary": "Resumen",
   "aboutMe_text1": "Soy Marc Boakye, Programador Full Stack ya que estudié <LinkTooltip title='{{DAM_name}}' href='{{DAM_link}}' text='DAM'></LinkTooltip> y <LinkTooltip title='{{DAW_name}}' href='{{DAW_link}}' text='DAW'></LinkTooltip>. Hice un 3x2, es decir, en tres años conseguí las dos titulaciones.<br/> Actualmente estoy estudiando Ingeniería Informática en la <Tooltip title='Universitat Oberta de Catalunya' text='UOC'></Tooltip>, elegí la rama de Ingeniería del Software. A final de septiembre empiezo mi último año, me queda una asignatura y el <Tooltip title='Trabajo de Fin de Grado' text='TFG'></Tooltip>. ¡Ya queda poco!",
   "aboutMe_text2": "Este último semestre ha sido el que he sacado mis mejores notas:",
@@ -58,6 +59,13 @@
   "aboutPage_resources": "Recursos",
   "aboutPage_doubtsProblems": "Dudas/Problemas",
   "aboutPage_text7": "Para resolver las dudas y problemas que he tenido, he buscado en Google y en StackOverflow.",
+  "questionary_rightAnswer": "¡Has acertado!",
+  "questionary_wrongAnswer": "Respuesta incorrecta",
+  "questionary_selectOption": "Selecciona una opción",
+  "questionary_close": "Cerrar",
+  "questionary_check": "Comprobar",
+  "eggsInitialMessage": "Hay 4 Easter Eggs en todo mi portfolio, trata de encontrarlos!",
+  "eggsCompleted": "¡Has encontrado todos los Easter Eggs!<0/><1>¡Felicidades!</1> <2/>",
   "academicTraining": [
     {
       "name": "Grado en Ingeniería Informática",
@@ -292,6 +300,28 @@
       "imagesFolder": "car_configurator",
       "imagesExt": ["jpg", "png", "png", "png"],
       "numPersons": 3
+    }
+  ],
+  "easterEggs": [
+    {
+      "text": "Pedro, Pedro, Pedro, Pedro, Pè!<1/><2/>¡Easter Egg 1 encontrado! <3/>"
+    },
+    {
+      "title": "Easter Egg 2: Mi primer lenguaje",
+      "description": "¡Has encontrado el Easter Egg 2!",
+      "question": "¿Cuál fue el primer lenguaje de programación que utilicé?",
+      "reason": "Cuando tenía 12 años hice un curso de informática y utilicé este lenguaje de forma muy básica.",
+      "maxWidthHelperTxt": "400px"
+    },
+    {
+      "title": "Easter Egg 3: Mi equipo",
+      "description": "¡Has encontrado el Easter Egg 3!",
+      "question": "¿Cuál es mi equipo de fútbol favorito?"
+    },
+    {
+      "title": "Easter Egg 4: Mi piloto favorito",
+      "description": "¡Has encontrado el Easter Egg 4!",
+      "question": "¿Cuál es mi piloto de F1 favorito?"
     }
   ]
 }

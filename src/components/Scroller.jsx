@@ -1,7 +1,7 @@
 import React from "react";
 import "./Scroller.css";
 
-export default function Scroller({ children, dataPause, dataDirection, dataSpeed, style }) {
+export default function Scroller({ children, dataPause, dataDirection, dataSpeed, onClick, style }) {
   let notReducedMotion = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   let copy = [];
 
@@ -12,6 +12,7 @@ export default function Scroller({ children, dataPause, dataDirection, dataSpeed
       data-pause={dataPause ? "true" : undefined}
       data-direction={dataDirection != null ? dataDirection : undefined}
       data-speed={dataSpeed != null ? dataSpeed : undefined}
+      onClick={onClick != null ? onClick : undefined}
       style={style != null ? style : undefined}
     >
       <div className="d-flex scroller-inner" data-elements={children.length}>

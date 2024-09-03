@@ -73,6 +73,7 @@ main.about-me .lang-div span.fi {
 
 main.about-me > .swiper-hobbies {
   margin: 0;
+  z-index: 0;
 }
 
 main.about-me > .swiper-hobbies, main.about-me > .swiper-hobbies .swiper-slide > img {

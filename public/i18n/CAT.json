@@ -21,6 +21,7 @@
   "home_position2": "Futur Enginyer de Software",
   "home_aboutMe": "Estudiant d'Enginyeria Informàtica a la Universitat Oberta de Catalunya. Molt motivat per aprendre i créixer professionalment.",
   "home_featuredProjects": "Projectes destacats",
+  "home_loading": "Carregant...",
   "aboutMe_summary": "Resum",
   "aboutMe_text1": "Sóc Marc Boakye, Programador Full Stack ja que vaig estudiar <LinkTooltip title=\"{{DAM_name}}\" href='{{DAM_link}}' text='DAM'></LinkTooltip> i <LinkTooltip title=\"{{DAW_name}}\" href='{{DAW_link}}' text='DAW'></LinkTooltip>. Vaig fer un 3x2, és a dir, en tres anys vaig aconseguir les dues titulacions.<br/> Actualment estic estudiant Enginyeria Informàtica a la <Tooltip title='Universitat Oberta de Catalunya' text='UOC'></Tooltip>, he triat la branca d'Enginyeria del Software. A finals de setembre començo el meu últim any, em queda una assignatura i el <Tooltip title='Treball de Fi de Grau' text='TFG'></Tooltip>. Ja queda poc!",
   "aboutMe_text2": "Aquest últim semestre ha estat el que he tret les meves millors notes:",
@@ -58,6 +59,13 @@
   "aboutPage_resources": "Recursos",
   "aboutPage_doubtsProblems": "Dubtes/Problemes",
   "aboutPage_text7": "Per resoldre els dubtes i problemes que he tingut, he buscat a Google i a StackOverflow.",
+  "questionary_rightAnswer": "Has encertat!",
+  "questionary_wrongAnswer": "Resposta incorrecta",
+  "questionary_selectOption": "Tria una opció",
+  "questionary_close": "Tancar",
+  "questionary_check": "Comprovar",
+  "eggsInitialMessage": "Hi ha 4 Easter Eggs a tot el meu portfoli, tracta de trobar-los!",
+  "eggsCompleted": "Has trobat tots els Easter Eggs!<0/><1>Felicitats!</1> <2/>",
   "academicTraining": [
     {
       "name": "Grau d'Enginyeria Informàtica",
@@ -292,6 +300,28 @@
       "imagesFolder": "car_configurator",
       "imagesExt": ["jpg", "png", "png", "png"],
       "numPersons": 3
+    }
+  ],
+  "easterEggs": [
+    {
+      "text": "Pedro, Pedro, Pedro, Pedro, Pè!<1/><2/>Has trobat l'Easter Egg 1! <3/>"
+    },
+    {
+      "title": "Easter Egg 2: El meu primer llenguatge",
+      "description": "Has trobat l'Easter Egg 2!",
+      "question": "Quin va ser el primer llenguatge de programació que vaig utilitzar?",
+      "reason": "Quan tenia 12 anys vaig fer un curs d'informàtica i vaig utilitzar aquest llenguatge de forma molt bàsica.",
+      "maxWidthHelperTxt": "475px"
+    },
+    {
+      "title": "Easter Egg 3: El meu equip",
+      "description": "Has trobat l'Easter Egg 3!",
+      "question": "Quin és el meu equip de futbol favorit?"
+    },
+    {
+      "title": "Easter Egg 4: El meu pilot favorit",
+      "description": "Has trobat l'Easter Egg 4!",
+      "question": "Quin és el meu pilot de F1 favorit?"
     }
   ]
 }

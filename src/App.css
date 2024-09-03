@@ -12,6 +12,10 @@ div.social-buttons > a:first-child {
   margin-left: -11px;
 }
 
+.confetti-emoji {
+  font-size: 1rem;
+}
+
 @media (max-width: 599px) {
   .container {
     padding: 1rem;

@@ -6,7 +6,8 @@ import IconButton from '@mui/material/IconButton';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Divider from '@mui/material/Divider';
-import { TECHNOLOGIES } from '../constants';
+import { TECHNOLOGIES, easterEgg2, easterEgg3, easterEgg4 } from '../constants';
+import useLocalStorage from 'use-local-storage';
 import StackIcon from "tech-stack-icons";
 import { Tooltip } from "@mui/material";
 import { useTheme } from '@mui/material/styles';
@@ -24,6 +25,9 @@ import 'swiper/css/pagination';
 import Football from '../assets/hobbies/football.webp';
 import F1 from '../assets/hobbies/f1.webp';
 import Training from '../assets/hobbies/training.webp';
+import QuestionaryDialog from "../components/QuestionaryDialog";
+import SimpleSnackbar from "../components/SimpleSnackbar";
+import Realistic from 'react-canvas-confetti/dist/presets/realistic';
 import "./AboutMe.css";
 
 function isDark(mode, whiteInDarkMode) {
@@ -115,7 +119,23 @@ function AboutMe() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
-  const [open, setOpen] = useState(false);
+  const [openLightbox, setOpenLightbox] = useState(false);
+  const [openDialog, setOpenDialog] = useState(false);
+
+  const [foundEgg1] = useLocalStorage("foundEgg1", false);
+  const [foundEgg2, setFoundEgg2] = useLocalStorage("foundEgg2", false);
+  const [foundEgg3, setFoundEgg3] = useLocalStorage("foundEgg3", false);
+  const [foundEgg4, setFoundEgg4] = useLocalStorage("foundEgg4", false);
+  const [eggsCompleted, setEggsCompleted] = useLocalStorage("eggsCompleted", false);
+
+  const [countEgg2, setCountEgg2] = useState(0);
+  const [countEgg3, setCountEgg3] = useState(0);
+  const [countEgg4, setCountEgg4] = useState(0);
+
+  const handleInit = (e) => {
+    e.conductor.shoot();
+    setTimeout(() => setEggsCompleted(true), 6000);
+  };
 
   return (
     <main className="about-me container">
@@ -140,11 +160,11 @@ function AboutMe() {
       <p>{t("aboutMe_text2")}</p>
       {isMobile ?
         <>
-          <img className="grades" src={`/src/assets/${t("aboutMe_gradesFile")}`} onClick={() => setOpen(true)} />
+          <img className="grades" src={`/src/assets/${t("aboutMe_gradesFile")}`} onClick={() => setOpenLightbox(true)} />
           <Lightbox
             plugins={[Zoom]}
-            open={open}
-            close={() => setOpen(false)}
+            open={openLightbox}
+            close={() => setOpenLightbox(false)}
             slides={[{ src: `/src/assets/${t("aboutMe_gradesFile")}` }]}
             carousel={{ finite: true }}
             render={{
@@ -157,7 +177,7 @@ function AboutMe() {
         : 
         <img className="grades" src={`/src/assets/${t("aboutMe_gradesFile")}`} />}
       <p>{t("aboutMe_text3")}</p>
-      <Scroller dataPause="true" style={{"--_gap": "0.5rem"}}>
+      <Scroller dataPause="true" onClick={!foundEgg2 ? () => setCountEgg2((countEgg2) => countEgg2 + 1) : undefined} style={{"--_gap": "0.5rem"}}>
         {TECHNOLOGIES.map((tech, techIndex) => {
           return (
             <Tooltip key={techIndex} title={tech.name}>
@@ -168,6 +188,7 @@ function AboutMe() {
           )
         })}
       </Scroller>
+      {countEgg2 == 3 && <QuestionaryDialog questionObj={easterEgg2} handlerFoundEgg={() => setFoundEgg2(true)} handlerOpen={(bool) => setOpenDialog(bool)} />}
       <p className="relevant-links">{t("aboutMe_relevantLinks")}</p>
       <div className="social-buttons">
         <Tooltip title="LinkedIn">
@@ -207,17 +228,35 @@ function AboutMe() {
       >
         <SwiperSlide>
           <h4>{t("aboutMe_hobby1")}</h4>
-          <img src={Football} alt="" />
+          <img src={Football} alt="" onClick={!foundEgg3 ? () => setCountEgg3((countEgg3) => countEgg3 + 1) : undefined} />
+          {countEgg3 == 3 && <QuestionaryDialog questionObj={easterEgg3} handlerFoundEgg={() => setFoundEgg3(true)} handlerOpen={(bool) => setOpenDialog(bool)} />}
         </SwiperSlide>
         <SwiperSlide>
           <h4>F1</h4>
-          <img src={F1} alt="" />
+          <img src={F1} alt="" onClick={!foundEgg4 ? () => setCountEgg4((countEgg4) => countEgg4 + 1) : undefined} />
+          {countEgg4 == 3 && <QuestionaryDialog questionObj={easterEgg4} handlerFoundEgg={() => setFoundEgg4(true)} handlerOpen={(bool) => setOpenDialog(bool)} />}
         </SwiperSlide>
         <SwiperSlide>
           <h4>{t("aboutMe_hobby3")}</h4>
           <img src={Training} alt="" />
         </SwiperSlide>
       </Swiper>
+      {(foundEgg1 && foundEgg2 && foundEgg3 && foundEgg4 && !openDialog && !eggsCompleted) &&
+        <>
+          <Realistic onInit={handleInit} />
+          <SimpleSnackbar 
+            message={
+              <Trans 
+                i18nKey="eggsCompleted"
+                components={[
+                  <br />,
+                  <span></span>,
+                  <span className="confetti-emoji">&#x1f38a;</span>
+                ]}
+              />
+            }
+          />
+        </>}
     </main>
   );
 }
