@@ -1,9 +1,10 @@
-main.about-me > h1 + h2, main.about-me > h2 + p, main.about-me > h2 + div > .academics:first-of-type > h4, main.about-me > h2 + div > h4 {
+main.about-me > h1 + h2, main.about-me > h2 + p, main.about-me > h2 + div > .academics:first-of-type > h4, main.about-me > h2 + div > h4, main.about-me .additional-training > .MuiStack-root > h4 {
   margin-top: 0;
 }
 
 main.about-me img.grades {
   max-width: 100%;
+  border-radius: 4px;
 }
 
 main.about-me span.tech-icon, main.about-me svg.tech-icon {

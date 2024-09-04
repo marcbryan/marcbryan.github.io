@@ -100,7 +100,8 @@
         "Desenvolupament Front End",
         "ASP.NET"
       ],
-      "src": "/src/assets/logos/fundacion_esplai.png"
+      "src": "/src/assets/logos/fundacion_esplai.png",
+      "badge": "/src/assets/csharp_badge.png"
     }
   ],
   "experience": [
@@ -110,7 +111,7 @@
       "years": "2019 - 2020",
       "details": [
         "Programació amb PHP",
-        "Disseny web amb JavaScript, HTML i CSS",
+        "Desenvolupament web amb JavaScript, HTML i CSS",
         "Ús de base de dades SQL",
         "Treball/coordinació gestionat amb Trello"
       ],
@@ -139,7 +140,7 @@
   "projects": [
     {
       "name": "Pràctica EPCSD",
-      "description": "Pràctica de l'assignatura \"Enginyeria del programari de components i sistemes distribuïts\" on vaig desenvolupar les funcionalitats de 3 microserveis.",
+      "description": "Pràctica de l'assignatura \"<a href='https://apps.uoc.edu/PlaDocent/PlaDocent?Semestre=20241&SignatureCode=05.587&Context=3&Locale=ca'>Enginyeria del programari de components i sistemes distribuïts</a>\" on vaig desenvolupar les funcionalitats de 3 microserveis.",
       "type": ["Backend"],
       "tags": ["Java", "Spring", "Microserveis"],
       "repository": [
@@ -153,7 +154,7 @@
     },
     {
       "name": "Pràctica 2 DED",
-      "description": "Pràctica de l'assignatura \"Disseny d'estructures de dades\" on vaig implementar funcionalitats seguint <a href='https://ca.wikipedia.org/wiki/Desenvolupament_guiat_per_proves'>TDD</a>.",
+      "description": "Pràctica de l'assignatura \"<a href='https://apps.uoc.edu/PlaDocent/PlaDocent?Semestre=20241&SignatureCode=05.613&Context=3&Locale=ca'>Disseny d'estructures de dades</a>\" on vaig implementar funcionalitats seguint <a href='https://ca.wikipedia.org/wiki/Desenvolupament_guiat_per_proves'>TDD</a>.",
       "type": [],
       "tags": ["Java"],
       "repository": "https://github.com/marcbryan/23-24-2-PR2",
@@ -163,7 +164,7 @@
     },
     {
       "name": "Pràctica 1 DED",
-      "description": "Pràctica de l'assignatura \"Disseny d'estructures de dades\" on vaig crear diferents <Tooltip title='Tipus abstracte de dades' text='TADs'>TADs</Tooltip> i funcionalitats seguint <a href='https://ca.wikipedia.org/wiki/Desenvolupament_guiat_per_proves'>TDD</a>.",
+      "description": "Pràctica de l'assignatura \"<a href='https://apps.uoc.edu/PlaDocent/PlaDocent?Semestre=20241&SignatureCode=05.613&Context=3&Locale=ca'>Disseny d'estructures de dades</a>\" on vaig crear diferents <Tooltip title='Tipus abstracte de dades' text='TADs'>TADs</Tooltip> i funcionalitats seguint <a href='https://ca.wikipedia.org/wiki/Desenvolupament_guiat_per_proves'>TDD</a>.",
       "type": [],
       "tags": ["Java"],
       "repository": "https://github.com/marcbryan/23-24-2-PR1",
@@ -216,6 +217,17 @@
   ],
   "groupProjects": [
     {
+      "name": "Projecte DP",
+      "description": "Projecte en grup de l'assignatura \"<a href='https://apps.uoc.edu/PlaDocent/PlaDocent?Semestre=20241&SignatureCode=05.588&Context=3&Locale=ca'>Projecte de Desenvolupament del Programari</a>\". És l'última assignatura que em queda. (A partir d'octubre)",
+      "status": {
+        "id": 1,
+        "text": "Pendent"
+      },
+      "type": [],
+      "tags": ["Java", "Spring", "Microserveis"],
+      "numPersons": "6 - 7"
+    },
+    {
       "name": "EatNow",
       "description": "Projecte final del Bootcamp .NET, és una aplicació per fer reserves i gestionar restaurants.",
       "shortDescription": "Projecte final del Bootcamp .NET",
@@ -231,7 +243,7 @@
       "name": "ProyectoF",
       "description": "Projecte final de <LinkTooltip title=\"{{DAW_name}}\" href='{{DAW_link}}' text='DAW'></LinkTooltip> (Grau Superior), és una aplicació per veure events i les entrades comprades a l'app Android.",
       "shortDescription": "Projecte final de DAW",
-      "moreInfo": "Els meus dos companys es van encarregar de crear l'<a href='https://github.com/MarcMartinezM/Proyecto-Final-Proyecto-F'>app Android</a>, jo vaig desenvolupar la web i el backend, que servia per proveir les dades a l'app i a la web.",
+      "moreInfo": "Els meus dos companys es van encarregar de crear l'<a href='https://github.com/MarcMartinezM/Proyecto-Final-Proyecto-F'>app Android</a>, jo vaig desenvolupar la web i el backend, que servia per proveir les dades a l'app i a la web. El backend compta amb un generador de dades.",
       "type": ["Frontend", "Backend"],
       "tags": ["Angular", "NodeJS", "TS", "JS", "HTML", "CSS", "MongoDB"],
       "repository": "https://github.com/marcbryan/ProyectoF",

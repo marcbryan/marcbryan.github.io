@@ -1,20 +1,27 @@
-.project-card .project-type {
+.project-card .project-type, .project-card .project-status {
   flex-direction: row;
   margin-left: auto;
 }
 
-.project-card .project-type > div:first-child {
+.project-card .project-type > div:first-child, .project-card .project-status > div:first-child {
   margin-right: 4px;
 }
 
-.project-card .project-type > div:only-child {
+.project-card .project-type > div:only-child, .project-card .project-status > div:only-child {
   margin-right: 0;
 }
 
 .project-card .project-persons {
   margin-left: auto!important;
   margin-right: 8px;
-  cursor: default;
+}
+
+.pending-project {
+  pointer-events: none;
+}
+
+.pending-project .project-persons, .pending-project .MuiCardContent-root a {
+  pointer-events: auto;
 }
 
 .tooltip-link {

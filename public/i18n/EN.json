@@ -97,7 +97,8 @@
         "Front End development",
         "ASP.NET"
       ],
-      "src": "/src/assets/logos/fundacion_esplai.png"
+      "src": "/src/assets/logos/fundacion_esplai.png",
+      "badge": "/src/assets/csharp_badge.png"
     }
   ],
   "experience": [
@@ -107,7 +108,7 @@
       "years": "2019 - 2020",
       "details": [
         "Coding with PHP",
-        "Web design JavaScript, HTML and CSS",
+        "Web development with JavaScript, HTML and CSS",
         "Use of SQL database",
         "Work/coordination managed with Trello"
       ],
@@ -213,6 +214,17 @@
   ],
   "groupProjects": [
     {
+      "name": "SD Project",
+      "description": "Group project of the subject \"Software development project\". It's the last subject I have left. (Starting in october)",
+      "status": {
+        "id": 1,
+        "text": "Pending"
+      },
+      "type": [],
+      "tags": ["Java", "Spring", "Microservices"],
+      "numPersons": "6 - 7"
+    },
+    {
       "name": "EatNow",
       "description": "Final project of the .NET Bootcamp, it's an application to make reservations and manage restaurants.",
       "shortDescription": "Final project of the .NET Bootcamp",
@@ -228,7 +240,7 @@
       "name": "ProyectoF",
       "description": "Final project of <Tooltip title='{{DAW_name}} {{CFGS_more}}' text='WAD'>WAD</Tooltip>, it's an application to view events and tickets purchased in the Android app.",
       "shortDescription": "Final project of WAD",
-      "moreInfo": "My two schoolmates developed the <a href='https://github.com/MarcMartinezM/Proyecto-Final-Proyecto-F'>Android app</a>, I developed the website and the backend, which provided the data to the app and the website.",
+      "moreInfo": "My two schoolmates developed the <a href='https://github.com/MarcMartinezM/Proyecto-Final-Proyecto-F'>Android app</a>, I developed the website and the backend, which provided the data to the app and the website. The backend has a data generator.",
       "type": ["Frontend", "Backend"],
       "tags": ["Angular", "NodeJS", "TS", "JS", "HTML", "CSS", "MongoDB"],
       "repository": "https://github.com/marcbryan/ProyectoF",

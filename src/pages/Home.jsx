@@ -64,9 +64,9 @@ function Home({lang}) {
   const theme = useTheme();
 
   const projectKeys = [
-    "groupProjects.1",
-    "groupProjects.5",
-    "groupProjects.0"
+    "groupProjects.2",
+    "groupProjects.6",
+    "groupProjects.1"
   ];
   const projects = projectKeys.map(project => t(project, { returnObjects: true }));
 
@@ -104,6 +104,7 @@ function Home({lang}) {
 
   const [imgRef, loaded, onLoad] = useImageLoaded(counterRef);
 
+  let reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const handleInit = (e) => {
     e.conductor.shoot();
     setTimeout(() => setEggsCompleted(true), 6000);
@@ -174,8 +175,9 @@ function Home({lang}) {
       {(openSnackbar && !foundEgg1) && <SimpleSnackbar duration={5000} message={t("eggsInitialMessage")} />}
       {(foundEgg1 && foundEgg2 && foundEgg3 && foundEgg4 && !eggsCompleted) &&
         <>
-          <Realistic onInit={handleInit} />
+          {!reducedMotion && <Realistic onInit={handleInit} />}
           <SimpleSnackbar 
+            duration={6000} 
             message={
               <Trans 
                 i18nKey="eggsCompleted"
@@ -186,6 +188,7 @@ function Home({lang}) {
                 ]}
               />
             }
+            setEggsCompleted={reducedMotion ? () => setEggsCompleted(true) : undefined}
           />
         </>}
     </main>

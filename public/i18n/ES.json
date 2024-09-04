@@ -100,7 +100,8 @@
         "Desarrollo Front End",
         "ASP.NET"
       ],
-      "src": "/src/assets/logos/fundacion_esplai.png"
+      "src": "/src/assets/logos/fundacion_esplai.png",
+      "badge": "/src/assets/csharp_badge.png"
     }
   ],
   "experience": [
@@ -110,7 +111,7 @@
       "years": "2019 - 2020",
       "details": [
         "Programación con PHP",
-        "Diseño web con JavaScript, HTML y CSS",
+        "Desarrollo web con JavaScript, HTML y CSS",
         "Uso de base de datos SQL",
         "Trabajo/coordinación gestionado con Trello"
       ],
@@ -139,7 +140,7 @@
   "projects": [
     {
       "name": "Práctica ISCSD",
-      "description": "Práctica de la asignatura \"Ingeniería del software de componentes y sistemas distribuidos\" donde tuve que desarrollar las funcionalidades de 3 microservicios.",
+      "description": "Práctica de la asignatura \"<a href='https://apps.uoc.edu/PlaDocent/PlaDocent?Semestre=20241&SignatureCode=75.587&Context=3&Locale=es'>Ingeniería del software de componentes y sistemas distribuidos</a>\" donde tuve que desarrollar las funcionalidades de 3 microservicios.",
       "type": ["Backend"],
       "tags": ["Java", "Spring", "Microservicios"],
       "repository": [
@@ -153,7 +154,7 @@
     },
     {
       "name": "Práctica 2 DED",
-      "description": "Práctica de la asignatura \"Diseño de estructuras de datos\" donde tuve que implementar funcionalidades siguiendo <a href='https://es.wikipedia.org/wiki/Desarrollo_guiado_por_pruebas'>TDD</a>.",
+      "description": "Práctica de la asignatura \"<a href='https://apps.uoc.edu/PlaDocent/PlaDocent?Semestre=20241&SignatureCode=75.613&Context=3&Locale=es'>Diseño de estructuras de datos</a>\" donde tuve que implementar funcionalidades siguiendo <a href='https://es.wikipedia.org/wiki/Desarrollo_guiado_por_pruebas'>TDD</a>.",
       "type": [],
       "tags": ["Java"],
       "repository": "https://github.com/marcbryan/23-24-2-PR2",
@@ -163,7 +164,7 @@
     },
     {
       "name": "Práctica 1 DED",
-      "description": "Práctica de la asignatura \"Diseño de estructuras de datos\" donde tuve que crear diferentes <Tooltip title='Tipo abstracto de datos' text='TADs'>TADs</Tooltip> y funcionalidades siguiendo <a href='https://es.wikipedia.org/wiki/Desarrollo_guiado_por_pruebas'>TDD</a>.",
+      "description": "Práctica de la asignatura \"<a href='https://apps.uoc.edu/PlaDocent/PlaDocent?Semestre=20241&SignatureCode=75.613&Context=3&Locale=es'>Diseño de estructuras de datos</a>\" donde tuve que crear diferentes <Tooltip title='Tipo abstracto de datos' text='TADs'>TADs</Tooltip> y funcionalidades siguiendo <a href='https://es.wikipedia.org/wiki/Desarrollo_guiado_por_pruebas'>TDD</a>.",
       "type": [],
       "tags": ["Java"],
       "repository": "https://github.com/marcbryan/23-24-2-PR1",
@@ -216,6 +217,17 @@
   ],
   "groupProjects": [
     {
+      "name": "Proyecto DS",
+      "description": "Proyecto en grupo de la asignatura \"<a href='https://apps.uoc.edu/PlaDocent/PlaDocent?Semestre=20241&SignatureCode=75.588&Context=3&Locale=es'>Proyecto de desarrollo del software</a>\". Es la última asignatura que me queda. (A partir de octubre)",
+      "status": {
+        "id": 1,
+        "text": "Pendiente"
+      },
+      "type": [],
+      "tags": ["Java", "Spring", "Microservicios"],
+      "numPersons": "6 - 7"
+    },
+    {
       "name": "EatNow",
       "description": "Proyecto final del Bootcamp .NET, es una aplicación para hacer reservas y gestionar restaurantes.",
       "shortDescription": "Proyecto final del Bootcamp .NET",
@@ -231,7 +243,7 @@
       "name": "ProyectoF",
       "description": "Proyecto final de <LinkTooltip title='{{DAW_name}}' href='{{DAW_link}}' text='DAW'></LinkTooltip> (Grado Superior), es una aplicación para ver eventos y las entradas compradas en la app Android.",
       "shortDescription": "Proyecto final de DAW",
-      "moreInfo": "Mis dos compañeros se encargaron de crear la <a href='https://github.com/MarcMartinezM/Proyecto-Final-Proyecto-F'>app Android</a>, yo desarrollé la web y el backend, que servía para proveer los datos a la app y a la web.",
+      "moreInfo": "Mis dos compañeros se encargaron de crear la <a href='https://github.com/MarcMartinezM/Proyecto-Final-Proyecto-F'>app Android</a>, yo desarrollé la web y el backend, que servía para proveer los datos a la app y a la web. El backend cuenta con un generador de datos.",
       "type": ["Frontend", "Backend"],
       "tags": ["Angular", "NodeJS", "TS", "JS", "HTML", "CSS", "MongoDB"],
       "repository": "https://github.com/marcbryan/ProyectoF",

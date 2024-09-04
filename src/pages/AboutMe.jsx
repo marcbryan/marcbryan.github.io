@@ -15,6 +15,8 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import Scroller from "../components/Scroller";
 import LinkTooltip from "../components/LinkTooltip";
 import TextTooltip from "../components/TextTooltip";
+import Stack from '@mui/material/Stack';
+import InfoIcon from '@mui/icons-material/Info';
 import Lightbox from 'yet-another-react-lightbox';
 import Zoom from 'yet-another-react-lightbox/plugins/zoom';
 import 'yet-another-react-lightbox/styles.css';
@@ -58,7 +60,20 @@ function Academics({academics}) {
   return (
     academics.map((academic, academicIndex) => (
       <div key={academicIndex} className={academic.details ? "additional-training" : "academics"}>
-        <h4>{academic.name}</h4>
+        {academic.badge != null ?
+          <Stack direction="row" alignItems="center" gap={0.5}>
+            <h4>{academic.name}</h4>
+            <Tooltip
+              title={<><img src={academic.badge} width="128" height="128" /></>}
+              slotProps={{
+                tooltip: { sx: { backgroundColor: "transparent" } }
+              }}
+            >
+              <InfoIcon color="info" fontSize="small" />
+            </Tooltip>
+          </Stack>
+          :
+          <h4>{academic.name}</h4>}
         <div className="d-flex">
           <img src={academic.src} />
           <p>{academic.school}{ academic.location != null && ` (${academic.location})`} | {academic.years}</p>
@@ -132,6 +147,7 @@ function AboutMe() {
   const [countEgg3, setCountEgg3] = useState(0);
   const [countEgg4, setCountEgg4] = useState(0);
 
+  let reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const handleInit = (e) => {
     e.conductor.shoot();
     setTimeout(() => setEggsCompleted(true), 6000);
@@ -243,8 +259,9 @@ function AboutMe() {
       </Swiper>
       {(foundEgg1 && foundEgg2 && foundEgg3 && foundEgg4 && !openDialog && !eggsCompleted) &&
         <>
-          <Realistic onInit={handleInit} />
+          {!reducedMotion && <Realistic onInit={handleInit} />}
           <SimpleSnackbar 
+            duration={6000}
             message={
               <Trans 
                 i18nKey="eggsCompleted"
@@ -255,6 +272,7 @@ function AboutMe() {
                 ]}
               />
             }
+            setEggsCompleted={reducedMotion ? () => setEggsCompleted(true) : undefined}
           />
         </>}
     </main>

@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { useState } from 'react';
 import { LANGUAGES } from '../constants';
 import { NavLink } from 'react-router-dom';
@@ -78,22 +78,22 @@ function ResponsiveAppBar({ lang, setLang, pages, menuPages }) {
   const { i18n, t } = useTranslation();
   const [code, setCode] = useState(getCode(lang));
 
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+  const [anchorElNav, setAnchorElNav] = useState(null);
+  const [anchorElLang, setAnchorElLang] = useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
+  const handleOpenLangMenu = (event) => {
+    setAnchorElLang(event.currentTarget);
   };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
+  const handleCloseLangMenu = () => {
+    setAnchorElLang(null);
   };
 
   const onClickMenuItem = (event) => {
@@ -105,7 +105,7 @@ function ResponsiveAppBar({ lang, setLang, pages, menuPages }) {
       document.documentElement.lang = newLang.toLowerCase();
     });
     
-    handleCloseUserMenu;
+    handleCloseLangMenu();
   };
 
   return (
@@ -183,14 +183,14 @@ function ResponsiveAppBar({ lang, setLang, pages, menuPages }) {
               </Box>
               <Box sx={{ flexGrow: 0 }}>
                 <Tooltip title={t("chooseLang")}>
-                  <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+                  <IconButton onClick={handleOpenLangMenu} sx={{ p: 0 }}>
                     <span className={`fi fi-${code}`}></span>
                   </IconButton>
                 </Tooltip>
                 <Menu
                   sx={{ mt: '45px' }}
                   id="menu-appbar"
-                  anchorEl={anchorElUser}
+                  anchorEl={anchorElLang}
                   anchorOrigin={{
                     vertical: 'top',
                     horizontal: 'right',
@@ -200,8 +200,8 @@ function ResponsiveAppBar({ lang, setLang, pages, menuPages }) {
                     vertical: 'top',
                     horizontal: 'right',
                   }}
-                  open={Boolean(anchorElUser)}
-                  onClose={handleCloseUserMenu}
+                  open={Boolean(anchorElLang)}
+                  onClose={handleCloseLangMenu}
                 >
                   {LANGUAGES.map((language) => (
                     <MenuItem key={language.lang} data-new-lang={language.lang} onClick={onClickMenuItem}>

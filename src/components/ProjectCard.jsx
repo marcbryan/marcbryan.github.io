@@ -124,26 +124,18 @@ function Tags({project, isMobileM}) {
 }
 
 function Actions({project, t}) {
-  if (project.numPersons != null) {
-    return (
-      <CardActions sx={{ marginTop: "auto" }}>
-        <ActionButtons project={project} t={t} />
+  return (
+    <CardActions sx={{ marginTop: "auto" }}>
+      <ActionButtons project={project} t={t} />
+      {(project.numPersons != null) &&
         <Tooltip title={t("portfolio_numPersons")}>
           <div className="d-flex project-persons">
-            <GroupIcon sx={{ mr: 0.5 }}></GroupIcon>
+            <GroupIcon sx={{ mr: 0.5 }} />
             <span>{project.numPersons}</span>
           </div>
-        </Tooltip>
-      </CardActions>
-    )
-  }
-  else {
-    return (
-      <CardActions sx={{ marginTop: "auto" }}>
-        <ActionButtons project={project} t={t} />
-      </CardActions>
-    )
-  }
+        </Tooltip>}
+    </CardActions>
+  )
 }
 
 function ActionButtons({project, t}) {
@@ -216,7 +208,7 @@ export default function ProjectCard({project, isMobile, isMobileM}) {
   const [open, setOpen] = useState(false);
 
   return (
-    <Card className="project-card d-flex" sx={{ maxWidth: "345px", flexDirection: "column", height: "100%" }}>
+    <Card className={`project-card d-flex${project.status != null ? " pending-project" : ""}`} sx={{ maxWidth: "345px", flexDirection: "column", height: "100%", cursor: "default" }}>
       {project.imagesFolder != null && project.imagesExt != null ?
         <>
           <Tooltip title={ project.imagesExt.length > 1 ? t("portfolio_viewImages") : t("portfolio_viewImage") }>
@@ -251,9 +243,14 @@ export default function ProjectCard({project, isMobile, isMobileM}) {
           <Typography gutterBottom variant="h5" component="div" sx={{ mr: "0.25rem" }}>
             {project.name}
           </Typography>
-          <div className="d-flex project-type">
-            <Type project={project} isMobile={isMobile} />
-          </div>
+          {project.type.length > 0 &&
+            <div className="d-flex project-type">
+              <Type project={project} isMobile={isMobile} />
+            </div>}
+          {(project.status != null && project.type.length == 0) && 
+            <div className="d-flex project-status">
+              <Chip label={project.status.text} color={project.status.id == 1 ? "warning" : project.status.id == 2 ? "success" : undefined } />
+            </div>}
         </div>
         <Typography variant="body2" color="text.secondary" sx={{ marginBottom: "0.35em" }}>
           <Description project={project}></Description>
