@@ -64,9 +64,9 @@ function Home({lang}) {
   const theme = useTheme();
 
   const projectKeys = [
-    "groupProjects.2",
     "groupProjects.6",
-    "groupProjects.1"
+    "groupProjects.2",
+    "groupProjects.7"
   ];
   const projects = projectKeys.map(project => t(project, { returnObjects: true }));
 

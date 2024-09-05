@@ -136,49 +136,24 @@
   ],
   "projects": [
     {
-      "name": "SECDS Practice",
-      "description": "Practice of the subject \"Software engineering of components and distributed systems\" where I had to develop the functionalities of 3 microservices.",
-      "type": ["Backend"],
-      "tags": ["Java", "Spring", "Microservices"],
-      "repository": [
-        "https://github.com/marcbryan/spring-2024-productcatalog",
-        "https://github.com/marcbryan/spring-2024-user",
-        "https://github.com/marcbryan/spring-2024-notification"
-      ],
-      "imagesFolder": "prac_iscsd",
-      "imagesExt": ["png", "png", "png", "png", "png"],
-      "objectPosition": "left"
-    },
-    {
-      "name": "DSD Practice 2",
-      "description": "Practice of the subject \"Data structures design\" where I had to implement functionalities following <a href='https://en.wikipedia.org/wiki/Test-driven_development'>TDD</a>.",
+      "name": "Snake game",
+      "description": "Snake game on .NET (Console).",
       "type": [],
-      "tags": ["Java"],
-      "repository": "https://github.com/marcbryan/23-24-2-PR2",
-      "imagesFolder": "prac2_ded",
+      "tags": [".NET", "C#", "Console"],
+      "repository": "https://github.com/marcbryan/SnakeGame",
+      "imagesFolder": "snake_game",
       "imagesExt": ["png", "png", "png"],
       "objectPosition": "left"
     },
     {
-      "name": "DSD Practice 1",
-      "description": "Practice of the subject \"Data structures design\" where I had to create some <Tooltip title='Abstract data type' text='ADTs'>ADTs</Tooltip> and functionalities following <a href='https://en.wikipedia.org/wiki/Test-driven_development'>TDD</a>.",
+      "name": "HositalApp",
+      "description": "Hospital management application with Windows Forms.",
       "type": [],
-      "tags": ["Java"],
-      "repository": "https://github.com/marcbryan/23-24-2-PR1",
-      "imagesFolder": "prac1_ded",
-      "imagesExt": ["png", "png"],
-      "objectPosition": "left"
-    },
-    {
-      "name": "TicTacToeJS",
-      "description": "Tic-Tac-Toe game in Javascript.",
-      "type": ["Frontend"],
-      "tags": ["JS", "HTML", "CSS"],
-      "repository": "https://github.com/marcbryan/TresEnRayaJS",
-      "imagesFolder": "tresenrayajs",
-      "imagesExt": ["png"],
-      "objectPosition": "top",
-      "webURL": "https://marcbryan.github.io/TresEnRayaJS/"
+      "tags": [".NET", "C#", "Windows Forms"],
+      "repository": "https://github.com/marcbryan/AppHospital",
+      "imagesFolder": "app_hospital",
+      "imagesExt": ["png", "png", "png"],
+      "objectPosition": "top"
     },
     {
       "name": "HangmanJS",
@@ -192,90 +167,71 @@
       "webURL": "https://marcbryan.github.io/AhorcadoJS/"
     },
     {
-      "name": "HositalApp",
-      "description": "Hospital management application with Windows Forms.",
-      "type": [],
-      "tags": [".NET", "C#", "Windows Forms"],
-      "repository": "https://github.com/marcbryan/AppHospital",
-      "imagesFolder": "app_hospital",
-      "imagesExt": ["png", "png", "png"],
-      "objectPosition": "top"
+      "name": "TicTacToeJS",
+      "description": "Tic-Tac-Toe game in Javascript.",
+      "type": ["Frontend"],
+      "tags": ["JS", "HTML", "CSS"],
+      "repository": "https://github.com/marcbryan/TresEnRayaJS",
+      "imagesFolder": "tresenrayajs",
+      "imagesExt": ["png"],
+      "objectPosition": "top",
+      "webURL": "https://marcbryan.github.io/TresEnRayaJS/"
     },
     {
-      "name": "Snake game",
-      "description": "Snake game on .NET (Console).",
+      "name": "DSD Practice 1",
+      "description": "Practice of the subject \"Data structures design\" where I had to create some <Tooltip title='Abstract data type' text='ADTs'>ADTs</Tooltip> and functionalities following <a href='https://en.wikipedia.org/wiki/Test-driven_development'>TDD</a>.",
       "type": [],
-      "tags": [".NET", "C#", "Console"],
-      "repository": "https://github.com/marcbryan/SnakeGame",
-      "imagesFolder": "snake_game",
+      "tags": ["Java"],
+      "repository": "https://github.com/marcbryan/23-24-2-PR1",
+      "imagesFolder": "prac1_ded",
+      "imagesExt": ["png", "png"],
+      "objectPosition": "left"
+    },
+    {
+      "name": "DSD Practice 2",
+      "description": "Practice of the subject \"Data structures design\" where I had to implement functionalities following <a href='https://en.wikipedia.org/wiki/Test-driven_development'>TDD</a>.",
+      "type": [],
+      "tags": ["Java"],
+      "repository": "https://github.com/marcbryan/23-24-2-PR2",
+      "imagesFolder": "prac2_ded",
       "imagesExt": ["png", "png", "png"],
+      "objectPosition": "left"
+    },
+    {
+      "name": "SECDS Practice",
+      "description": "Practice of the subject \"Software engineering of components and distributed systems\" where I had to develop the functionalities of 3 microservices.",
+      "type": ["Backend"],
+      "tags": ["Java", "Spring", "Microservices"],
+      "repository": [
+        "https://github.com/marcbryan/spring-2024-productcatalog",
+        "https://github.com/marcbryan/spring-2024-user",
+        "https://github.com/marcbryan/spring-2024-notification"
+      ],
+      "imagesFolder": "prac_iscsd",
+      "imagesExt": ["png", "png", "png", "png", "png"],
       "objectPosition": "left"
     }
   ],
   "groupProjects": [
     {
-      "name": "SD Project",
-      "description": "Group project of the subject \"Software development project\". It's the last subject I have left. (Starting in october)",
-      "status": {
-        "id": 1,
-        "text": "Pending"
-      },
+      "name": "Car configurator",
+      "description": "Project that I did in <Tooltip title='{{DAM_name}} {{CFGS_more}}' text='CPAD'>CPAD</Tooltip>, it's an application to configure a car and buy it.",
+      "moreInfo": "It's similar to what you would do in any car brand website.",
       "type": [],
-      "tags": ["Java", "Spring", "Microservices"],
-      "numPersons": "6 - 7"
-    },
-    {
-      "name": "EatNow",
-      "description": "Final project of the .NET Bootcamp, it's an application to make reservations and manage restaurants.",
-      "shortDescription": "Final project of the .NET Bootcamp",
-      "type": ["Frontend", "Backend"],
-      "tags": [".NET", "ASP.NET Core MVC", "C#", "HTML", "CSS", "JS", "SQL"],
-      "repository": "https://github.com/Far9554/EatNow",
-      "imagesFolder": "eat_now",
-      "imagesExt": ["jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "png", "png", "jpg", "png", "png", "png", "png", "jpg", "jpg", "png", "png"],
-      "objectPosition": "top",
-      "numPersons": 4
-    },
-    {
-      "name": "ProyectoF",
-      "description": "Final project of <Tooltip title='{{DAW_name}} {{CFGS_more}}' text='WAD'>WAD</Tooltip>, it's an application to view events and tickets purchased in the Android app.",
-      "shortDescription": "Final project of WAD",
-      "moreInfo": "My two schoolmates developed the <a href='https://github.com/MarcMartinezM/Proyecto-Final-Proyecto-F'>Android app</a>, I developed the website and the backend, which provided the data to the app and the website. The backend has a data generator.",
-      "type": ["Frontend", "Backend"],
-      "tags": ["Angular", "NodeJS", "TS", "JS", "HTML", "CSS", "MongoDB"],
-      "repository": "https://github.com/marcbryan/ProyectoF",
-      "imagesFolder": "proyecto_f",
-      "imagesExt": ["jpg", "png", "png", "png", "png", "jpg", "jpg", "png", "png", "jpg", "png", "png", "png"],
+      "tags": ["Java", "JavaFX", "XML"],
+      "repository": "https://github.com/asantamans/ams2project",
+      "imagesFolder": "car_configurator",
+      "imagesExt": ["jpg", "png", "png", "png"],
       "numPersons": 3
     },
     {
-      "name": "Mensakas",
-      "description": "Project that I did in <Tooltip title='{{DAW_name}} {{CFGS_more}}' text='WAD'>WAD</Tooltip>, it's an application to manage restaurants and make orders (like Glovo).",
-      "type": ["Frontend", "Backend"],
-      "tags": ["Laravel", "PHP", "HTML", "CSS", "JS"],
-      "repository": "https://github.com/marcbryan/proyecto-mensakas",
-      "imagesFolder": "mensakas",
-      "imagesExt": ["jpg", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png"],
-      "numPersons": 2
-    },
-    {
-      "name": "AJAX Kahoot",
-      "description": "Project that I did in <Tooltip title='{{DAW_name}} {{CFGS_more}}' text='WAD'>WAD</Tooltip>, it's an application to make questionnaries like Kahoot.",
-      "type": ["Frontend", "Backend"],
-      "tags": ["PHP", "JS", "HTML", "CSS", "SQL"],
-      "repository": "https://github.com/gooicoo/Ajax-Kahoot",
-      "imagesFolder": "ajax_kahoot",
-      "imagesExt": ["jpg", "png", "png", "png", "png", "png", "png"],
-      "numPersons": 3
-    },
-    {
-      "name": "Fallout Terminal",
-      "description": "Project that I did in <Tooltip title='{{DAW_name}} {{CFGS_more}}' text='WAD'>WAD</Tooltip>, it's a game that looks like the terminal from the game Fallout.",
-      "type": ["Frontend"],
-      "tags": ["PHP", "JS", "HTML", "CSS"],
-      "repository": "https://github.com/davidencinamartinez/Terminal_Fallout",
-      "imagesFolder": "terminal_fallout",
-      "imagesExt": ["jpg", "jpg"],
+      "name": "Scrum manager",
+      "description": "Project that I did in <Tooltip title='{{DAM_name}} {{CFGS_more}}' text='CPAD'>CPAD</Tooltip>, it's an application to manage the tasks like in a Scrum board.",
+      "type": [],
+      "tags": ["Java", "Hibernate", "JavaFX"],
+      "repository": "https://github.com/marcbryan/Proyecto2_Scrum",
+      "imagesFolder": "scrum_manager",
+      "imagesExt": ["jpg", "jpg", "jpg", "jpg", "jpg"],
       "numPersons": 3
     },
     {
@@ -290,25 +246,69 @@
       "numPersons": 2
     },
     {
-      "name": "Scrum manager",
-      "description": "Project that I did in <Tooltip title='{{DAM_name}} {{CFGS_more}}' text='CPAD'>CPAD</Tooltip>, it's an application to manage the tasks like in a Scrum board.",
-      "type": [],
-      "tags": ["Java", "Hibernate", "JavaFX"],
-      "repository": "https://github.com/marcbryan/Proyecto2_Scrum",
-      "imagesFolder": "scrum_manager",
-      "imagesExt": ["jpg", "jpg", "jpg", "jpg", "jpg"],
+      "name": "Fallout Terminal",
+      "description": "Project that I did in <Tooltip title='{{DAW_name}} {{CFGS_more}}' text='WAD'>WAD</Tooltip>, it's a game that looks like the terminal from the game Fallout.",
+      "type": ["Frontend"],
+      "tags": ["PHP", "JS", "HTML", "CSS"],
+      "repository": "https://github.com/davidencinamartinez/Terminal_Fallout",
+      "imagesFolder": "terminal_fallout",
+      "imagesExt": ["jpg", "jpg"],
       "numPersons": 3
     },
     {
-      "name": "Car configurator",
-      "description": "Project that I did in <Tooltip title='{{DAM_name}} {{CFGS_more}}' text='CPAD'>CPAD</Tooltip>, it's an application to configure a car and buy it.",
-      "moreInfo": "It's similar to what you would do in any car brand website.",
-      "type": [],
-      "tags": ["Java", "JavaFX", "XML"],
-      "repository": "https://github.com/asantamans/ams2project",
-      "imagesFolder": "car_configurator",
-      "imagesExt": ["jpg", "png", "png", "png"],
+      "name": "AJAX Kahoot",
+      "description": "Project that I did in <Tooltip title='{{DAW_name}} {{CFGS_more}}' text='WAD'>WAD</Tooltip>, it's an application to make questionnaries like Kahoot.",
+      "type": ["Frontend", "Backend"],
+      "tags": ["PHP", "JS", "HTML", "CSS", "SQL"],
+      "repository": "https://github.com/gooicoo/Ajax-Kahoot",
+      "imagesFolder": "ajax_kahoot",
+      "imagesExt": ["jpg", "png", "png", "png", "png", "png", "png"],
       "numPersons": 3
+    },
+    {
+      "name": "Mensakas",
+      "description": "Project that I did in <Tooltip title='{{DAW_name}} {{CFGS_more}}' text='WAD'>WAD</Tooltip>, it's an application to manage restaurants and make orders (like Glovo).",
+      "type": ["Frontend", "Backend"],
+      "tags": ["Laravel", "PHP", "HTML", "CSS", "JS"],
+      "repository": "https://github.com/marcbryan/proyecto-mensakas",
+      "imagesFolder": "mensakas",
+      "imagesExt": ["jpg", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png"],
+      "numPersons": 2
+    },
+    {
+      "name": "ProyectoF",
+      "description": "Final project of <Tooltip title='{{DAW_name}} {{CFGS_more}}' text='WAD'>WAD</Tooltip>, it's an application to view events and tickets purchased in the Android app.",
+      "shortDescription": "Final project of WAD",
+      "moreInfo": "My two schoolmates developed the <a href='https://github.com/MarcMartinezM/Proyecto-Final-Proyecto-F'>Android app</a>, I developed the website and the backend, which provided the data to the app and the website. The backend has a data generator.",
+      "type": ["Frontend", "Backend"],
+      "tags": ["Angular", "NodeJS", "TS", "JS", "HTML", "CSS", "MongoDB"],
+      "repository": "https://github.com/marcbryan/ProyectoF",
+      "imagesFolder": "proyecto_f",
+      "imagesExt": ["jpg", "png", "png", "png", "png", "jpg", "jpg", "png", "png", "jpg", "png", "png", "png"],
+      "numPersons": 3
+    },
+    {
+      "name": "EatNow",
+      "description": "Final project of the .NET Bootcamp, it's an application to make reservations and manage restaurants.",
+      "shortDescription": "Final project of the .NET Bootcamp",
+      "type": ["Frontend", "Backend"],
+      "tags": [".NET", "ASP.NET Core MVC", "C#", "HTML", "CSS", "JS", "SQL"],
+      "repository": "https://github.com/Far9554/EatNow",
+      "imagesFolder": "eat_now",
+      "imagesExt": ["jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "png", "png", "jpg", "png", "png", "png", "png", "jpg", "jpg", "png", "png"],
+      "objectPosition": "top",
+      "numPersons": 4
+    },
+    {
+      "name": "SD Project",
+      "description": "Group project of the subject \"Software development project\". It's the last subject I have left. (Starting in october)",
+      "status": {
+        "id": 1,
+        "text": "Pending"
+      },
+      "type": [],
+      "tags": ["Java", "Spring", "Microservices"],
+      "numPersons": "6 - 7"
     }
   ],
   "easterEggs": [

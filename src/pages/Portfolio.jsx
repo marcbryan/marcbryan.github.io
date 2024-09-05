@@ -15,8 +15,8 @@ function Portfolio() {
   const { t } = useTranslation();
   useTitle(`${t("portfolio")} | ${t("title")}`);
 
-  const projects = t("projects", { returnObjects: true });
-  const groupProjects = t("groupProjects", { returnObjects: true });
+  const projects = t("projects", { returnObjects: true }).slice().reverse();
+  const groupProjects = t("groupProjects", { returnObjects: true }).slice().reverse();
 
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
