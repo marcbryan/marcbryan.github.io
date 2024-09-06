@@ -9,7 +9,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import ProfilePic from '../assets/profile_pic.jpg';
 import useLocalStorage from 'use-local-storage';
-import { easterEgg1 } from "../constants";
+import { EASTER_EGG1 } from "../constants";
 import SimpleSnackbar from "../components/SimpleSnackbar";
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import Divider from '@mui/material/Divider';
@@ -40,18 +40,18 @@ const useImageLoaded = (counterRef) => {
   const imgRef = useRef();
 
   const onLoad = () => {
-    if (imgRef.current.src == easterEgg1.gifURL) {
+    if (imgRef.current.src == EASTER_EGG1.gifURL) {
       setLoaded(true);
       
       setTimeout(() => {
         if (counterRef.current == 3)
           imgRef.current?.click();
-      }, easterEgg1.gifDurationMs);
+      }, EASTER_EGG1.gifDurationMs);
     }
   }
 
   useEffect(() => {
-    if ((imgRef.current.src == easterEgg1.gifURL) && imgRef.current && imgRef.current.complete)
+    if ((imgRef.current.src == EASTER_EGG1.gifURL) && imgRef.current && imgRef.current.complete)
       onLoad();
   });
 
@@ -92,7 +92,7 @@ function Home({lang}) {
     setCountEgg1((countEgg1) => {
       const newCount = countEgg1 + 1;
       if (newCount == 3)
-        setProfilePicSrc(easterEgg1.gifURL);
+        setProfilePicSrc(EASTER_EGG1.gifURL);
       else if (newCount == 4) {
         setProfilePicSrc(ProfilePic);
         setFoundEgg1(true);
@@ -116,9 +116,9 @@ function Home({lang}) {
         <div className="d-flex top-container">
           <div>
             <h1>Marc Boakye</h1>
-            <h2>
-              {window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 
-                t("home_position") :
+            <h2 className={reducedMotion ? "d-flex" : undefined}>
+              {reducedMotion ? 
+                <>{t("home_position")} / <span>{t("home_position2")}</span></> :
                 <TypeAnimation
                   key={`typeAnimation-${lang}`}
                   sequence={[
@@ -150,7 +150,7 @@ function Home({lang}) {
           {(countEgg1 == 3 && !loaded) && <SimpleSnackbar duration={10000} message={t("home_loading")} /> }
           {(countEgg1 == 3 && loaded) &&
             <SimpleSnackbar
-              duration={easterEgg1.gifDurationMs}
+              duration={EASTER_EGG1.gifDurationMs}
               message={ 
                 <Trans
                   i18nKey="easterEggs.0.text"
@@ -172,7 +172,7 @@ function Home({lang}) {
           {projects.map((project, i) => <Grid item key={i} xs={12} sm={4}><SmallProjectCard project={project} /></Grid>)}
         </Grid>
       </div>
-      {(openSnackbar && !foundEgg1) && <SimpleSnackbar duration={5000} message={t("eggsInitialMessage")} />}
+      {(openSnackbar && !foundEgg1) && <SimpleSnackbar className="initial-message" duration={5000} message={t("eggsInitialMessage")} />}
       {(foundEgg1 && foundEgg2 && foundEgg3 && foundEgg4 && !eggsCompleted) &&
         <>
           {!reducedMotion && <Realistic onInit={handleInit} />}

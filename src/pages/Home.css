@@ -16,6 +16,10 @@ main.home .top-container h2 {
   margin-top: 0;
 }
 
+main.home .top-container h2.d-flex {
+  flex-direction: column;
+}
+
 main.home .top-container p {
   margin-top: 0;
   margin-bottom: 0.5em;
@@ -25,6 +29,10 @@ main.home .top-container img.profile-pic {
   width: 250px;
   height: 250px;
   border-radius: 50%;
+}
+
+main.home .MuiSnackbar-root.initial-message .MuiSnackbarContent-root {
+  flex-wrap: nowrap;
 }
 
 @media (max-width: 849px) {

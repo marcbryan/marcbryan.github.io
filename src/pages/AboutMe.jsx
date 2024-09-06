@@ -6,7 +6,7 @@ import IconButton from '@mui/material/IconButton';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Divider from '@mui/material/Divider';
-import { TECHNOLOGIES, easterEgg2, easterEgg3, easterEgg4 } from '../constants';
+import { TECHNOLOGIES, EASTER_EGG2, EASTER_EGG3, EASTER_EGG4 } from '../constants';
 import useLocalStorage from 'use-local-storage';
 import StackIcon from "tech-stack-icons";
 import { Tooltip } from "@mui/material";
@@ -16,7 +16,7 @@ import Scroller from "../components/Scroller";
 import LinkTooltip from "../components/LinkTooltip";
 import TextTooltip from "../components/TextTooltip";
 import Stack from '@mui/material/Stack';
-import InfoIcon from '@mui/icons-material/Info';
+import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import Lightbox from 'yet-another-react-lightbox';
 import Zoom from 'yet-another-react-lightbox/plugins/zoom';
 import 'yet-another-react-lightbox/styles.css';
@@ -69,7 +69,7 @@ function Academics({academics}) {
                 tooltip: { sx: { backgroundColor: "transparent" } }
               }}
             >
-              <InfoIcon color="info" fontSize="small" />
+              <InfoOutlinedIcon color="info" fontSize="small" />
             </Tooltip>
           </Stack>
           :
@@ -204,7 +204,7 @@ function AboutMe() {
           )
         })}
       </Scroller>
-      {countEgg2 == 3 && <QuestionaryDialog questionObj={easterEgg2} handlerFoundEgg={() => setFoundEgg2(true)} handlerOpen={(bool) => setOpenDialog(bool)} />}
+      {countEgg2 == 3 && <QuestionaryDialog questionObj={EASTER_EGG2} handlerFoundEgg={() => setFoundEgg2(true)} handlerOpen={(bool) => setOpenDialog(bool)} />}
       <p className="relevant-links">{t("aboutMe_relevantLinks")}</p>
       <div className="social-buttons">
         <Tooltip title="LinkedIn">
@@ -245,12 +245,12 @@ function AboutMe() {
         <SwiperSlide>
           <h4>{t("aboutMe_hobby1")}</h4>
           <img src={Football} alt="" onClick={!foundEgg3 ? () => setCountEgg3((countEgg3) => countEgg3 + 1) : undefined} />
-          {countEgg3 == 3 && <QuestionaryDialog questionObj={easterEgg3} handlerFoundEgg={() => setFoundEgg3(true)} handlerOpen={(bool) => setOpenDialog(bool)} />}
+          {countEgg3 == 3 && <QuestionaryDialog questionObj={EASTER_EGG3} handlerFoundEgg={() => setFoundEgg3(true)} handlerOpen={(bool) => setOpenDialog(bool)} />}
         </SwiperSlide>
         <SwiperSlide>
           <h4>F1</h4>
           <img src={F1} alt="" onClick={!foundEgg4 ? () => setCountEgg4((countEgg4) => countEgg4 + 1) : undefined} />
-          {countEgg4 == 3 && <QuestionaryDialog questionObj={easterEgg4} handlerFoundEgg={() => setFoundEgg4(true)} handlerOpen={(bool) => setOpenDialog(bool)} />}
+          {countEgg4 == 3 && <QuestionaryDialog questionObj={EASTER_EGG4} handlerFoundEgg={() => setFoundEgg4(true)} handlerOpen={(bool) => setOpenDialog(bool)} />}
         </SwiperSlide>
         <SwiperSlide>
           <h4>{t("aboutMe_hobby3")}</h4>

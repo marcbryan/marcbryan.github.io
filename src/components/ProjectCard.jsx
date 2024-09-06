@@ -208,7 +208,10 @@ export default function ProjectCard({project, isMobile, isMobileM}) {
   const [open, setOpen] = useState(false);
 
   return (
-    <Card className={`project-card d-flex${project.status != null ? " pending-project" : ""}`} sx={{ maxWidth: "345px", flexDirection: "column", height: "100%", cursor: "default" }}>
+    <Card
+      className={`project-card d-flex prevent-select${project.status != null ? " pending-project" : ""}`}
+      sx={{ maxWidth: "345px", flexDirection: "column", height: "100%", cursor: "default" }}
+    >
       {project.imagesFolder != null && project.imagesExt != null ?
         <>
           <Tooltip title={ project.imagesExt.length > 1 ? t("portfolio_viewImages") : t("portfolio_viewImage") }>
