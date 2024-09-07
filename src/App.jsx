@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import useLocalStorage from 'use-local-storage';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import ResponsiveAppBar from './components/ResponsiveAppBar';
 import Home from './pages/Home';
 import AboutMe from './pages/AboutMe';
@@ -47,6 +47,7 @@ function App() {
         <Route path="/about-me" element={<AboutMe />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>  
     </BrowserRouter>
   )

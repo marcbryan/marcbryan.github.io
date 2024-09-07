@@ -83,7 +83,7 @@
       "school": "IES Esteve Terradas i Illa",
       "location": "Cornellá de Llobregat",
       "years": "2019 - 2020",
-      "src": "src/assets/logos/esteve_terradas.png"
+      "src": "/src/assets/logos/esteve_terradas.png"
     },
     {
       "name": "Grado Superior en Desarrollo de Aplicaciones Multiplataforma",
