@@ -1,5 +1,5 @@
-import { useTranslation } from "react-i18next";
-import { useTitle } from "../App";
+import { useTranslation } from 'react-i18next';
+import { useTitle } from '../App';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -19,8 +19,8 @@ function Portfolio() {
   const groupProjects = t("groupProjects", { returnObjects: true }).slice().reverse();
 
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
-  const isMobileM = useMediaQuery('(max-width:374px)');
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const isMobileM = useMediaQuery("(max-width:374px)");
 
   return (
     <main className="portfolio container">
@@ -28,7 +28,7 @@ function Portfolio() {
       <div className="top-container">
         <p>{t("portfolio_text1")}</p>
         <div className="d-flex">
-          <GitHubIcon fontSize="large" sx={{ mr: 1 }} />
+          <GitHubIcon fontSize="large" />
           <Link href="https://github.com/marcbryan?tab=repositories" target="_blank" rel="noopener noreferrer">https://github.com/marcbryan</Link>      
         </div>
       </div>      
@@ -50,13 +50,11 @@ function Portfolio() {
         modules={[Pagination]}
         className="swiper-projects"
       >
-        {projects.map((project, projectIndex) => {
-          return (
-            <SwiperSlide key={projectIndex}>
-              <ProjectCard project={project} isMobile={isMobile} isMobileM={isMobileM} />
-            </SwiperSlide>
-          )
-        })}
+        {projects.map((project, i) => (
+          <SwiperSlide key={i}>
+            <ProjectCard project={project} isMobile={isMobile} isMobileM={isMobileM} />
+          </SwiperSlide>
+        ))}
       </Swiper>
       <h2>{t("portfolio_gp")}</h2>
       <Swiper
@@ -76,13 +74,11 @@ function Portfolio() {
         modules={[Pagination]}
         className="swiper-gp"
       >
-        {groupProjects.map((project, projectIndex) => {
-          return (
-            <SwiperSlide key={projectIndex}>
-              <ProjectCard project={project} isMobile={isMobile} isMobileM={isMobileM} />
-            </SwiperSlide>
-          )
-        })}
+        {groupProjects.map((project, i) => (
+          <SwiperSlide key={i}>
+            <ProjectCard project={project} isMobile={isMobile} isMobileM={isMobileM} />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </main>
   );

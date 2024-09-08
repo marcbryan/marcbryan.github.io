@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import useLocalStorage from 'use-local-storage';
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import ResponsiveAppBar from './components/ResponsiveAppBar';
 import Home from './pages/Home';
 import AboutMe from './pages/AboutMe';
@@ -41,7 +41,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <ResponsiveAppBar lang={lang} setLang={setLang} pages={pages} menuPages={menuPages}></ResponsiveAppBar>
+      <ResponsiveAppBar lang={lang} setLang={setLang} pages={pages} menuPages={menuPages} />
       <Routes>
         <Route path="/" element={<Home lang={lang} />} />
         <Route path="/about-me" element={<AboutMe />} />

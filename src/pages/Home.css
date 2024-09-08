@@ -12,7 +12,7 @@ main.home .top-container h1 {
   margin-bottom: 0.75rem;
 }
 
-main.home .top-container h2 {
+main.home .top-container h2, main.home .top-container p {
   margin-top: 0;
 }
 
@@ -20,8 +20,7 @@ main.home .top-container h2.d-flex {
   flex-direction: column;
 }
 
-main.home .top-container p {
-  margin-top: 0;
+main.home .top-container p, main.home div.MuiDivider-root {
   margin-bottom: 0.5em;
 }
 

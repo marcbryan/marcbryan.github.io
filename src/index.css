@@ -44,6 +44,10 @@ h2 {
   user-select: none; /* Standard syntax */
 }
 
+.yarl__root {
+  --yarl__color_backdrop: rgba(0, 0, 0, 0.9);
+}
+
 body.mode-light .MuiToolbar-root a:hover {
   opacity: 0.8;
 }
@@ -53,7 +57,7 @@ body.mode-light div.MuiDivider-root > span {
 }
 
 body.mode-dark div.MuiDivider-root > span {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 body.mode-dark hr.MuiDivider-root {

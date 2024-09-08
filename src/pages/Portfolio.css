@@ -11,6 +11,10 @@ main.portfolio > .top-container a {
   align-self: center;
 }
 
+main.portfolio > .top-container .MuiSvgIcon-root {
+  margin-right: 8px;
+}
+
 main.portfolio > h2:first-of-type {
   margin-top: 1rem;
 }

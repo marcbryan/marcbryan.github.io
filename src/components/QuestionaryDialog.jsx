@@ -1,4 +1,3 @@
-import React from 'react';
 import { useEffect, useState } from 'react';
 import { t } from 'i18next';
 import Button from '@mui/material/Button';
@@ -19,10 +18,10 @@ export default function QuestionaryDialog({questionObj, handlerFoundEgg, handler
   const {title, description, question, options, answer, reason, maxWidthHelperTxt} = questionObj;
 
   const [open, setOpen] = useState(true);
-  const [value, setValue] = useState('');
+  const [value, setValue] = useState("");
   const [error, setError] = useState(false);
   const [correct, setCorrect] = useState(false);
-  const [helperText, setHelperText] = useState(' ');
+  const [helperText, setHelperText] = useState(" ");
   const theme = useTheme();
 
   // trigger on component mount
@@ -36,7 +35,7 @@ export default function QuestionaryDialog({questionObj, handlerFoundEgg, handler
 
   const handleRadioChange = (event) => {
     setValue(event.target.value);
-    setHelperText(' ');
+    setHelperText(" ");
     setError(false);
   };
 
@@ -48,7 +47,7 @@ export default function QuestionaryDialog({questionObj, handlerFoundEgg, handler
       setError(false);
       setCorrect(true);
       handlerFoundEgg();
-      document.querySelector(`.questionary-dialog .MuiFormGroup-root > label:nth-child(${answer + 1}) > span > input[name="radio-buttons-group"]`).disabled = true;
+      document.querySelector(`div.questionary-dialog div.MuiFormGroup-root > label:nth-child(${answer + 1}) > span > input[name="radio-buttons-group"]`).disabled = true;
     }
     else if (value != undefined && value != "") {
       setHelperText(`\u2716 ${t("questionary_wrongAnswer")}`);

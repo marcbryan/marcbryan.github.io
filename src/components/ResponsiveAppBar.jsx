@@ -1,4 +1,3 @@
-import React from 'react';
 import { useState } from 'react';
 import { LANGUAGES } from '../constants';
 import { NavLink } from 'react-router-dom';
@@ -27,7 +26,7 @@ import DarkModeOutlined from '@mui/icons-material/DarkModeOutlined';
 import Fade from '@mui/material/Fade';
 import Fab from '@mui/material/Fab';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-import "/node_modules/flag-icons/css/flag-icons.min.css";
+import '/node_modules/flag-icons/css/flag-icons.min.css';
 
 function getCode(newLang) {
   return LANGUAGES.find(obj => { return obj.lang === newLang }).code;
@@ -48,12 +47,12 @@ function ScrollTop({children}) {
 
   const handleClick = (event) => {
     const anchor = (event.target.ownerDocument || document).querySelector(
-      '#back-to-top-anchor',
+      "#back-to-top-anchor",
     );
 
     if (anchor) {
       anchor.scrollIntoView({
-        block: 'center',
+        block: "center",
       });
     }
   };
@@ -63,7 +62,7 @@ function ScrollTop({children}) {
       <Box
         onClick={handleClick}
         role="presentation"
-        sx={{ position: 'fixed', zIndex: 2, bottom: 16, right: 16 }}
+        sx={{ position: "fixed", zIndex: 2, bottom: 16, right: 16 }}
       >
         {children}
       </Box>
@@ -91,7 +90,6 @@ function ResponsiveAppBar({ lang, setLang, pages, menuPages }) {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
-
   const handleCloseLangMenu = () => {
     setAnchorElLang(null);
   };
@@ -115,17 +113,17 @@ function ResponsiveAppBar({ lang, setLang, pages, menuPages }) {
           <Container maxWidth="xl">
             <Toolbar disableGutters>
               <Tooltip title={t("home")}>
-                <IconButton color={(mode === "light") ? 'inherit' : 'primary'} sx={{ display: { xs: 'none', md: 'flex' } }} component={NavLink} to="/">
+                <IconButton color={(mode === "light") ? "inherit" : "primary"} sx={{ display: { xs: "none", md: "flex" } }} component={NavLink} to="/">
                   <SvgIcon component={Logo} sx={{fontSize: 36}} inheritViewBox />
                 </IconButton>
               </Tooltip>
 
-              <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+              <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
                 <IconButton
                   size="large"
                   aria-controls="menu-appbar"
                   onClick={handleOpenNavMenu}
-                  color={(mode === "light") ? 'inherit' : 'primary'}
+                  color={(mode === "light") ? "inherit" : "primary"}
                 >
                   <MenuIcon />
                 </IconButton>
@@ -133,18 +131,18 @@ function ResponsiveAppBar({ lang, setLang, pages, menuPages }) {
                   id="menu-appbar"
                   anchorEl={anchorElNav}
                   anchorOrigin={{
-                    vertical: 'bottom',
-                    horizontal: 'left',
+                    vertical: "bottom",
+                    horizontal: "left",
                   }}
                   keepMounted
                   transformOrigin={{
-                    vertical: 'top',
-                    horizontal: 'left',
+                    vertical: "top",
+                    horizontal: "left",
                   }}
                   open={Boolean(anchorElNav)}
                   onClose={handleCloseNavMenu}
                   sx={{
-                    display: { xs: 'block', md: 'none' },
+                    display: { xs: "block", md: "none" },
                   }}
                 >
                   {menuPages.map((page) => (
@@ -156,12 +154,12 @@ function ResponsiveAppBar({ lang, setLang, pages, menuPages }) {
                   ))}
                 </Menu>
               </Box>
-              <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+              <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
                 {pages.map((page) => (
                   <Button
                     key={page.key}
                     onClick={handleCloseNavMenu}
-                    sx={{ display: 'block', color: (mode === "light") ? 'inherit' : undefined }}
+                    sx={{ display: "block", color: (mode === "light") ? "inherit" : undefined }}
                     component={NavLink}
                     to={page.route}
                   >
@@ -173,7 +171,7 @@ function ResponsiveAppBar({ lang, setLang, pages, menuPages }) {
                 <Tooltip title={t(`activate_${nextMode()}Mode`)}>
                   <IconButton
                     onClick={toggleMode}
-                    sx={{ color: (mode === "light") ? 'inherit' : theme.palette.primary.main }}
+                    sx={{ color: (mode === "light") ? "inherit" : theme.palette.primary.main }}
                   >
                     {theme.palette.mode === "dark" ? 
                       <LightModeOutlined /> :
@@ -188,17 +186,17 @@ function ResponsiveAppBar({ lang, setLang, pages, menuPages }) {
                   </IconButton>
                 </Tooltip>
                 <Menu
-                  sx={{ mt: '45px' }}
+                  sx={{ mt: "45px" }}
                   id="menu-appbar"
                   anchorEl={anchorElLang}
                   anchorOrigin={{
-                    vertical: 'top',
-                    horizontal: 'right',
+                    vertical: "top",
+                    horizontal: "right",
                   }}
                   keepMounted
                   transformOrigin={{
-                    vertical: 'top',
-                    horizontal: 'right',
+                    vertical: "top",
+                    horizontal: "right",
                   }}
                   open={Boolean(anchorElLang)}
                   onClose={handleCloseLangMenu}

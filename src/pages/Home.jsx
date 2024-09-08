@@ -1,22 +1,21 @@
-import { useEffect, useRef, useState } from "react";
-import { useTranslation, Trans } from "react-i18next";
-import { useTitle } from "../App";
-import { useMediaQuery, useTheme } from '@mui/material';
+import { useEffect, useRef, useState } from 'react';
+import { useTranslation, Trans } from 'react-i18next';
+import { useTitle } from '../App';
+import { useMediaQuery, useTheme, Tooltip } from '@mui/material';
 import { TypeAnimation } from 'react-type-animation';
-import { Tooltip } from '@mui/material';
 import IconButton from '@mui/material/IconButton';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import ProfilePic from '../assets/profile_pic.jpg';
-import useLocalStorage from 'use-local-storage';
-import { EASTER_EGG1 } from "../constants";
-import SimpleSnackbar from "../components/SimpleSnackbar";
-import MusicNoteIcon from '@mui/icons-material/MusicNote';
+import profilePic from '../assets/profile_pic.jpg';
 import Divider from '@mui/material/Divider';
 import Grid from '@mui/material/Grid';
 import SmallProjectCard from '../components/SmallProjectCard';
+import useLocalStorage from 'use-local-storage';
+import { EASTER_EGG1 } from '../constants';
+import SimpleSnackbar from '../components/SimpleSnackbar';
+import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import Realistic from 'react-canvas-confetti/dist/presets/realistic';
-import "./Home.css";
+import './Home.css';
 
 function useAppBarHeight() {
   const {
@@ -58,16 +57,17 @@ const useImageLoaded = (counterRef) => {
   return [imgRef, loaded, onLoad];
 }
 
+const projectKeys = [
+  "groupProjects.6",
+  "groupProjects.2",
+  "groupProjects.7"
+];
+
 function Home({lang}) {
   const { t } = useTranslation();
   useTitle(`${t("home")} | ${t("title")}`);
   const theme = useTheme();
 
-  const projectKeys = [
-    "groupProjects.6",
-    "groupProjects.2",
-    "groupProjects.7"
-  ];
   const projects = projectKeys.map(project => t(project, { returnObjects: true }));
 
   const [openSnackbar, setOpenSnackbar] = useState(false);
@@ -83,7 +83,7 @@ function Home({lang}) {
   const [foundEgg4] = useLocalStorage("foundEgg4", false);
   const [eggsCompleted, setEggsCompleted] = useLocalStorage("eggsCompleted", false);
 
-  const [profilePicSrc, setProfilePicSrc] = useState(ProfilePic);
+  const [profilePicSrc, setProfilePicSrc] = useState(profilePic);
   const [countEgg1, setCountEgg1] = useState(0);
   const counterRef = useRef();
   counterRef.current = countEgg1;
@@ -94,7 +94,7 @@ function Home({lang}) {
       if (newCount == 3)
         setProfilePicSrc(EASTER_EGG1.gifURL);
       else if (newCount == 4) {
-        setProfilePicSrc(ProfilePic);
+        setProfilePicSrc(profilePic);
         setFoundEgg1(true);
       }
 
@@ -111,14 +111,15 @@ function Home({lang}) {
   };
 
   return (
-    <main className="home d-flex" style={{ minHeight: `calc(100vh - ${useAppBarHeight()}px)`}}>
+    <main className="home d-flex" style={{ minHeight: `calc(100vh - ${useAppBarHeight()}px)` }}>
       <div className="container d-flex">
         <div className="d-flex top-container">
           <div>
             <h1>Marc Boakye</h1>
             <h2 className={reducedMotion ? "d-flex" : undefined}>
               {reducedMotion ? 
-                <>{t("home_position")} / <span>{t("home_position2")}</span></> :
+                <>{t("home_position")} / <span>{t("home_position2")}</span></>
+                :
                 <TypeAnimation
                   key={`typeAnimation-${lang}`}
                   sequence={[
@@ -146,7 +147,13 @@ function Home({lang}) {
               </Tooltip>
             </div>
           </div>
-          <img className="profile-pic" src={profilePicSrc} ref={imgRef} onLoad={!foundEgg1 || countEgg1 == 3 ? onLoad : undefined} onClick={!foundEgg1 || countEgg1 == 3 ? handleImgClick : undefined} />
+          <img
+            className="profile-pic"
+            src={profilePicSrc}
+            ref={imgRef} 
+            onLoad={!foundEgg1 || countEgg1 == 3 ? onLoad : undefined}
+            onClick={!foundEgg1 || countEgg1 == 3 ? handleImgClick : undefined}
+          />
           {(countEgg1 == 3 && !loaded) && <SimpleSnackbar duration={10000} message={t("home_loading")} /> }
           {(countEgg1 == 3 && loaded) &&
             <SimpleSnackbar
@@ -163,7 +170,7 @@ function Home({lang}) {
               }
             />}
         </div>
-        <Divider sx={{marginBottom: "0.5em"}}>{t("home_featuredProjects").toUpperCase()}</Divider>
+        <Divider>{t("home_featuredProjects").toUpperCase()}</Divider>
         <Grid container
           rowSpacing={{xs: 2, sm: 1}}
           columnSpacing={{xs: 0, sm: 2}}

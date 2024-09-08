@@ -4,25 +4,20 @@ import { initReactI18next } from "react-i18next";
 
 function getLang() {
   let lang = localStorage.getItem("i18nextLng");
-  if (lang != null) {
+  if (lang != null)
     lang = JSON.parse(lang);
-    if (lang == "ES" || lang == "CAT" || lang == "EN") {
-      if (lang != "ES")
-        document.documentElement.lang = lang.toLowerCase();
-
-      return lang;
-    }
-  }
   else {
+    lang = "";
     const userLang = navigator.language || navigator.userLanguage;
-    let lang = "";
     if (userLang.startsWith('ca') && userLang.includes("ES")) 
       lang = "CAT";
     else if (userLang.startsWith('es') || userLang.includes("ES"))
       lang = "ES";
     else
       lang = "EN";
+  }
 
+  if (lang == "ES" || lang == "CAT" || lang == "EN") {
     if (lang != "ES")
       document.documentElement.lang = lang.toLowerCase();
 

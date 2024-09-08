@@ -1,6 +1,5 @@
-import React from 'react';
-import { useTranslation, Trans } from "react-i18next";
-import { useTitle } from "../App";
+import { useTranslation, Trans } from 'react-i18next';
+import { useTitle } from '../App';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import reactLogo from '../assets/tech_logos/react.svg';
@@ -15,20 +14,20 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import { PORTFOLIOS_IDEAS, LINKS_NPM, OTHER_LINKS, YOUTUBE_VIDEOS, DOUBTS_PROBLEMS } from '../constants';
-import "./AboutPage.css";
+import './AboutPage.css';
 
 function AboutPage() {
   const { t } = useTranslation();
   useTitle(`${t("aboutPage")} | ${t("title")}`);
 
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   
   return (
     <main className="about-page container">
       <h2>{t("aboutPage_intro")}</h2>
       <p>
-        <Trans i18nKey="aboutPage_text1" /><br/>
+        <Trans i18nKey="aboutPage_text1" />
       </p>
       <div>
         <a href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">
@@ -39,9 +38,9 @@ function AboutPage() {
         </a>
       </div>
       <p>
-        <Trans i18nKey="aboutPage_text2" >MUI:<Link href="https://mui.com/material-ui/" target="_blank" rel="noopener noreferrer"/></Trans>
+        <Trans i18nKey="aboutPage_text2">MUI:<Link href="https://mui.com/material-ui/" target="_blank" rel="noopener noreferrer"/></Trans>
       </p>
-      <List sx={{ p: 0 }}>
+      <List className="p-0">
         {PORTFOLIOS_IDEAS.map((portfolioLink, i) =>
           <ListItem key={i}>
             <Link href={portfolioLink} target="_blank" rel="noopener noreferrer">{portfolioLink}</Link>
@@ -52,12 +51,14 @@ function AboutPage() {
       <h2>{t("aboutPage_repository")}</h2>
       <p>{t("aboutPage_text4")}</p>
       <div className="d-flex">
-        <GitHubIcon fontSize="large" sx={{ mr: 1 }} />
-        <Link href="https://github.com/marcbryan/marcbryan.github.io" target="_blank" rel="noopener noreferrer" style={{ alignSelf: "center" }}>{t("aboutPage_GitHubRepo")}</Link>      
+        <GitHubIcon fontSize="large" />
+        <Link href="https://github.com/marcbryan/marcbryan.github.io" target="_blank" rel="noopener noreferrer">{t("aboutPage_GitHubRepo")}</Link>      
       </div>
       <h2>{t("aboutPage_reasons")}</h2>
       <p>
-        <Trans i18nKey="aboutPage_text5" >Udemy course:<Link href="https://www.udemy.com/course/react-js-inicia-en-el-mundo-de-los-frameworks-de-javascript/" target="_blank" rel="noopener noreferrer" /></Trans><br/>
+        <Trans i18nKey="aboutPage_text5">
+          Udemy course:<Link href="https://www.udemy.com/course/react-js-inicia-en-el-mundo-de-los-frameworks-de-javascript/" target="_blank" rel="noopener noreferrer" />
+        </Trans>
       </p>
       <p>{t("aboutPage_text6")}</p>
       <h2>{t("aboutPage_resources")}</h2>
@@ -96,7 +97,7 @@ function AboutPage() {
             <Typography>{t("aboutPage_otherLinks")}</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <List sx={{ p: 0 }}>
+            <List className="p-0">
               {OTHER_LINKS.map((link, i) =>
                 <ListItem key={i}>
                   <Link href={link} target="_blank" rel="noopener noreferrer">{link}</Link>
@@ -114,7 +115,7 @@ function AboutPage() {
             <Typography>{t("aboutPage_YouTubeVideos")}</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <List sx={{ p: 0 }}>
+            <List className="p-0">
               {YOUTUBE_VIDEOS.map((link, i) =>
                 <ListItem key={i}>
                   <Link href={link} target="_blank" rel="noopener noreferrer">{link}</Link>
@@ -136,7 +137,7 @@ function AboutPage() {
             <Typography>{t("aboutPage_problems_links")}</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <List sx={{ p: 0 }}>
+            <List className="p-0">
               {DOUBTS_PROBLEMS.map((link, i) =>
                 <ListItem key={i}>
                   <Link href={link} target="_blank" rel="noopener noreferrer">{link}</Link>

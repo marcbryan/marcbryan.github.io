@@ -1,4 +1,3 @@
-import React from 'react';
 import { useState } from 'react';
 import Snackbar from '@mui/material/Snackbar';
 import IconButton from '@mui/material/IconButton';
@@ -8,7 +7,7 @@ export default function SimpleSnackbar({duration, message, setEggsCompleted, cla
   const [open, setOpen] = useState(true);
 
   const handleClose = (event, reason) => {
-    if (reason === 'clickaway')
+    if (reason === "clickaway")
       return;
 
     setOpen(false);

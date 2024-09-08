@@ -1,4 +1,4 @@
-import * as React from 'react';
+import { useRef, useState } from 'react';
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
@@ -8,18 +8,14 @@ import Paper from '@mui/material/Paper';
 import Popper from '@mui/material/Popper';
 import MenuItem from '@mui/material/MenuItem';
 import MenuList from '@mui/material/MenuList';
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 export default function SplitButton({options}) {
-  const [open, setOpen] = React.useState(false);
-  const anchorRef = React.useRef(null);
-  const [selectedIndex, setSelectedIndex] = React.useState(0);
+  const [open, setOpen] = useState(false);
+  const anchorRef = useRef(null);
+  const [selectedIndex, setSelectedIndex] = useState(0);
 
   const { t } = useTranslation();
-
-  const handleClick = () => {
-    //console.info(`You clicked ${options[selectedIndex].name}`);
-  };
 
   const handleMenuItemClick = (event, index) => {
     setSelectedIndex(index);
@@ -47,7 +43,6 @@ export default function SplitButton({options}) {
         aria-label={t("portfolio_buttonGroup_ariaLabel")}
       >
         <Button
-          onClick={handleClick}
           href={options[selectedIndex].repository}
           target="_blank"
           component="a"
@@ -56,8 +51,8 @@ export default function SplitButton({options}) {
         </Button>
         <Button
           size="small"
-          aria-controls={open ? 'split-button-menu' : undefined}
-          aria-expanded={open ? 'true' : undefined}
+          aria-controls={open ? "split-button-menu" : undefined}
+          aria-expanded={open ? "true" : undefined}
           aria-label={t("portfolio_arrowButton_ariaLabel")}
           aria-haspopup="menu"
           onClick={handleToggle}
@@ -80,7 +75,7 @@ export default function SplitButton({options}) {
             {...TransitionProps}
             style={{
               transformOrigin:
-                placement === 'bottom' ? 'center top' : 'center bottom',
+                placement === "bottom" ? "center top" : "center bottom",
             }}
           >
             <Paper>

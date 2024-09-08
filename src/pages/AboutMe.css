@@ -58,9 +58,11 @@ main.about-me .lang-div span.fi {
   margin-right: 0.25rem;
 }
 
-main.about-me > .swiper-hobbies {
+main.about-me > .swiper.swiper-hobbies {
   margin: 0;
   z-index: 0;
+  --swiper-pagination-color: white;
+  --swiper-pagination-bullet-inactive-color: white;
 }
 
 main.about-me > .swiper-hobbies, main.about-me > .swiper-hobbies .swiper-slide > img {

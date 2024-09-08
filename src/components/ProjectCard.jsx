@@ -1,4 +1,3 @@
-import React from 'react';
 import { useState } from 'react';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -12,29 +11,30 @@ import Tooltip from '@mui/material/Tooltip';
 import Link from '@mui/material/Link';
 import { t } from 'i18next';
 import { Trans } from 'react-i18next';
-import GitHubUniverse from '../assets/github_universe.png';
+import githubUniverse from '../assets/github_universe.png';
 import SplitButton from './SplitButton';
 import Scroller from './Scroller';
-import LinkTooltip from "../components/LinkTooltip";
-import TextTooltip from "../components/TextTooltip";
+import LinkTooltip from '../components/LinkTooltip';
+import TextTooltip from '../components/TextTooltip';
 import { FRONTEND } from '../constants';
 import Lightbox from 'yet-another-react-lightbox';
 import Zoom from 'yet-another-react-lightbox/plugins/zoom';
-import Counter from "yet-another-react-lightbox/plugins/counter";
+import Counter from 'yet-another-react-lightbox/plugins/counter';
 import 'yet-another-react-lightbox/styles.css';
-import "yet-another-react-lightbox/plugins/counter.css";
+import 'yet-another-react-lightbox/plugins/counter.css';
 import './ProjectCard.css';
 
 let isHTML = RegExp.prototype.test.bind(/(<([^>]+)>)/i);
 
 function Type({project, isMobile}) {
   return (
-    project.type.map((type, typeIndex) => (
+    project.type.map((type, i) => (
       isMobile ?
-        <Tooltip key={typeIndex} title={type}>
+        <Tooltip key={i} title={type}>
           <Chip label={type == FRONTEND ? "Front" : "Back"} color={type == FRONTEND ? "primary" : "secondary"} />
-        </Tooltip> :
-        <Chip key={typeIndex} label={type} color={type == FRONTEND ? "primary" : "secondary"} />
+        </Tooltip>
+        :
+        <Chip key={i} label={type} color={type == FRONTEND ? "primary" : "secondary"} />
     )) 
   )
 }
@@ -106,31 +106,31 @@ function Tags({project, isMobileM}) {
   if (length > 4 || (length > 4 && isMobileM)) {
     return (
       <Scroller>
-        {project.tags.map((tag, tagIndex) => (
-          <Chip key={tagIndex} label={tag} color="primary" />
+        {project.tags.map((tag, i) => (
+          <Chip key={i} label={tag} color="primary" />
         ))}
       </Scroller>
     )
   }
   else {
     return (
-      <div className="d-flex">
-        {project.tags.map((tag, tagIndex) => (
-          <Chip key={tagIndex} label={tag} color="primary" sx={tagIndex === (project.tags.length - 1) ? undefined : { mr: 0.5 }} />
+      <div className="d-flex project-tags">
+        {project.tags.map((tag, i) => (
+          <Chip key={i} label={tag} color="primary" />
         ))}
       </div>
     )
   }
 }
 
-function Actions({project, t}) {
+function Actions({project}) {
   return (
-    <CardActions sx={{ marginTop: "auto" }}>
-      <ActionButtons project={project} t={t} />
+    <CardActions>
+      <ActionButtons project={project} />
       {(project.numPersons != null) &&
         <Tooltip title={t("portfolio_numPersons")}>
           <div className="d-flex project-persons">
-            <GroupIcon sx={{ mr: 0.5 }} />
+            <GroupIcon />
             <span>{project.numPersons}</span>
           </div>
         </Tooltip>}
@@ -138,7 +138,7 @@ function Actions({project, t}) {
   )
 }
 
-function ActionButtons({project, t}) {
+function ActionButtons({project}) {
   if (project.moreInfo != null) {
     let moreInfo = null;
     if (project.moreInfo.includes("</a>")) {
@@ -157,7 +157,7 @@ function ActionButtons({project, t}) {
         <>
           <RepositoryButton project={project} />
           <Tooltip disableFocusListener title={moreInfo != null ? moreInfo : project.moreInfo}>
-            <Button size="small" sx={{ cursor: "initial" }}>{t("portfolio_knowMore")}</Button>
+            <Button className="knowMore-btn" size="small">{t("portfolio_knowMore")}</Button>
           </Tooltip>
           <Tooltip disableFocusListener title={t("portfolio_seeProject")}>
             <Button size="small" href={project.webURL} target="_blank" rel="noopener noreferrer">Web</Button>
@@ -170,7 +170,7 @@ function ActionButtons({project, t}) {
         <>
           <RepositoryButton project={project} />
           <Tooltip disableFocusListener title={moreInfo != null ? moreInfo : project.moreInfo}>
-            <Button size="small" sx={{ cursor: "initial" }}>{t("portfolio_knowMore")}</Button>
+            <Button className="knowMore-btn" size="small">{t("portfolio_knowMore")}</Button>
           </Tooltip>
         </>
       )
@@ -195,8 +195,8 @@ function ActionButtons({project, t}) {
 function RepositoryButton({project}) {
   if (Array.isArray(project.repository)) {
     let repositories = [];
-    project.repository.forEach((repo, index) => {
-      repositories.push({name: "Repo "+(index + 1), repository: repo})
+    project.repository.forEach((repo, i) => {
+      repositories.push({name: "Repo "+(i + 1), repository: repo})
     });
     return <SplitButton options={repositories} />
   }
@@ -208,16 +208,13 @@ export default function ProjectCard({project, isMobile, isMobileM}) {
   const [open, setOpen] = useState(false);
 
   return (
-    <Card
-      className={`project-card d-flex prevent-select${project.status != null ? " pending-project" : ""}`}
-      sx={{ maxWidth: "345px", flexDirection: "column", height: "100%", cursor: "default" }}
-    >
-      {project.imagesFolder != null && project.imagesExt != null ?
+    <Card className={`project-card d-flex prevent-select${project.status != null ? " pending-project" : ""}`}>
+      {(project.imagesFolder != null && project.imagesExt != null) ?
         <>
           <Tooltip title={ project.imagesExt.length > 1 ? t("portfolio_viewImages") : t("portfolio_viewImage") }>
             <CardMedia
               component="img"
-              sx={{ height: 140, cursor: "pointer", ...project.objectPosition != null && { objectPosition: project.objectPosition } }}
+              sx={ project.objectPosition != null ? { objectPosition: project.objectPosition } : undefined }
               image={`/src/assets/projects/${project.imagesFolder}/img1.${project.imagesExt[0]}`}
               onClick={() => setOpen(true)}
             />
@@ -236,14 +233,13 @@ export default function ProjectCard({project, isMobile, isMobileM}) {
               buttonPrev: project.imagesExt.length <= 1 ? () => null : undefined,
               buttonNext: project.imagesExt.length <= 1 ? () => null : undefined,
             }}
-            styles={{ root: { "--yarl__color_backdrop": "rgba(0, 0, 0, .9)" }}}
           />
         </>
         :
-        <CardMedia component="img" sx={{ height: 140 }} image={GitHubUniverse} />}
+        <CardMedia component="img" image={githubUniverse} />}
       <CardContent>
         <div className="d-flex">
-          <Typography gutterBottom variant="h5" component="div" sx={{ mr: "0.25rem" }}>
+          <Typography gutterBottom variant="h5" component="div">
             {project.name}
           </Typography>
           {project.type.length > 0 &&
@@ -252,15 +248,15 @@ export default function ProjectCard({project, isMobile, isMobileM}) {
             </div>}
           {(project.status != null && project.type.length == 0) && 
             <div className="d-flex project-status">
-              <Chip label={project.status.text} color={project.status.id == 1 ? "warning" : project.status.id == 2 ? "success" : undefined } />
+              <Chip label={project.status.text} color={project.status.id == 1 ? "warning" : (project.status.id == 2 ? "success" : undefined) } />
             </div>}
         </div>
-        <Typography variant="body2" color="text.secondary" sx={{ marginBottom: "0.35em" }}>
+        <Typography variant="body2" color="text.secondary">
           <Description project={project}></Description>
         </Typography>
         <Tags project={project} isMobileM={isMobileM} />
       </CardContent>
-      <Actions project={project} t={t} />
+      <Actions project={project} />
     </Card>
   );
 }

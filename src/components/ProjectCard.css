@@ -1,26 +1,54 @@
-.project-card .project-type, .project-card .project-status {
+div.project-card {
+  max-width: 345px;
+  flex-direction: column;
+  height: 100%;
+  cursor: default;
+}
+
+div.project-card > img.MuiCardMedia-root {
+  height: 140px;
+  cursor: pointer;
+}
+
+div.project-card > .MuiCardContent-root > .MuiTypography-body2 {
+  margin-bottom: 0.35em;
+}
+
+div.project-card .project-type, div.project-card .project-status {
   flex-direction: row;
   margin-left: auto;
 }
 
-.project-card .project-type > div:first-child, .project-card .project-status > div:first-child {
+div.project-card > .MuiCardContent-root .MuiTypography-h5,
+div.project-card > .MuiCardContent-root > .project-tags > .MuiChip-root:not(:last-child),
+div.project-card .project-type > div:first-child,
+div.project-card .project-status > div:first-child,
+div.project-card .project-persons > .MuiSvgIcon-root {
   margin-right: 4px;
 }
 
-.project-card .project-type > div:only-child, .project-card .project-status > div:only-child {
+div.project-card .project-type > div:only-child, div.project-card .project-status > div:only-child {
   margin-right: 0;
 }
 
-.project-card .project-persons {
-  margin-left: auto!important;
+div.project-card > .MuiCardActions-root {
+  margin-top: auto;
+}
+
+div.project-card > .MuiCardActions-root > button.knowMore-btn {
+  cursor: default;
+}
+
+div.project-card .project-persons {
+  margin-left: auto;
   margin-right: 8px;
 }
 
-.pending-project {
+div.pending-project {
   pointer-events: none;
 }
 
-.pending-project .project-persons, .pending-project .MuiCardContent-root a {
+div.pending-project .project-persons, div.pending-project .MuiCardContent-root a {
   pointer-events: auto;
 }
 
