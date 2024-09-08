@@ -59,13 +59,13 @@ En escritorio salen cuando haces hover (pasar el ratón por encima).
 - Si haces hover sobre el botón (i) del *Bootcamp Programador .NET*, se muestra la insignia que conseguí cuando terminé el Bootcamp.
 - Si haces **click y arrastras hacia un lado** puedes cambiar de slide de las aficiones. En móvil puedes deslizar con el dedo. (Gracias al componente [Swiper](https://swiperjs.com/)).
 
-## Página *Portfolio*
+### Página *Portfolio*
 
 - Si pulsas sobre la imagen del proyecto, podrás ver todas las imágenes del proyecto en el [Lightbox](https://yet-another-react-lightbox.com/). Funciona igual que las slides de Swiper. 
 - Lo mismo que en la página anterior, si haces click y arrastras hacia un lado puedes cambiar de slide. En móvil lo mismo de antes.
 - Si haces hover sobre el botón "Conoce más", se muestra más información sobre el proyecto.
 
-## Página *Sobre esta página*
+### Página *Sobre esta página*
 
 Nada que apuntar.
 
