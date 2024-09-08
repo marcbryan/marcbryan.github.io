@@ -145,7 +145,7 @@ function ActionButtons({project, t}) {
       moreInfo = (
         <Trans 
           i18nKey={project}
-          components={{ a: <a target="_blank" rel="noopener noreferrer" className="tooltip-link" /> }}
+          components={{ a: <Link target="_blank" rel="noopener noreferrer" className="tooltip-link" /> }}
         >
           {project.moreInfo}
         </Trans>

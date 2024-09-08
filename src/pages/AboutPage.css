@@ -2,7 +2,7 @@ main.about-page > h2 {
   margin-top: 1rem;
 }
 
-main.about-page > h2:first-of-type, main.about-page > h2 + p {
+main.about-page > h2:first-of-type, main.about-page > h2 + p, main.about-page > p:nth-of-type(2) {
   margin-top: 0;
 }
 
@@ -10,13 +10,16 @@ main.about-page > p:nth-of-type(1) {
   margin-bottom: 0;
 }
 
-main.about-page > p:nth-of-type(2) {
-  margin-top: 0;
+main.about-page > p:nth-of-type(2), main.about-page > p:nth-last-of-type(4) {
   margin-bottom: 0.5em;
 }
 
-main.about-page > p:nth-last-of-type(4) {
-  margin-bottom: 0.5em;
+main.about-page ul > li > a {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 main.about-page .logo {
@@ -44,15 +47,5 @@ main.about-page .logo.react:hover {
 @media (prefers-reduced-motion: no-preference) {
   main.about-page .react.logo {
     animation: logo-spin infinite 20s linear;
-  }
-}
-
-@media (max-width: 599px) {
-  main.about-page ul > li > a {
-    display: block;
-    max-width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
   }
 }

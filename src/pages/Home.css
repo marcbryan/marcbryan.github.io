@@ -56,7 +56,7 @@ main.home .MuiSnackbar-root.initial-message .MuiSnackbarContent-root {
 }
 
 @media (max-width: 599px) {
-  main.home .featured-projects .MuiPaper-root {
+  main.home .featured-projects .MuiCard-root {
     margin-left: auto;
     margin-right: auto;
   }

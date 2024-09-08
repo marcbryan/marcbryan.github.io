@@ -24,11 +24,7 @@
   pointer-events: auto;
 }
 
-.tooltip-link {
+a.tooltip-link {
   color: blue;
-  opacity: 0.8;
-}
-
-.tooltip-link:hover {
-  opacity: initial;
+  text-decoration-color: rgba(0, 0, 255, 0.4);
 }
