@@ -250,7 +250,10 @@ export const DOUBTS_PROBLEMS = [
   "https://stackoverflow.com/a/71172009",
   "https://www.w3schools.com/howto/howto_css_disable_text_selection.asp",
   "https://www.reddit.com/r/learnjavascript/comments/5ns7hq/constants_can_be_declared_with_uppercase_or/",
-  "https://stackoverflow.com/a/69872699"
+  "https://stackoverflow.com/a/69872699",
+  "https://stackoverflow.com/a/21701048",
+  "https://stackoverflow.com/a/25975282",
+  "https://stackoverflow.com/a/54655508"
 ];
 
 export const EASTER_EGG1 = {

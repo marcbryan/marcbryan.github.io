@@ -8,6 +8,10 @@ main.home .top-container {
   gap: 64px;
 }
 
+main.home .top-container > div {
+  flex-grow: 1;
+}
+
 main.home .top-container h1 {
   margin-bottom: 0.75rem;
 }
@@ -34,6 +38,11 @@ main.home .MuiSnackbar-root.initial-message .MuiSnackbarContent-root {
   flex-wrap: nowrap;
 }
 
+/* Safari 7.1+ */
+_::-webkit-full-page-media, _:future, main.home div.featured-projects div.MuiCard-root {
+  max-width: 270px;
+}
+
 @media (max-width: 849px) {
   main.home .top-container {
     gap: 32px;
@@ -55,9 +64,10 @@ main.home .MuiSnackbar-root.initial-message .MuiSnackbarContent-root {
 }
 
 @media (max-width: 599px) {
-  main.home .featured-projects .MuiCard-root {
+  main.home div.featured-projects div.MuiCard-root {
     margin-left: auto;
     margin-right: auto;
+    max-width: 345px;
   }
 }
 

@@ -41,6 +41,11 @@ main.portfolio > .swiper > .swiper-pagination {
   transform: translateX(-50%);
 }
 
+/* Safari 7.1+ */
+_::-webkit-full-page-media, _:future, main.portfolio > .swiper > .swiper-pagination {
+  min-width: 250px;
+}
+
 @media (max-width: 1023px) {
   main.portfolio > .swiper-projects, main.portfolio > .swiper-gp {
     max-width: 710px;

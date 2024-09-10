@@ -78,3 +78,9 @@ body.mode-dark .swiper {
   --swiper-pagination-color: #90caf9;
   --swiper-pagination-bullet-inactive-color: white;
 }
+
+
+/* Safari 7.1+ */
+_::-webkit-full-page-media, _:future, :root div.MuiToolbar-root a {
+  -webkit-font-smoothing: subpixel-antialiased;
+}

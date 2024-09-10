@@ -26,10 +26,11 @@ export default function QuestionaryDialog({questionObj, handlerFoundEgg, handler
 
   // trigger on component mount
   useEffect(() => {
-    handlerOpen(open);
-  });
+    handlerOpen(true);
+  }, []);
 
   const handleClose = () => {
+    handlerOpen(false);
     setOpen(false);
   };
 
