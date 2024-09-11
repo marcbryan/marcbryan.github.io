@@ -69,7 +69,7 @@
   "questionary_selectOption": "Selecciona una opción",
   "questionary_close": "Cerrar",
   "questionary_check": "Comprobar",
-  "eggsInitialMessage": "Hay 4 Easter Eggs en todo mi portfolio, trata de encontrarlos!",
+  "eggsInitialMessage": "Hay 4 Easter Eggs en todo mi portfolio, ¡trata de encontrarlos!",
   "eggsCompleted": "¡Has encontrado todos los Easter Eggs!<0/><1>¡Felicidades!</1> <2/>",
   "academicTraining": [
     {
@@ -154,7 +154,7 @@
       "objectPosition": "left"
     },
     {
-      "name": "AppHosital",
+      "name": "AppHospital",
       "description": "Aplicación de gestión de un hospital con Windows Forms.",
       "type": [],
       "tags": [".NET", "C#", "Windows Forms"],

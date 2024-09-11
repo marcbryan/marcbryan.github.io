@@ -151,7 +151,7 @@
       "objectPosition": "left"
     },
     {
-      "name": "HositalApp",
+      "name": "HospitalApp",
       "description": "Hospital management application with Windows Forms.",
       "type": [],
       "tags": [".NET", "C#", "Windows Forms"],
@@ -262,7 +262,7 @@
     },
     {
       "name": "AJAX Kahoot",
-      "description": "Project that I did in <Tooltip title='{{DAW_name}} {{CFGS_more}}' text='WAD'>WAD</Tooltip>, it's an application to make questionnaries like Kahoot.",
+      "description": "Project that I did in <Tooltip title='{{DAW_name}} {{CFGS_more}}' text='WAD'>WAD</Tooltip>, it's an application to make questionnaires like Kahoot.",
       "type": ["Frontend", "Backend"],
       "tags": ["PHP", "JS", "HTML", "CSS", "SQL"],
       "repository": "https://github.com/gooicoo/Ajax-Kahoot",
@@ -306,7 +306,7 @@
     },
     {
       "name": "SD Project",
-      "description": "Group project of the subject \"Software development project\". It's the last subject I have left. (Starting in october)",
+      "description": "Group project of the subject \"Software development project\". It's the last subject I have left. (Starting in October)",
       "status": {
         "id": 1,
         "text": "Pending"
@@ -324,7 +324,7 @@
       "title": "Easter Egg 2: My first language",
       "description": "You've found the Easter Egg 2!",
       "question": "What was the first programming language that I used?",
-      "reason": "When I had 12 years old I did an IT course and I used this language in a very basic way.",
+      "reason": "When I had 12 years old, I did an IT course and I used this language in a very basic way.",
       "maxWidthHelperTxt": "380px"
     },
     {

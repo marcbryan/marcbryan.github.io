@@ -47,7 +47,7 @@
   "portfolio_buttonGroup_ariaLabel": "Grup de botons amb un menú desplegable",
   "portfolio_arrowButton_ariaLabel": "Tria un repositori",
   "aboutPage_intro": "Introducció",
-  "aboutPage_text1": "Aquest pàgina està construïda amb <strong>Vite</strong> i <strong>React</strong> (JS). També he utilizat HTML i CSS.",
+  "aboutPage_text1": "Aquest pàgina està construïda amb <strong>Vite</strong> i <strong>React</strong> (JS). També he utilitzat HTML i CSS.",
   "aboutPage_text2": "Per al disseny he utilitzat els components de <strong>Material Design</strong> (<1>MUI a React</1>) i també he agafat idees dels següents portfolis:",
   "aboutPage_text3": "Totes les idees que se m'han acudit les he pogut desenvolupar.",
   "aboutPage_repository": "Repositori",
@@ -154,7 +154,7 @@
       "objectPosition": "left"
     },
     {
-      "name": "AppHosital",
+      "name": "AppHospital",
       "description": "Aplicació de gestió d'un hospital amb Windows Forms.",
       "type": [],
       "tags": [".NET", "C#", "Windows Forms"],
@@ -285,7 +285,7 @@
     },
     {
       "name": "ProyectoF",
-      "description": "Projecte final de <LinkTooltip title=\"{{DAW_name}}\" href='{{DAW_link}}' text='DAW'></LinkTooltip> (Grau Superior), és una aplicació per veure events i les entrades comprades a l'app Android.",
+      "description": "Projecte final de <LinkTooltip title=\"{{DAW_name}}\" href='{{DAW_link}}' text='DAW'></LinkTooltip> (Grau Superior), és una aplicació per veure esdeveniments i les entrades comprades a l'app Android.",
       "shortDescription": "Projecte final de DAW",
       "moreInfo": "Els meus dos companys es van encarregar de crear l'<a href='https://github.com/MarcMartinezM/Proyecto-Final-Proyecto-F'>app Android</a>, jo vaig desenvolupar la web i el backend, que servia per proveir les dades a l'app i a la web. El backend compta amb un generador de dades.",
       "type": ["Frontend", "Backend"],
