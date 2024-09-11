@@ -1,5 +1,5 @@
 # Marc's Portfolio
-[![es](https://img.shields.io/badge/lang-es-red.svg)](https://github.com/marcbryan/marcbryan.github.io/blob/master/README.md)
+[![es](https://img.shields.io/badge/lang-es-red.svg)](https://github.com/marcbryan/marcbryan.github.io/blob/master/README.md "Switch to Spanish")
 
 Welcome to my portfolio's repository. Here you will find all the code.
 
@@ -32,7 +32,9 @@ npm run dev # or "npm run host" if you want to try it on another device
 
 **/public/i18n** In this folder are the JSON files of the texts in the 3 languages. The config file it's in **/src/i18n.js**.
 
-**/src/assets** In this folder are all the images that I use on the portfolio.
+**/public/assets** In this folder are all the images that I use on the portfolio.
+
+**/src/assets** In this folder are the images that are used by the components.
 
 **/src/components** In this folder are all the components that I use on the portfolio.
 

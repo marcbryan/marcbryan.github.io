@@ -215,7 +215,7 @@ export default function ProjectCard({project, isMobile, isMobileM}) {
             <CardMedia
               component="img"
               sx={ project.objectPosition != null ? { objectPosition: project.objectPosition } : undefined }
-              image={`/src/assets/projects/${project.imagesFolder}/img1.${project.imagesExt[0]}`}
+              image={`/assets/projects/${project.imagesFolder}/img1.${project.imagesExt[0]}`}
               onClick={() => setOpen(true)}
             />
           </Tooltip>
@@ -225,7 +225,7 @@ export default function ProjectCard({project, isMobile, isMobileM}) {
             close={() => setOpen(false)}
             slides={
               project.imagesExt.map((ext, i) => {
-                return { src: `/src/assets/projects/${project.imagesFolder}/img${i+1}.${ext}` }
+                return { src: `/assets/projects/${project.imagesFolder}/img${i+1}.${ext}` }
               })
             }
             carousel={{ finite: project.imagesExt.length <= 1 }}

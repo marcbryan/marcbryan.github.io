@@ -80,14 +80,14 @@
       "school": "IES Esteve Terradas i Illa",
       "location": "Cornellá de Llobregat",
       "years": "2019 - 2020",
-      "src": "/src/assets/logos/esteve_terradas.png"
+      "src": "/assets/logos/esteve_terradas.png"
     },
     {
       "name": "Superior grade in Cross-Platform Application Development",
       "school": "IES Esteve Terradas i Illa",
       "location": "Cornellá de Llobregat",
       "years": "2017 - 2019",
-      "src": "/src/assets/logos/esteve_terradas.png"
+      "src": "/assets/logos/esteve_terradas.png"
     }
   ],
   "additionalTraining": [
@@ -102,8 +102,8 @@
         "Front End development",
         "ASP.NET"
       ],
-      "src": "/src/assets/logos/fundacion_esplai.png",
-      "badge": "/src/assets/csharp_badge.png"
+      "src": "/assets/logos/fundacion_esplai.png",
+      "badge": "/assets/csharp_badge.png"
     }
   ],
   "experience": [
@@ -117,7 +117,7 @@
         "Use of SQL database",
         "Work/coordination managed with Trello"
       ],
-      "src": "/src/assets/logos/tradEAsy.png"
+      "src": "/assets/logos/tradEAsy.png"
     },
     {
       "job": "Android Developer",

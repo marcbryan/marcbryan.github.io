@@ -15,7 +15,7 @@ export default function SmallProjectCard({project}) {
         <CardMedia
           component="img"
           sx={{ height: 140, ...project.objectPosition != null && { objectPosition: project.objectPosition } }}
-          image={project.imagesFolder != null && project.imagesExt != null ? `/src/assets/projects/${project.imagesFolder}/img1.${project.imagesExt[0]}` : githubUniverse}
+          image={project.imagesFolder != null && project.imagesExt != null ? `/assets/projects/${project.imagesFolder}/img1.${project.imagesExt[0]}` : githubUniverse}
           title={t("portfolio_projectImg")}
         />
         <CardContent>

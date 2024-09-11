@@ -171,12 +171,12 @@ function AboutMe() {
       <p>{t("aboutMe_text2")}</p>
       {isMobile ?
         <>
-          <img className="grades" src={`/src/assets/${t("aboutMe_gradesFile")}`} onClick={() => setOpenLightbox(true)} />
+          <img className="grades" src={`/assets/${t("aboutMe_gradesFile")}`} onClick={() => setOpenLightbox(true)} />
           <Lightbox
             plugins={[Zoom]}
             open={openLightbox}
             close={() => setOpenLightbox(false)}
-            slides={[{ src: `/src/assets/${t("aboutMe_gradesFile")}` }]}
+            slides={[{ src: `/assets/${t("aboutMe_gradesFile")}` }]}
             carousel={{ finite: true }}
             render={{
               buttonPrev: () => null,
@@ -185,7 +185,7 @@ function AboutMe() {
           />
         </>
         : 
-        <img className="grades" src={`/src/assets/${t("aboutMe_gradesFile")}`} />}
+        <img className="grades" src={`/assets/${t("aboutMe_gradesFile")}`} />}
       <p>{t("aboutMe_text3")}</p>
       <Scroller dataPause="true" onClick={!foundEgg2 ? () => setCountEgg2((countEgg2) => countEgg2 + 1) : undefined} style={{"--_gap": "0.5rem"}}>
         {TECHNOLOGIES.map((tech, i) => (

@@ -17,7 +17,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import SvgIcon from '@mui/material/SvgIcon';
-import Logo from '../assets/logo.svg?react';
+import logo from '../assets/logo.svg?react';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import { useTheme } from '@mui/material/styles';
@@ -114,7 +114,7 @@ function ResponsiveAppBar({ lang, setLang, pages, menuPages }) {
             <Toolbar disableGutters>
               <Tooltip title={t("home")}>
                 <IconButton color={(mode === "light") ? "inherit" : "primary"} sx={{ display: { xs: "none", md: "flex" } }} component={NavLink} to="/">
-                  <SvgIcon component={Logo} sx={{fontSize: 36}} inheritViewBox />
+                  <SvgIcon component={logo} sx={{fontSize: 36}} inheritViewBox />
                 </IconButton>
               </Tooltip>
 

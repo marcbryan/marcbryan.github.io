@@ -83,14 +83,14 @@
       "school": "IES Esteve Terradas i Illa",
       "location": "Cornellá de Llobregat",
       "years": "2019 - 2020",
-      "src": "/src/assets/logos/esteve_terradas.png"
+      "src": "/assets/logos/esteve_terradas.png"
     },
     {
       "name": "Grado Superior en Desarrollo de Aplicaciones Multiplataforma",
       "school": "IES Esteve Terradas i Illa",
       "location": "Cornellá de Llobregat",
       "years": "2017 - 2019",
-      "src": "/src/assets/logos/esteve_terradas.png"
+      "src": "/assets/logos/esteve_terradas.png"
     }
   ],
   "additionalTraining": [
@@ -105,8 +105,8 @@
         "Desarrollo Front End",
         "ASP.NET"
       ],
-      "src": "/src/assets/logos/fundacion_esplai.png",
-      "badge": "/src/assets/csharp_badge.png"
+      "src": "/assets/logos/fundacion_esplai.png",
+      "badge": "/assets/csharp_badge.png"
     }
   ],
   "experience": [
@@ -120,7 +120,7 @@
         "Uso de base de datos SQL",
         "Trabajo/coordinación gestionado con Trello"
       ],
-      "src": "/src/assets/logos/tradEAsy.png"
+      "src": "/assets/logos/tradEAsy.png"
     },
     {
       "job": "Desarrollador Android",
