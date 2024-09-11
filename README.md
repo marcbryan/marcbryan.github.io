@@ -1,4 +1,5 @@
 # Portfolio Marc
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](https://github.com/marcbryan/marcbryan.github.io/blob/master/README.en.md)
 
 ¡Bienvenid@ al repositorio de mi portfolio! Aquí encontrarás todo el código.
 
@@ -54,9 +55,9 @@ En escritorio salen cuando haces hover (pasar el ratón por encima).
 
 ### Página *Sobre mí*
 
-- En móvil si haces click sobre la imagen de las notas se abre el [Lightbox](https://yet-another-react-lightbox.com/) para verlas más grandes.
+- En móvil si pulsas sobre la imagen de las notas se abre el [Lightbox](https://yet-another-react-lightbox.com/) para verlas más grandes.
 - Si haces hover sobre el [Scroller](https://www.youtube.com/watch?v=iLmBy-HKIAw) se para la animación.
-- Si haces hover sobre el botón (i) del *Bootcamp Programador .NET*, se muestra la insignia que conseguí cuando terminé el Bootcamp.
+- Si haces hover sobre el botón ( i ) del *Bootcamp Programador .NET*, se muestra la insignia que conseguí cuando terminé el Bootcamp.
 - Si haces **click y arrastras hacia un lado** puedes cambiar de slide de las aficiones. En móvil puedes deslizar con el dedo. (Gracias al componente [Swiper](https://swiperjs.com/)).
 
 ### Página *Portfolio*
