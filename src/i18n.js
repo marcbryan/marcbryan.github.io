@@ -9,9 +9,9 @@ function getLang() {
   else {
     lang = "";
     const userLang = navigator.language || navigator.userLanguage;
-    if (userLang.startsWith('ca') && userLang.includes("ES")) 
+    if (userLang === "ca" | (userLang.startsWith("ca") && userLang.includes("ES"))) 
       lang = "CAT";
-    else if (userLang.startsWith('es') || userLang.includes("ES"))
+    else if (userLang.startsWith("es") || userLang.includes("ES"))
       lang = "ES";
     else
       lang = "EN";
