@@ -256,7 +256,8 @@ export const DOUBTS_PROBLEMS = [
   "https://stackoverflow.com/a/54655508",
   "https://github.com/orgs/community/discussions/31132#discussioncomment-3493798",
   "https://github.com/jonatasemidio/multilanguage-readme-pattern/blob/master/STEPS.md",
-  "https://stackoverflow.com/a/71729464"
+  "https://stackoverflow.com/a/71729464",
+  "https://blog.devgenius.io/how-to-deploy-your-vite-react-app-to-github-pages-with-and-without-react-router-b060d912b10e"
 ];
 
 export const EASTER_EGG1 = {
