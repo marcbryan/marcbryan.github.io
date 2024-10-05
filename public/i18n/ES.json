@@ -23,8 +23,8 @@
   "home_featuredProjects": "Proyectos destacados",
   "home_loading": "Cargando...",
   "aboutMe_summary": "Resumen",
-  "aboutMe_text1": "Soy Marc Boakye, Programador Full Stack ya que estudié <LinkTooltip title='{{DAM_name}}' href='{{DAM_link}}' text='DAM'></LinkTooltip> y <LinkTooltip title='{{DAW_name}}' href='{{DAW_link}}' text='DAW'></LinkTooltip>. Hice un 3x2, es decir, en tres años conseguí las dos titulaciones.<br/> Actualmente estoy estudiando Ingeniería Informática en la <Tooltip title='Universitat Oberta de Catalunya' text='UOC'></Tooltip>, elegí la rama de Ingeniería del Software. A final de septiembre empiezo mi último año, me queda una asignatura y el <Tooltip title='Trabajo de Fin de Grado' text='TFG'></Tooltip>. ¡Ya queda poco!",
-  "aboutMe_text2": "Este último semestre ha sido el que he sacado mis mejores notas:",
+  "aboutMe_text1": "Soy Marc Boakye, Programador Full Stack ya que estudié <LinkTooltip title='{{DAM_name}}' href='{{DAM_link}}' text='DAM'></LinkTooltip> y <LinkTooltip title='{{DAW_name}}' href='{{DAW_link}}' text='DAW'></LinkTooltip>. Hice un 3x2, es decir, en tres años conseguí las dos titulaciones.<br/> Actualmente estoy estudiando Ingeniería Informática en la <Tooltip title='Universitat Oberta de Catalunya' text='UOC'></Tooltip>, elegí la rama de Ingeniería del Software. Estoy en mi último año, me queda una asignatura y el <Tooltip title='Trabajo de Fin de Grado' text='TFG'></Tooltip>. ¡Ya queda poco!",
+  "aboutMe_text2": "El anterior semestre ha sido el que he sacado mis mejores notas:",
   "aboutMe_text3": "Tecnologías que he utilizado durante este tiempo:",
   "aboutMe_relevantLinks": "Enlaces de interés:",
   "aboutMe_academicTraining": "Formación académica",
@@ -223,7 +223,7 @@
   "groupProjects": [
     {
       "name": "Configurador de coches",
-      "description": "Proyecto que realicé en <LinkTooltip title='{{DAM_name}}' href='{{DAM_link}}' text='DAM'></LinkTooltip> (Grado Superior), es una aplicación para configurar un coche y comprarlo.",
+      "description": "Proyecto que realicé en <LinkTooltip title='{{DAM_name}}' href='{{DAM_link}}' text='DAM'></LinkTooltip>, es una aplicación para configurar un coche y comprarlo.",
       "moreInfo": "Es similar a lo que harías en una página de cualquier marca de coches.",
       "type": [],
       "tags": ["Java", "JavaFX", "XML"],
@@ -234,7 +234,7 @@
     },
     {
       "name": "Gestor Scrum",
-      "description": "Proyecto que realicé en <LinkTooltip title='{{DAM_name}}' href='{{DAM_link}}' text='DAM'></LinkTooltip> (Grado Superior), es una aplicación para gestionar las tareas como en un panel de Scrum.",
+      "description": "Proyecto que realicé en <LinkTooltip title='{{DAM_name}}' href='{{DAM_link}}' text='DAM'></LinkTooltip>, es una aplicación para gestionar las tareas como en un panel de Scrum.",
       "type": [],
       "tags": ["Java", "Hibernate", "JavaFX"],
       "repository": "https://github.com/marcbryan/Proyecto2_Scrum",
@@ -244,7 +244,7 @@
     },
     {
       "name": "SynergyET",
-      "description": "Proyecto final de <LinkTooltip title='{{DAM_name}}' href='{{DAM_link}}' text='DAM'></LinkTooltip> (Grado Superior), es una aplicación similar a Moodle pero en Android.",
+      "description": "Proyecto final de <LinkTooltip title='{{DAM_name}}' href='{{DAM_link}}' text='DAM'></LinkTooltip>, es una aplicación similar a Moodle pero en Android.",
       "shortDescription": "Proyecto final de DAM",
       "type": [],
       "tags": ["Java", "Android", "Firebase"],
@@ -255,7 +255,7 @@
     },
     {
       "name": "Terminal Fallout",
-      "description": "Proyecto que realicé en <LinkTooltip title='{{DAW_name}}' href='{{DAW_link}}' text='DAW'></LinkTooltip> (Grado Superior), es un juego parecido al terminal del juego Fallout.",
+      "description": "Proyecto que realicé en <LinkTooltip title='{{DAW_name}}' href='{{DAW_link}}' text='DAW'></LinkTooltip>, es un juego parecido al terminal del juego Fallout.",
       "type": ["Frontend"],
       "tags": ["PHP", "JS", "HTML", "CSS"],
       "repository": "https://github.com/davidencinamartinez/Terminal_Fallout",
@@ -265,7 +265,7 @@
     },
     {
       "name": "AJAX Kahoot",
-      "description": "Proyecto que realicé en <LinkTooltip title='{{DAW_name}}' href='{{DAW_link}}' text='DAW'></LinkTooltip> (Grado Superior), es una aplicación para hacer cuestionarios como Kahoot.",
+      "description": "Proyecto que realicé en <LinkTooltip title='{{DAW_name}}' href='{{DAW_link}}' text='DAW'></LinkTooltip>, es una aplicación para hacer cuestionarios como Kahoot.",
       "type": ["Frontend", "Backend"],
       "tags": ["PHP", "JS", "HTML", "CSS", "SQL"],
       "repository": "https://github.com/gooicoo/Ajax-Kahoot",
@@ -275,7 +275,7 @@
     },
     {
       "name": "Mensakas",
-      "description": "Proyecto que realicé en <LinkTooltip title='{{DAW_name}}' href='{{DAW_link}}' text='DAW'></LinkTooltip> (Grado Superior), es una aplicación para gestionar restaurantes y hacer pedidos (estilo Glovo).",
+      "description": "Proyecto que realicé en <LinkTooltip title='{{DAW_name}}' href='{{DAW_link}}' text='DAW'></LinkTooltip>, es una aplicación para gestionar restaurantes y hacer pedidos (estilo Glovo).",
       "type": ["Frontend", "Backend"],
       "tags": ["Laravel", "PHP", "HTML", "CSS", "JS"],
       "repository": "https://github.com/marcbryan/proyecto-mensakas",
@@ -285,7 +285,7 @@
     },
     {
       "name": "ProyectoF",
-      "description": "Proyecto final de <LinkTooltip title='{{DAW_name}}' href='{{DAW_link}}' text='DAW'></LinkTooltip> (Grado Superior), es una aplicación para ver eventos y las entradas compradas en la app Android.",
+      "description": "Proyecto final de <LinkTooltip title='{{DAW_name}}' href='{{DAW_link}}' text='DAW'></LinkTooltip>, es una aplicación para ver eventos y las entradas compradas en la app Android.",
       "shortDescription": "Proyecto final de DAW",
       "moreInfo": "Mis dos compañeros se encargaron de crear la <a href='https://github.com/MarcMartinezM/Proyecto-Final-Proyecto-F'>app Android</a>, yo desarrollé la web y el backend, que servía para proveer los datos a la app y a la web. El backend cuenta con un generador de datos.",
       "type": ["Frontend", "Backend"],
@@ -309,7 +309,7 @@
     },
     {
       "name": "Proyecto DS",
-      "description": "Proyecto en grupo de la asignatura \"<a href='https://apps.uoc.edu/PlaDocent/PlaDocent?Semestre=20241&SignatureCode=75.588&Context=3&Locale=es'>Proyecto de desarrollo del software</a>\". Es la última asignatura que me queda. (A partir de octubre)",
+      "description": "Proyecto en grupo de la asignatura \"<a href='https://apps.uoc.edu/PlaDocent/PlaDocent?Semestre=20241&SignatureCode=75.588&Context=3&Locale=es'>Proyecto de desarrollo del software</a>\". Es la última asignatura que me queda. (A partir de noviembre)",
       "status": {
         "id": 1,
         "text": "Pendiente"

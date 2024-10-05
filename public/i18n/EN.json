@@ -20,8 +20,8 @@
   "home_featuredProjects": "Featured projects",
   "home_loading": "Loading...",
   "aboutMe_summary": "Summary",
-  "aboutMe_text1": "I'm Marc Boakye, Full Stack Developer since I studied <Tooltip title='{{DAM_name}} {{CFGS_more}}' text='CPAD' bold='true'></Tooltip> and <Tooltip title='{{DAW_name}} {{CFGS_more}}' text='WAD' bold='true'></Tooltip>. I did a 3x2, that means that in three years I obtained both degrees.<br/> At the present, I'm studying Computer Engineering at <Tooltip title='Universitat Oberta de Catalunya' text='UOC'></Tooltip>, I chose the Software Engineering branch. At the end of September I will start my last year, I have one subject left and the Bachelor’s Thesis. The end is close!",
-  "aboutMe_text2": "This last semester has been the one where I have gotten my best grades:",
+  "aboutMe_text1": "I'm Marc Boakye, Full Stack Developer since I studied <Tooltip title='{{DAM_name}} {{CFGS_more}}' text='CPAD' bold='true'></Tooltip> and <Tooltip title='{{DAW_name}} {{CFGS_more}}' text='WAD' bold='true'></Tooltip>. I did a 3x2, that means that in three years I obtained both degrees.<br/> At the present, I'm studying Computer Engineering at <Tooltip title='Universitat Oberta de Catalunya' text='UOC'></Tooltip>, I chose the Software Engineering branch. I'm in my last year, I have one subject left and the Bachelor’s Thesis. The end is close!",
+  "aboutMe_text2": "The previous semester has been the one where I have gotten my best grades:",
   "aboutMe_text3": "Technologies that I used during this time:",
   "aboutMe_relevantLinks": "Relevant links:",
   "aboutMe_academicTraining": "Academic training",
@@ -306,7 +306,7 @@
     },
     {
       "name": "SD Project",
-      "description": "Group project of the subject \"Software development project\". It's the last subject I have left. (Starting in October)",
+      "description": "Group project of the subject \"Software development project\". It's the last subject I have left. (Starting in November)",
       "status": {
         "id": 1,
         "text": "Pending"
