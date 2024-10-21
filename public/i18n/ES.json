@@ -23,7 +23,7 @@
   "home_featuredProjects": "Proyectos destacados",
   "home_loading": "Cargando...",
   "aboutMe_summary": "Resumen",
-  "aboutMe_text1": "Soy Marc Boakye, Programador Full Stack ya que estudié <LinkTooltip title='{{DAM_name}}' href='{{DAM_link}}' text='DAM'></LinkTooltip> y <LinkTooltip title='{{DAW_name}}' href='{{DAW_link}}' text='DAW'></LinkTooltip>. Hice un 3x2, es decir, en tres años conseguí las dos titulaciones.<br/> Actualmente estoy estudiando Ingeniería Informática en la <Tooltip title='Universitat Oberta de Catalunya' text='UOC'></Tooltip>, elegí la rama de Ingeniería del Software. Estoy en mi último año, me queda una asignatura y el <Tooltip title='Trabajo de Fin de Grado' text='TFG'></Tooltip>. ¡Ya queda poco!",
+  "aboutMe_text1": "Soy Marc Boakye, Programador Full Stack ya que estudié <LinkTooltip title='{{DAM_name}}' href='{{DAM_link}}' text='DAM'></LinkTooltip> y <LinkTooltip title='{{DAW_name}}' href='{{DAW_link}}' text='DAW'></LinkTooltip>. Hice un 3x2, es decir, en tres años conseguí las dos titulaciones.<br/> Actualmente estoy estudiando Ingeniería Informática en la <Tooltip title='Universitat Oberta de Catalunya' text='UOC'></Tooltip>, elegí la rama de Ingeniería del Software. Estoy en mi último año, me queda una asignatura y el <Tooltip title='Trabajo de Fin de Grado' text='TFG'></Tooltip>. ¡Ya queda poco!<br/> Por otro lado, por las mañanas estoy haciendo una formación en knowmad mood que durará 3 meses y a finales de enero empezaré a trabajar.",
   "aboutMe_text2": "El anterior semestre ha sido el que he sacado mis mejores notas:",
   "aboutMe_text3": "Tecnologías que he utilizado durante este tiempo:",
   "aboutMe_relevantLinks": "Enlaces de interés:",
@@ -94,6 +94,23 @@
     }
   ],
   "additionalTraining": [
+    {
+      "name": "UgrowthXperience Professional - Junior School (3 meses)",
+      "school": "knowmad mood",
+      "location": "Remoto",
+      "years": "21 Octubre 2024 - 24 Enero 2025",
+      "details": [
+        "Java",
+        "Spring",
+        "Metodologías Agile",
+        "Salesforce",
+        "Mulesoft",
+        "Host",
+        "PL/1",
+        "SQL"
+      ],
+      "src": "/assets/logos/knowmad_mood.png"
+    },
     {
       "name": "Bootcamp Programador .NET (336 horas)",
       "school": "Fundación Esplai",
