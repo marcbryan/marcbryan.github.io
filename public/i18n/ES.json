@@ -13,17 +13,17 @@
   "scrollTop_ariaLabel": "Desplazarse hacia arriba",
   "DAM": "DAM",
   "DAM_name": "Desarrollo de aplicaciones multiplataforma",
-  "DAM_link": "https://todofp.es/que-estudiar/ciclos/informatica-comunicaciones/des-aplicaciones-multiplataforma.html",
+  "DAM_link": "https://todofp.es/que-estudiar/familias-profesionales/informatica-comunicaciones/des-aplicaciones-multiplataforma.html",
   "DAW": "DAW",
   "DAW_name": "Desarrollo de aplicaciones web",
-  "DAW_link": "https://todofp.es/que-estudiar/ciclos/informatica-comunicaciones/des-aplicaciones-web.html",
+  "DAW_link": "https://todofp.es/que-estudiar/familias-profesionales/informatica-comunicaciones/des-aplicaciones-web.html",
   "home_position": "Desarrollador Full Stack",
   "home_position2": "Futuro Ingeniero de Software",
   "home_aboutMe": "Estudiante de Ingeniería Informática en la Universitat Oberta de Catalunya. Muy motivado por aprender y crecer profesionalmente.",
   "home_featuredProjects": "Proyectos destacados",
   "home_loading": "Cargando...",
   "aboutMe_summary": "Resumen",
-  "aboutMe_text1": "Soy Marc Boakye, Programador Full Stack ya que estudié <LinkTooltip title='{{DAM_name}}' href='{{DAM_link}}' text='DAM'></LinkTooltip> y <LinkTooltip title='{{DAW_name}}' href='{{DAW_link}}' text='DAW'></LinkTooltip>. Hice un 3x2, es decir, en tres años conseguí las dos titulaciones.<br/> Actualmente estoy estudiando Ingeniería Informática en la <Tooltip title='Universitat Oberta de Catalunya' text='UOC'></Tooltip>, elegí la rama de Ingeniería del Software. Estoy en mi último año, me queda una asignatura y el <Tooltip title='Trabajo de Fin de Grado' text='TFG'></Tooltip>. ¡Ya queda poco!<br/> Por otro lado, por las mañanas estoy haciendo una formación en knowmad mood que durará 3 meses y a finales de enero empezaré a trabajar.",
+  "aboutMe_text1": "Soy Marc Boakye, Desarrollador Full Stack ya que estudié <LinkTooltip title='{{DAM_name}}' href='{{DAM_link}}' text='DAM'></LinkTooltip> y <LinkTooltip title='{{DAW_name}}' href='{{DAW_link}}' text='DAW'></LinkTooltip>. Hice un 3x2, es decir, en tres años conseguí las dos titulaciones.<br/> Actualmente, por las mañanas, estoy haciendo una formación en knowmad mood que durará 3 meses, y a finales de enero empezaré a trabajar.<br/> A su vez, estoy estudiando Ingeniería Informática en la <Tooltip title='Universitat Oberta de Catalunya' text='UOC'></Tooltip>, elegí la rama de Ingeniería del Software. Estoy en mi último año, me queda una asignatura y el <Tooltip title='Trabajo de Fin de Grado' text='TFG'></Tooltip>. ¡Ya queda poco!",
   "aboutMe_text2": "El anterior semestre ha sido el que he sacado mis mejores notas:",
   "aboutMe_text3": "Tecnologías que he utilizado durante este tiempo:",
   "aboutMe_relevantLinks": "Enlaces de interés:",
@@ -79,14 +79,14 @@
       "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAilBMVEV29P8ePpgGDYAAAH9hyOp07/9z7v9n1fAAAHomT5xy7P9y7f9z7f8YMpAAAHQAAG8jSJV18v918f9t4fkAAHVaut4aN5EgQpZdwuV39/9TrNYXMYojSptCiL0AAHAgQZFw5/wqV580a6woVKAUKoctXaNWstlMnss4c7IvY6ULGYARI4Y+gLkaN4ut4uclAAABdElEQVR4AV2PB3LEIAxFtQXjlRWxYHl77/X+1wsyHg/Jp/NUAQbD0dgUthxOABGrosJOhAA/zGNjrOOpp+CxJh8UYIUUofA4RChT75uZc26+8EQVReVwuXIiLOyaQKoqQdNCXAtvtnPhOVJMXhQKJXlO7E72Bg5rcXVReDwcADbMjfdjx8eF4xPQ8ixu7HF7KUvw2x1f6/rIu23TQjizW4SNE2YwloWjpLQtRIXjWNrwegb0q3LHvBuulrfec3zm3WoJgOTt/fG4W29izufSLKfi7I+42lCEZAKAN2RsKa9F3QylxItWHCGSTt3McyfyFnGPZQsROkRRxu4dM7tJDR1EIoVqguGwOj1Pt4NRaEMBlKsIABAKgivzB2vAvyJUhcaJfNcprI4ud+Lho9kVdkCNVMopNI/jFar0matSHHxhoM/zX9EL1Ct3xqq/KkxZe476Sk9Ib6xalleVPNPIhZg26D/yanVD6mFukhfUNxNZ9kLCX/gHKjY+ls/IAAAAAElFTkSuQmCC"
     },
     {
-      "name": "Grado Superior en Desarrollo de Aplicaciones Web",
+      "name": "CFGS Desarrollo de Aplicaciones Web",
       "school": "IES Esteve Terradas i Illa",
       "location": "Cornellá de Llobregat",
       "years": "2019 - 2020",
       "src": "/assets/logos/esteve_terradas.png"
     },
     {
-      "name": "Grado Superior en Desarrollo de Aplicaciones Multiplataforma",
+      "name": "CFGS Desarrollo de Aplicaciones Multiplataforma",
       "school": "IES Esteve Terradas i Illa",
       "location": "Cornellá de Llobregat",
       "years": "2017 - 2019",
@@ -100,11 +100,11 @@
       "location": "Remoto",
       "years": "21 Octubre 2024 - 24 Enero 2025",
       "details": [
-        "Java",
-        "Spring",
         "Metodologías Agile",
         "Salesforce",
         "Mulesoft",
+        "Java",
+        "Spring",
         "Host",
         "PL/1",
         "SQL"
@@ -326,16 +326,14 @@
     },
     {
       "name": "Proyecto DS",
-      "description": "Proyecto en grupo de la asignatura \"<a href='https://apps.uoc.edu/PlaDocent/PlaDocent?Semestre=20241&SignatureCode=75.588&Context=3&Locale=es'>Proyecto de desarrollo del software</a>\". Es la última asignatura que me queda. (A partir de noviembre)",
-      "status": {
-        "id": 1,
-        "text": "Pendiente"
-      },
+      "description": "Proyecto en grupo de la asignatura \"<a href='https://apps.uoc.edu/PlaDocent/PlaDocent?Semestre=20241&SignatureCode=75.588&Context=3&Locale=es'>Proyecto de desarrollo del software</a>\". Es la última asignatura que me queda.",
+      "status": 2,
       "type": [],
-      "tags": ["Java", "Spring", "Microservicios"],
-      "numPersons": "6 - 7"
+      "tags": ["Java", "Spring", "Vue.js", "Docker", "Microservicios", "JS", "HTML", "CSS"],
+      "numPersons": "6"
     }
   ],
+  "projectStatus": ["Pendiente", "En progreso"],
   "easterEggs": [
     {
       "text": "Pedro, Pedro, Pedro, Pedro, Pè!<1/><2/>¡Easter Egg 1 encontrado! <3/>"

@@ -248,7 +248,7 @@ export default function ProjectCard({project, isMobile, isMobileM}) {
             </div>}
           {(project.status != null && project.type.length == 0) && 
             <div className="d-flex project-status">
-              <Chip label={project.status.text} color={project.status.id == 1 ? "warning" : (project.status.id == 2 ? "success" : undefined) } />
+              <Chip label={t(`projectStatus.${project.status - 1}`)} color={project.status == 1 ? "warning" : (project.status == 2 ? "success" : undefined) } />
             </div>}
         </div>
         <Typography variant="body2" color="text.secondary">

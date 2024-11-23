@@ -23,7 +23,7 @@
   "home_featuredProjects": "Projectes destacats",
   "home_loading": "Carregant...",
   "aboutMe_summary": "Resum",
-  "aboutMe_text1": "Sóc Marc Boakye, Programador Full Stack ja que vaig estudiar <LinkTooltip title=\"{{DAM_name}}\" href='{{DAM_link}}' text='DAM'></LinkTooltip> i <LinkTooltip title=\"{{DAW_name}}\" href='{{DAW_link}}' text='DAW'></LinkTooltip>. Vaig fer un 3x2, és a dir, en tres anys vaig aconseguir les dues titulacions.<br/> Actualment estic estudiant Enginyeria Informàtica a la <Tooltip title='Universitat Oberta de Catalunya' text='UOC'></Tooltip>, he triat la branca d'Enginyeria del Software. Estic al meu últim any, em queda una assignatura i el <Tooltip title='Treball de Fi de Grau' text='TFG'></Tooltip>. Ja queda poc!<br/> Per altra banda, als matins estic fent una formació a knowmad mood que durarà 3 mesos i a finals de gener començaré a treballar.",
+  "aboutMe_text1": "Sóc Marc Boakye, Desenvolupador Full Stack ja que vaig estudiar <LinkTooltip title=\"{{DAM_name}}\" href='{{DAM_link}}' text='DAM'></LinkTooltip> i <LinkTooltip title=\"{{DAW_name}}\" href='{{DAW_link}}' text='DAW'></LinkTooltip>. Vaig fer un 3x2, és a dir, en tres anys vaig aconseguir les dues titulacions.<br/> Actualment, als matins, estic fent una formació a knowmad mood que durarà 3 mesos, i a finals de gener començaré a treballar.<br/> A la vegada, estic estudiant Enginyeria Informàtica a la <Tooltip title='Universitat Oberta de Catalunya' text='UOC'></Tooltip>, he triat la branca d'Enginyeria del Software. Estic al meu últim any, em queda una assignatura i el <Tooltip title='Treball de Fi de Grau' text='TFG'></Tooltip>. Ja queda poc!",
   "aboutMe_text2": "L'anterior semestre ha estat el que he tret les meves millors notes:",
   "aboutMe_text3": "Tecnologies que he utilitzat durant aquest temps:",
   "aboutMe_relevantLinks": "Enllaços d'interès:",
@@ -79,14 +79,14 @@
       "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAilBMVEV29P8ePpgGDYAAAH9hyOp07/9z7v9n1fAAAHomT5xy7P9y7f9z7f8YMpAAAHQAAG8jSJV18v918f9t4fkAAHVaut4aN5EgQpZdwuV39/9TrNYXMYojSptCiL0AAHAgQZFw5/wqV580a6woVKAUKoctXaNWstlMnss4c7IvY6ULGYARI4Y+gLkaN4ut4uclAAABdElEQVR4AV2PB3LEIAxFtQXjlRWxYHl77/X+1wsyHg/Jp/NUAQbD0dgUthxOABGrosJOhAA/zGNjrOOpp+CxJh8UYIUUofA4RChT75uZc26+8EQVReVwuXIiLOyaQKoqQdNCXAtvtnPhOVJMXhQKJXlO7E72Bg5rcXVReDwcADbMjfdjx8eF4xPQ8ixu7HF7KUvw2x1f6/rIu23TQjizW4SNE2YwloWjpLQtRIXjWNrwegb0q3LHvBuulrfec3zm3WoJgOTt/fG4W29izufSLKfi7I+42lCEZAKAN2RsKa9F3QylxItWHCGSTt3McyfyFnGPZQsROkRRxu4dM7tJDR1EIoVqguGwOj1Pt4NRaEMBlKsIABAKgivzB2vAvyJUhcaJfNcprI4ud+Lho9kVdkCNVMopNI/jFar0matSHHxhoM/zX9EL1Ct3xqq/KkxZe476Sk9Ib6xalleVPNPIhZg26D/yanVD6mFukhfUNxNZ9kLCX/gHKjY+ls/IAAAAAElFTkSuQmCC"
     },
     {
-      "name": "Grau Superior de Desenvolupament d'Aplicacions Web",
+      "name": "CFGS Desenvolupament d'Aplicacions Web",
       "school": "IES Esteve Terradas i Illa",
       "location": "Cornellà de Llobregat",
       "years": "2019 - 2020",
       "src": "/assets/logos/esteve_terradas.png"
     },
     {
-      "name": "Grau Superior de Desenvolupament d'Aplicacions Multiplataforma",
+      "name": "CFGS Desenvolupament d'Aplicacions Multiplataforma",
       "school": "IES Esteve Terradas i Illa",
       "location": "Cornellà de Llobregat",
       "years": "2017 - 2019",
@@ -100,11 +100,11 @@
       "location": "Remot",
       "years": "21 Octubre 2024 - 24 Gener 2025",
       "details": [
-        "Java",
-        "Spring",
         "Metodologies Agile",
         "Salesforce",
         "Mulesoft",
+        "Java",
+        "Spring",
         "Host",
         "PL/1",
         "SQL"
@@ -326,16 +326,14 @@
     },
     {
       "name": "Projecte DP",
-      "description": "Projecte en grup de l'assignatura \"<a href='https://apps.uoc.edu/PlaDocent/PlaDocent?Semestre=20241&SignatureCode=05.588&Context=3&Locale=ca'>Projecte de Desenvolupament del Programari</a>\". És l'última assignatura que em queda. (A partir d'novembre)",
-      "status": {
-        "id": 1,
-        "text": "Pendent"
-      },
+      "description": "Projecte en grup de l'assignatura \"<a href='https://apps.uoc.edu/PlaDocent/PlaDocent?Semestre=20241&SignatureCode=05.588&Context=3&Locale=ca'>Projecte de Desenvolupament del Programari</a>\". És l'última assignatura que em queda.",
+      "status": 2,
       "type": [],
-      "tags": ["Java", "Spring", "Microserveis"],
-      "numPersons": "6 - 7"
+      "tags": ["Java", "Spring", "Vue.js", "Docker", "Microserveis", "JS", "HTML", "CSS"],
+      "numPersons": "6"
     }
   ],
+  "projectStatus": ["Pendent", "En progrés"],
   "easterEggs": [
     {
       "text": "Pedro, Pedro, Pedro, Pedro, Pè!<1/><2/>Has trobat l'Easter Egg 1! <3/>"
