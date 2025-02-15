@@ -1,5 +1,7 @@
 import DotNet from '../assets/tech_logos/dot_net.svg?react';
 import SQLServer from '../assets/tech_logos/sqlserver.svg?react';
+import DaisyUI from '../assets/tech_logos/daisyui.svg?react';
+import SonarQube from '../assets/tech_logos/sonarqube.svg?react';
 
 export const LANGUAGES = [
   { lang: 'ES', code: 'es' },
@@ -106,6 +108,34 @@ export const TECHNOLOGIES = [
   {
     name: "TypeScript",
     tsIcon: "typescript"
+  },
+  {
+    name: "Vue.js",
+    tsIcon: "vuejs"
+  },
+  {
+    name: "Tailwind CSS",
+    tsIcon: "tailwindcss"
+  },
+  {
+    name: "daisyUI",
+    SVGComponent: DaisyUI
+  },
+  {
+    name: "Docker",
+    tsIcon: "docker"
+  },
+  {
+    name: "Cypress",
+    tsIcon: "cypress",
+    whiteInDarkMode: true,
+    darkModeClass: "cypress"
+  },
+  {
+    name: "SonarQube",
+    SVGComponent: SonarQube,
+    whiteInDarkMode: true,
+    darkModeClass: "sonarqube"
   },
   {
     name: "Android",

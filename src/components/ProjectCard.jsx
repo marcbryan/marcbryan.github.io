@@ -29,7 +29,7 @@ let isHTML = RegExp.prototype.test.bind(/(<([^>]+)>)/i);
 function Type({project, isMobile}) {
   return (
     project.type.map((type, i) => (
-      isMobile ?
+      isMobile || (project.type.length > 1 && project.name.length > 11) ?
         <Tooltip key={i} title={type}>
           <Chip label={type == FRONTEND ? "Front" : "Back"} color={type == FRONTEND ? "primary" : "secondary"} />
         </Tooltip>

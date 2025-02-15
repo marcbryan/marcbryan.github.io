@@ -39,6 +39,8 @@ function TechIcon({tech, mode}) {
     if (tech.whiteInDarkMode != null) {
       if (tech.tsIcon == "markdown")
         return <StackIcon name={tech.tsIcon} className={`tech-icon${isDark(mode, tech.whiteInDarkMode) ? " tech-icon-white tech-icon-md" : ""}`} />;
+      else if (tech.tsIcon == "cypress")
+        return <StackIcon name={tech.tsIcon} className={`tech-icon${isDark(mode, tech.whiteInDarkMode) ? " tech-icon-cypress" : ""}`} />;
       else
         return <StackIcon name={tech.tsIcon} className={`tech-icon${isDark(mode, tech.whiteInDarkMode) ? " tech-icon-white" : ""}`} />;
     }

@@ -23,8 +23,8 @@
   "home_featuredProjects": "Proyectos destacados",
   "home_loading": "Cargando...",
   "aboutMe_summary": "Resumen",
-  "aboutMe_text1": "Soy Marc Boakye, Desarrollador Full Stack ya que estudié <LinkTooltip title='{{DAM_name}}' href='{{DAM_link}}' text='DAM'></LinkTooltip> y <LinkTooltip title='{{DAW_name}}' href='{{DAW_link}}' text='DAW'></LinkTooltip>. Hice un 3x2, es decir, en tres años conseguí las dos titulaciones.<br/> Actualmente, por las mañanas, estoy haciendo una formación en knowmad mood que durará 3 meses, y a finales de enero empezaré a trabajar.<br/> A su vez, estoy estudiando Ingeniería Informática en la <Tooltip title='Universitat Oberta de Catalunya' text='UOC'></Tooltip>, elegí la rama de Ingeniería del Software. Estoy en mi último año, me queda una asignatura y el <Tooltip title='Trabajo de Fin de Grado' text='TFG'></Tooltip>. ¡Ya queda poco!",
-  "aboutMe_text2": "El anterior semestre ha sido el que he sacado mis mejores notas:",
+  "aboutMe_text1": "Soy Marc Boakye, Desarrollador Full Stack ya que estudié <LinkTooltip title='{{DAM_name}}' href='{{DAM_link}}' text='DAM'></LinkTooltip> y <LinkTooltip title='{{DAW_name}}' href='{{DAW_link}}' text='DAW'></LinkTooltip>. Hice un 3x2, es decir, en tres años conseguí las dos titulaciones.<br/> Actualmente estoy trabajando como Junior Software Developer en knowmad mood.<br/> A su vez, estoy estudiando Ingeniería Informática en la <Tooltip title='Universitat Oberta de Catalunya' text='UOC'></Tooltip>, elegí la rama de Ingeniería del Software. Estoy en mi último año, me queda el <Tooltip title='Trabajo de Fin de Grado' text='TFG'></Tooltip>. ¡Ya queda muy poco!",
+  "aboutMe_text2": "En el segundo semestre del tercer año saqué mis mejores notas:",
   "aboutMe_text3": "Tecnologías que he utilizado durante este tiempo:",
   "aboutMe_relevantLinks": "Enlaces de interés:",
   "aboutMe_academicTraining": "Formación académica",
@@ -98,7 +98,7 @@
       "name": "UgrowthXperience Professional - Junior School (3 meses)",
       "school": "knowmad mood",
       "location": "Remoto",
-      "years": "21 Octubre 2024 - 24 Enero 2025",
+      "years": "Octubre 2024 - Enero 2025",
       "details": [
         "Metodologías Agile",
         "Salesforce",
@@ -127,6 +127,16 @@
     }
   ],
   "experience": [
+    {
+      "job": "Junior Software Developer",
+      "company": "knowmad mood",
+      "years": "Enero 2025 - Actualidad",
+      "details": [
+        "Programación con Java",
+        "Uso de base de datos SQL"
+      ],
+      "src": "/assets/logos/knowmad_mood.png"
+    },
     {
       "job": "Desarrollador web",
       "company": "tradEAsy, S.L.",
@@ -325,11 +335,17 @@
       "numPersons": 4
     },
     {
-      "name": "Proyecto DS",
-      "description": "Proyecto en grupo de la asignatura \"<a href='https://apps.uoc.edu/PlaDocent/PlaDocent?Semestre=20241&SignatureCode=75.588&Context=3&Locale=es'>Proyecto de desarrollo del software</a>\". Es la última asignatura que me queda.",
-      "status": 2,
-      "type": [],
-      "tags": ["Java", "Spring", "Vue.js", "Docker", "Microservicios", "JS", "HTML", "CSS"],
+      "name": "Photo&Film4You",
+      "description": "Proyecto de la asignatura \"<a href='https://apps.uoc.edu/PlaDocent/PlaDocent?Semestre=20241&SignatureCode=75.588&Context=3&Locale=es'>Proyecto de desarrollo del software</a>\", es una aplicación para alquilar material fotográfico. La última asignatura que hice antes del TFG.",
+      "type": ["Frontend", "Backend"],
+      "tags": ["Java", "Spring", "Vue.js", "daisyUI", "Docker", "Microservicios", "JS", "HTML", "CSS", "Cypress", "SonarQube"],
+      "repository": [
+        "https://gitlab.com/marcbryan/epcsd-spring-2024-docker-compose",
+        "https://gitlab.com/marcbryan/epcsd-spring-2024-notification-solution",
+        "https://gitlab.com/marcbryan/epcsd-spring-2024-productcatalog-solution",
+        "https://gitlab.com/marcbryan/epcsd-spring-2024-user-solution",
+        "https://gitlab.com/marcbryan/photo_and_film_4_you_frontend"
+      ],
       "numPersons": "6"
     }
   ],

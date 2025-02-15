@@ -20,8 +20,8 @@
   "home_featuredProjects": "Featured projects",
   "home_loading": "Loading...",
   "aboutMe_summary": "Summary",
-  "aboutMe_text1": "I'm Marc Boakye, Full Stack Developer since I studied <Tooltip title='{{DAM_name}} {{CFGS_more}}' text='CPAD' bold='true'></Tooltip> and <Tooltip title='{{DAW_name}} {{CFGS_more}}' text='WAD' bold='true'></Tooltip>. I did a 3x2, that means that in three years I obtained both degrees.<br/> At the present, in the mornings, I'm doing training in knowmad mood that will last 3 months and at the end of January I will start working.<br/> At the same time, I'm studying Computer Engineering at <Tooltip title='Universitat Oberta de Catalunya' text='UOC'></Tooltip>, I chose the Software Engineering branch. I'm in my last year, I have one subject left and the Bachelor’s Thesis. The end is close!",
-  "aboutMe_text2": "The previous semester has been the one where I have gotten my best grades:",
+  "aboutMe_text1": "I'm Marc Boakye, Full Stack Developer since I studied <Tooltip title='{{DAM_name}} {{CFGS_more}}' text='CPAD' bold='true'></Tooltip> and <Tooltip title='{{DAW_name}} {{CFGS_more}}' text='WAD' bold='true'></Tooltip>. I did a 3x2, that means that in three years I obtained both degrees.<br/> At the present, I'm working as Junior Software Developer at knowmad mood.<br/> At the same time, I'm studying Computer Engineering at <Tooltip title='Universitat Oberta de Catalunya' text='UOC'></Tooltip>, I chose the Software Engineering branch. I'm in my last year, I still have the Bachelor’s Thesis to complete. The end is so close!",
+  "aboutMe_text2": "In the second semester of my third year I got my best grades:",
   "aboutMe_text3": "Technologies that I used during this time:",
   "aboutMe_relevantLinks": "Relevant links:",
   "aboutMe_academicTraining": "Academic training",
@@ -95,7 +95,7 @@
       "name": "UgrowthXperience Professional - Junior School (3 months)",
       "school": "knowmad mood",
       "location": "Remote",
-      "years": "21st October 2024 - 24th January 2025",
+      "years": "October 2024 - January 2025",
       "details": [
         "Agile framework",
         "Salesforce",
@@ -124,6 +124,16 @@
     }
   ],
   "experience": [
+    {
+      "job": "Junior Software Developer",
+      "company": "knowmad mood",
+      "years": "January 2025 - Present",
+      "details": [
+        "Coding with Java",
+        "Use of SQL database"
+      ],
+      "src": "/assets/logos/knowmad_mood.png"
+    },
     {
       "job": "Web Developer",
       "company": "tradEAsy, S.L.",
@@ -322,11 +332,17 @@
       "numPersons": 4
     },
     {
-      "name": "SD Project",
-      "description": "Group project of the subject \"Software development project\". It's the last subject I have left.",
-      "status": 2,
-      "type": [],
-      "tags": ["Java", "Spring", "Vue.js", "Docker", "Microservices", "JS", "HTML", "CSS"],
+      "name": "Photo&Film4You",
+      "description": "Project of the subject \"Software development project\", it's an application to rent photographic equipment. The last subject I did before the Bachelor's Thesis.",
+      "type": ["Frontend", "Backend"],
+      "tags": ["Java", "Spring", "Vue.js", "daisyUI", "Docker", "Microservices", "JS", "HTML", "CSS", "Cypress", "SonarQube"],
+      "repository": [
+        "https://gitlab.com/marcbryan/epcsd-spring-2024-docker-compose",
+        "https://gitlab.com/marcbryan/epcsd-spring-2024-notification-solution",
+        "https://gitlab.com/marcbryan/epcsd-spring-2024-productcatalog-solution",
+        "https://gitlab.com/marcbryan/epcsd-spring-2024-user-solution",
+        "https://gitlab.com/marcbryan/photo_and_film_4_you_frontend"
+      ],
       "numPersons": "6"
     }
   ],

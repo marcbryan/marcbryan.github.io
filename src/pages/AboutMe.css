@@ -23,7 +23,10 @@ main.about-me img.tech-icon {
 
 main.about-me .tech-icon-white > svg > path,
 main.about-me svg.tech-icon-dot-net > path:first-of-type,
-main.about-me svg.tech-icon-sqlserver > path:last-of-type {
+main.about-me svg.tech-icon-sqlserver > path:last-of-type,
+main.about-me .tech-icon-cypress > svg > path:nth-of-type(3),
+main.about-me .tech-icon-cypress > svg > path:nth-of-type(4),
+main.about-me svg.tech-icon-sonarqube > path:first-of-type {
   fill: white;
 }
 

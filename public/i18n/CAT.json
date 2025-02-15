@@ -23,8 +23,8 @@
   "home_featuredProjects": "Projectes destacats",
   "home_loading": "Carregant...",
   "aboutMe_summary": "Resum",
-  "aboutMe_text1": "Sóc Marc Boakye, Desenvolupador Full Stack ja que vaig estudiar <LinkTooltip title=\"{{DAM_name}}\" href='{{DAM_link}}' text='DAM'></LinkTooltip> i <LinkTooltip title=\"{{DAW_name}}\" href='{{DAW_link}}' text='DAW'></LinkTooltip>. Vaig fer un 3x2, és a dir, en tres anys vaig aconseguir les dues titulacions.<br/> Actualment, als matins, estic fent una formació a knowmad mood que durarà 3 mesos, i a finals de gener començaré a treballar.<br/> A la vegada, estic estudiant Enginyeria Informàtica a la <Tooltip title='Universitat Oberta de Catalunya' text='UOC'></Tooltip>, he triat la branca d'Enginyeria del Software. Estic al meu últim any, em queda una assignatura i el <Tooltip title='Treball de Fi de Grau' text='TFG'></Tooltip>. Ja queda poc!",
-  "aboutMe_text2": "L'anterior semestre ha estat el que he tret les meves millors notes:",
+  "aboutMe_text1": "Sóc Marc Boakye, Desenvolupador Full Stack ja que vaig estudiar <LinkTooltip title=\"{{DAM_name}}\" href='{{DAM_link}}' text='DAM'></LinkTooltip> i <LinkTooltip title=\"{{DAW_name}}\" href='{{DAW_link}}' text='DAW'></LinkTooltip>. Vaig fer un 3x2, és a dir, en tres anys vaig aconseguir les dues titulacions.<br/> Actualment, estic treballant com a Junior Software Developer a knowmad mood.<br/> A la vegada, estic estudiant Enginyeria Informàtica a la <Tooltip title='Universitat Oberta de Catalunya' text='UOC'></Tooltip>, vaig triar la branca d'Enginyeria del Software. Estic al meu últim any, em queda el <Tooltip title='Treball de Fi de Grau' text='TFG'></Tooltip>. Ja queda molt poc!",
+  "aboutMe_text2": "Al segon semestre del tercer any vaig treure les meves millors notes:",
   "aboutMe_text3": "Tecnologies que he utilitzat durant aquest temps:",
   "aboutMe_relevantLinks": "Enllaços d'interès:",
   "aboutMe_academicTraining": "Formació acadèmica",
@@ -98,7 +98,7 @@
       "name": "UgrowthXperience Professional - Junior School (3 mesos)",
       "school": "knowmad mood",
       "location": "Remot",
-      "years": "21 Octubre 2024 - 24 Gener 2025",
+      "years": "Octubre 2024 - Gener 2025",
       "details": [
         "Metodologies Agile",
         "Salesforce",
@@ -127,6 +127,16 @@
     }
   ],
   "experience": [
+    {
+      "job": "Junior Software Developer",
+      "company": "knowmad mood",
+      "years": "Gener 2025 - Actualitat",
+      "details": [
+        "Programació amb Java",
+        "Ús de base de dades SQL"
+      ],
+      "src": "/assets/logos/knowmad_mood.png"
+    },
     {
       "job": "Desenvolupador web",
       "company": "tradEAsy, S.L.",
@@ -325,11 +335,17 @@
       "numPersons": 4
     },
     {
-      "name": "Projecte DP",
-      "description": "Projecte en grup de l'assignatura \"<a href='https://apps.uoc.edu/PlaDocent/PlaDocent?Semestre=20241&SignatureCode=05.588&Context=3&Locale=ca'>Projecte de Desenvolupament del Programari</a>\". És l'última assignatura que em queda.",
-      "status": 2,
-      "type": [],
-      "tags": ["Java", "Spring", "Vue.js", "Docker", "Microserveis", "JS", "HTML", "CSS"],
+      "name": "Photo&Film4You",
+      "description": "Projecte de l'assignatura \"<a href='https://apps.uoc.edu/PlaDocent/PlaDocent?Semestre=20241&SignatureCode=05.588&Context=3&Locale=ca'>Projecte de Desenvolupament del Programari</a>\", és una aplicació per llogar material fotogràfic. L'última assignatura que vaig fer abans del TFG.",
+      "type": ["Frontend", "Backend"],
+      "tags": ["Java", "Spring", "Vue.js", "daisyUI", "Docker", "Microserveis", "JS", "HTML", "CSS", "Cypress", "SonarQube"],
+      "repository": [
+        "https://gitlab.com/marcbryan/epcsd-spring-2024-docker-compose",
+        "https://gitlab.com/marcbryan/epcsd-spring-2024-notification-solution",
+        "https://gitlab.com/marcbryan/epcsd-spring-2024-productcatalog-solution",
+        "https://gitlab.com/marcbryan/epcsd-spring-2024-user-solution",
+        "https://gitlab.com/marcbryan/photo_and_film_4_you_frontend"
+      ],
       "numPersons": "6"
     }
   ],
