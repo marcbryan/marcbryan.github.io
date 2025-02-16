@@ -245,6 +245,13 @@
       "imagesFolder": "prac_iscsd",
       "imagesExt": ["png", "png", "png", "png", "png"],
       "objectPosition": "left"
+    },
+    {
+      "name": "TFG",
+      "description": "Treball de fi de grau d'Enginyeria Informàtica. És una aplicació mòbil, però no dono més detalls. (Ho actualitzaré quan acabi)",
+      "status": 2,
+      "type": [],
+      "tags": ["React Native"]
     }
   ],
   "groupProjects": [
@@ -346,6 +353,9 @@
         "https://gitlab.com/marcbryan/epcsd-spring-2024-user-solution",
         "https://gitlab.com/marcbryan/photo_and_film_4_you_frontend"
       ],
+      "imagesFolder": "photoandfilm4you",
+      "imagesExt": ["png"],
+      "objectPosition": "top",
       "numPersons": "6"
     }
   ],

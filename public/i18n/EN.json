@@ -242,6 +242,13 @@
       "imagesFolder": "prac_iscsd",
       "imagesExt": ["png", "png", "png", "png", "png"],
       "objectPosition": "left"
+    },
+    {
+      "name": "Bachelor's Thesis",
+      "description": "Bachelor's Thesis of Computer Engineering. It's a mobile app, but I'm not giving more details. (I'll update it when I finish it)",
+      "status": 2,
+      "type": [],
+      "tags": ["React Native"]
     }
   ],
   "groupProjects": [
@@ -343,6 +350,9 @@
         "https://gitlab.com/marcbryan/epcsd-spring-2024-user-solution",
         "https://gitlab.com/marcbryan/photo_and_film_4_you_frontend"
       ],
+      "imagesFolder": "photoandfilm4you",
+      "imagesExt": ["png"],
+      "objectPosition": "top",
       "numPersons": "6"
     }
   ],
