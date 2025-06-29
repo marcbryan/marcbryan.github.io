@@ -254,7 +254,9 @@
         "https://github.com/marcbryan/fittrackr-docker",
         "https://github.com/marcbryan/fittrackr-core",
         "https://github.com/marcbryan/fittrackr-trackr"
-      ]
+      ],
+      "imagesFolder": "fittrackr",
+      "imagesExt": ["jpg", "png", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg"]
     }
   ],
   "groupProjects": [
