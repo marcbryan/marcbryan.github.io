@@ -16,7 +16,7 @@ import SplitButton from './SplitButton';
 import Scroller from './Scroller';
 import LinkTooltip from '../components/LinkTooltip';
 import TextTooltip from '../components/TextTooltip';
-import { FRONTEND } from '../constants';
+import { FRONTEND, BACKEND } from '../constants';
 import Lightbox from 'yet-another-react-lightbox';
 import Zoom from 'yet-another-react-lightbox/plugins/zoom';
 import Counter from 'yet-another-react-lightbox/plugins/counter';
@@ -26,16 +26,35 @@ import './ProjectCard.css';
 
 let isHTML = RegExp.prototype.test.bind(/(<([^>]+)>)/i);
 
+function getTypeObject(type) {
+  let object;
+  switch (type) {
+    case FRONTEND:
+      object = { shortLabel: "Front", color: "primary" };
+      break;
+    case BACKEND:
+      object = { shortLabel: "Back", color: "secondary" };
+      break;
+    default:
+      object = { shortLabel: type, color: "success" };
+      break;
+  }
+
+  return object;
+}
+
 function Type({project, isMobile}) {
   return (
-    project.type.map((type, i) => (
-      isMobile || (project.type.length > 1 && project.name.length > 11) ?
+    project.type.map((type, i) => {
+      const obj = getTypeObject(type);
+
+      return isMobile || (project.type.length > 1 && project.name.length > 11) ?
         <Tooltip key={i} title={type}>
-          <Chip label={type == FRONTEND ? "Front" : "Back"} color={type == FRONTEND ? "primary" : "secondary"} />
+          <Chip label={obj.shortLabel} color={obj.color} />
         </Tooltip>
         :
-        <Chip key={i} label={type} color={type == FRONTEND ? "primary" : "secondary"} />
-    )) 
+        <Chip key={i} label={type} color={obj.color} />
+    }) 
   )
 }
 

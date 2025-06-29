@@ -16,11 +16,11 @@
   "CFGS_more": "(Superior Grade Formative Cycle in Spain), like NVQ 4 in UK or Junior College in the US.",
   "home_position": "Full Stack Developer",
   "home_position2": "Future Software Engineer",
-  "home_aboutMe": "Student of Computer Engineering at Universitat Oberta de Catalunya. Very motivated to learn and grow professionally.",
+  "home_aboutMe": "Graduated in Computer Engineering at Universitat Oberta de Catalunya. Very motivated to learn and grow professionally.",
   "home_featuredProjects": "Featured projects",
   "home_loading": "Loading...",
   "aboutMe_summary": "Summary",
-  "aboutMe_text1": "I'm Marc Boakye, Full Stack Developer since I studied <Tooltip title='{{DAM_name}} {{CFGS_more}}' text='CPAD' bold='true'></Tooltip> and <Tooltip title='{{DAW_name}} {{CFGS_more}}' text='WAD' bold='true'></Tooltip>. I did a 3x2, that means that in three years I obtained both degrees.<br/> At the present, I'm working as Junior Software Developer at knowmad mood.<br/> At the same time, I'm studying Computer Engineering at <Tooltip title='Universitat Oberta de Catalunya' text='UOC'></Tooltip>, I chose the Software Engineering branch. I'm in my last year, I still have the Bachelor’s Thesis to complete. The end is so close!",
+  "aboutMe_text1": "I'm Marc Boakye, Full Stack Developer since I studied <Tooltip title='{{DAM_name}} {{CFGS_more}}' text='CPAD' bold='true'></Tooltip> and <Tooltip title='{{DAW_name}} {{CFGS_more}}' text='WAD' bold='true'></Tooltip>. I did a 3x2, that means that in three years I obtained both degrees.<br/> At the present, I'm working as Junior Software Developer at knowmad mood.<br/> I've just finished my degree in Computer Engineering at <Tooltip title='Universitat Oberta de Catalunya' text='UOC'></Tooltip> (Software Engineering branch), I've got an 8.8 on my Bachelor's Thesis.",
   "aboutMe_text2": "In the second semester of my third year I got my best grades:",
   "aboutMe_text3": "Technologies that I used during this time:",
   "aboutMe_relevantLinks": "Relevant links:",
@@ -244,11 +244,17 @@
       "objectPosition": "left"
     },
     {
-      "name": "Bachelor's Thesis",
-      "description": "Bachelor's Thesis of Computer Engineering. It's a mobile app, but I'm not giving more details. (I'll update it when I finish it)",
-      "status": 2,
-      "type": [],
-      "tags": ["React Native"]
+      "name": "FitTrackr",
+      "description": "Bachelor's Thesis, Computer Engineering. It's a mobile app (Android & iOS) to record your marks, check gym exercises, and view your routine.",
+      "type": ["Mobile", "Backend"],
+      "tags": ["React Native", "Spring Boot", "Java", ".NET", "Docker", "TS", "MySQL", "Postgres", "Microservices"],
+      "repository": [
+        "https://github.com/marcbryan/FitTrackr",
+        "https://github.com/marcbryan/fittrackr-auth",
+        "https://github.com/marcbryan/fittrackr-docker",
+        "https://github.com/marcbryan/fittrackr-core",
+        "https://github.com/marcbryan/fittrackr-trackr"
+      ]
     }
   ],
   "groupProjects": [
@@ -277,7 +283,7 @@
       "name": "SynergyET",
       "description": "Final project of <Tooltip title='{{DAM_name}} {{CFGS_more}}' text='CPAD'>CPAD</Tooltip>, it's an application similar to Moodle but in Android.",
       "shortDescription": "Final project of CPAD",
-      "type": [],
+      "type": ["Mobile"],
       "tags": ["Java", "Android", "Firebase"],
       "repository": "https://github.com/marcbryan/SynergyET",
       "imagesFolder": "synergy_et",

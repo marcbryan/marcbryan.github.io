@@ -2,6 +2,7 @@ import DotNet from '../assets/tech_logos/dot_net.svg?react';
 import SQLServer from '../assets/tech_logos/sqlserver.svg?react';
 import DaisyUI from '../assets/tech_logos/daisyui.svg?react';
 import SonarQube from '../assets/tech_logos/sonarqube.svg?react';
+import ReactNative from '../assets/tech_logos/react_native.svg?react';
 
 export const LANGUAGES = [
   { lang: 'ES', code: 'es' },
@@ -10,6 +11,7 @@ export const LANGUAGES = [
 ];
 
 export const FRONTEND = "Frontend";
+export const BACKEND = "Backend";
 
 export const TECHNOLOGIES = [
   {
@@ -110,6 +112,10 @@ export const TECHNOLOGIES = [
     tsIcon: "typescript"
   },
   {
+    name: "React Native",
+    SVGComponent: ReactNative
+  },
+  {
     name: "Vue.js",
     tsIcon: "vuejs"
   },
@@ -150,13 +156,17 @@ export const TECHNOLOGIES = [
     tsIcon: "laravel"
   },
   {
+    name: "Firebase",
+    tsIcon: "firebase" 
+  },
+  {
     name: "AWS",
     tsIcon: "aws",
     whiteInDarkMode: true
   },
   {
-    name: "Firebase",
-    tsIcon: "firebase" 
+    name: "Azure",
+    tsIcon: "azure"
   },
   {
     name: "GitLab",

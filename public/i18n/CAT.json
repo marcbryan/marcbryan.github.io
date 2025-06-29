@@ -19,11 +19,11 @@
   "DAW_link": "https://triaeducativa.gencat.cat/ca/estudis/?desenvolupament-aplicacions-web&p_id=770",
   "home_position": "Desenvolupador Full Stack",
   "home_position2": "Futur Enginyer de Software",
-  "home_aboutMe": "Estudiant d'Enginyeria Informàtica a la Universitat Oberta de Catalunya. Molt motivat per aprendre i créixer professionalment.",
+  "home_aboutMe": "Graduat en Enginyeria Informàtica a la Universitat Oberta de Catalunya. Molt motivat per aprendre i créixer professionalment.",
   "home_featuredProjects": "Projectes destacats",
   "home_loading": "Carregant...",
   "aboutMe_summary": "Resum",
-  "aboutMe_text1": "Sóc Marc Boakye, Desenvolupador Full Stack ja que vaig estudiar <LinkTooltip title=\"{{DAM_name}}\" href='{{DAM_link}}' text='DAM'></LinkTooltip> i <LinkTooltip title=\"{{DAW_name}}\" href='{{DAW_link}}' text='DAW'></LinkTooltip>. Vaig fer un 3x2, és a dir, en tres anys vaig aconseguir les dues titulacions.<br/> Actualment, estic treballant com a Junior Software Developer a knowmad mood.<br/> A la vegada, estic estudiant Enginyeria Informàtica a la <Tooltip title='Universitat Oberta de Catalunya' text='UOC'></Tooltip>, vaig triar la branca d'Enginyeria del Software. Estic al meu últim any, em queda el <Tooltip title='Treball de Fi de Grau' text='TFG'></Tooltip>. Ja queda molt poc!",
+  "aboutMe_text1": "Sóc Marc Boakye, Desenvolupador Full Stack ja que vaig estudiar <LinkTooltip title=\"{{DAM_name}}\" href='{{DAM_link}}' text='DAM'></LinkTooltip> i <LinkTooltip title=\"{{DAW_name}}\" href='{{DAW_link}}' text='DAW'></LinkTooltip>. Vaig fer un 3x2, és a dir, en tres anys vaig aconseguir les dues titulacions.<br/> Actualment, estic treballant com a Junior Software Developer a knowmad mood.<br/> Tot just he acabat la carrera d'Enginyeria Informàtica a la <Tooltip title='Universitat Oberta de Catalunya' text='UOC'></Tooltip> (branca d'Enginyeria del Software). He tret un 8,8 al meu <Tooltip title='Treball de Fi de Grau' text='TFG'></Tooltip>.",
   "aboutMe_text2": "Al segon semestre del tercer any vaig treure les meves millors notes:",
   "aboutMe_text3": "Tecnologies que he utilitzat durant aquest temps:",
   "aboutMe_relevantLinks": "Enllaços d'interès:",
@@ -247,11 +247,17 @@
       "objectPosition": "left"
     },
     {
-      "name": "TFG",
-      "description": "Treball de fi de grau d'Enginyeria Informàtica. És una aplicació mòbil, però no dono més detalls. (Ho actualitzaré quan acabi)",
-      "status": 2,
-      "type": [],
-      "tags": ["React Native"]
+      "name": "FitTrackr",
+      "description": "Treball de Fi de Grau, Enginyeria Informàtica. És una aplicació mòbil (Android i iOS), registrar les teves marques, consultar els exercicis del gimnàs i veure la teva rutina.",
+      "type": ["Mòbil", "Backend"],
+      "tags": ["React Native", "Spring Boot", "Java", ".NET", "Docker", "TS", "MySQL", "Postgres", "Microserveis"],
+      "repository": [
+        "https://github.com/marcbryan/FitTrackr",
+        "https://github.com/marcbryan/fittrackr-auth",
+        "https://github.com/marcbryan/fittrackr-docker",
+        "https://github.com/marcbryan/fittrackr-core",
+        "https://github.com/marcbryan/fittrackr-trackr"
+      ]
     }
   ],
   "groupProjects": [
@@ -280,7 +286,7 @@
       "name": "SynergyET",
       "description": "Projecte final de <LinkTooltip title=\"{{DAM_name}}\" href='{{DAM_link}}' text='DAM'></LinkTooltip>, és una aplicació semblant a Moodle però a Android.",
       "shortDescription": "Projecte final de DAM",
-      "type": [],
+      "type": ["Mòbil"],
       "tags": ["Java", "Android", "Firebase"],
       "repository": "https://github.com/marcbryan/SynergyET",
       "imagesFolder": "synergy_et",
