@@ -259,7 +259,8 @@
         "https://github.com/marcbryan/fittrackr-trackr"
       ],
       "imagesFolder": "fittrackr",
-      "imagesExt": ["jpg", "png", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg"]
+      "imagesExt": ["jpg", "png", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg"],
+      "webURL": "https://openaccess.uoc.edu/handle/10609/152798"
     }
   ],
   "groupProjects": [
