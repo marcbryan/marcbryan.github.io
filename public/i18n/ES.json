@@ -23,7 +23,7 @@
   "home_featuredProjects": "Proyectos destacados",
   "home_loading": "Cargando...",
   "aboutMe_summary": "Resumen",
-  "aboutMe_text1": "Soy Marc Boakye, Desarrollador Full Stack ya que estudié <LinkTooltip title='{{DAM_name}}' href='{{DAM_link}}' text='DAM'></LinkTooltip> y <LinkTooltip title='{{DAW_name}}' href='{{DAW_link}}' text='DAW'></LinkTooltip>. Hice un 3x2, es decir, en tres años conseguí las dos titulaciones.<br/> Actualmente estoy trabajando como Junior Software Developer en knowmad mood.<br/> Acabo de terminar la carrera de Ingeniería Informática en la <Tooltip title='Universitat Oberta de Catalunya' text='UOC'></Tooltip> (rama de Ingeniería del Software), he sacado un 8,8 en mi <Tooltip title='Trabajo de Fin de Grado' text='TFG'></Tooltip>.",
+  "aboutMe_text1": "Soy Marc Boakye, Desarrollador Full Stack ya que estudié <LinkTooltip title='{{DAM_name}}' href='{{DAM_link}}' text='DAM'></LinkTooltip> y <LinkTooltip title='{{DAW_name}}' href='{{DAW_link}}' text='DAW'></LinkTooltip>. Hice un 3x2, es decir, en tres años conseguí las dos titulaciones.<div class='summ-pr-2'>Actualmente estoy trabajando como Junior Software Developer en <knowmadmood/> knowmad mood.</div><br/>Acabo de terminar la carrera de Ingeniería Informática en la <Tooltip title='Universitat Oberta de Catalunya' text='UOC'></Tooltip> (rama de Ingeniería del Software), he sacado un 8,8 en mi <Tooltip title='Trabajo de Fin de Grado' text='TFG'></Tooltip>.",
   "aboutMe_text2": "En el segundo semestre del tercer año saqué mis mejores notas:",
   "aboutMe_text3": "Tecnologías que he utilizado durante este tiempo:",
   "aboutMe_relevantLinks": "Enlaces de interés:",
@@ -133,7 +133,8 @@
       "years": "Enero 2025 - Actualidad",
       "details": [
         "Programación con Java",
-        "Uso de base de datos SQL"
+        "Uso de base de datos SQL",
+        "Scrum"
       ],
       "src": "/assets/logos/knowmad_mood.png"
     },

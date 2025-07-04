@@ -72,6 +72,10 @@ export const TECHNOLOGIES = [
     darkModeClass: "sqlserver"
   },
   {
+    name: "PostgreSQL",
+    tsIcon: "postgresql"
+  },
+  {
     name: "MongoDB",
     tsIcon: "mongodb" 
   },
@@ -89,7 +93,7 @@ export const TECHNOLOGIES = [
   },
   {
     name: "React",
-    tsIcon: "reactjs" 
+    tsIcon: "react" 
   },
   {
     name: "Vite",
@@ -134,8 +138,7 @@ export const TECHNOLOGIES = [
   {
     name: "Cypress",
     tsIcon: "cypress",
-    whiteInDarkMode: true,
-    darkModeClass: "cypress"
+    whiteInDarkMode: true
   },
   {
     name: "SonarQube",

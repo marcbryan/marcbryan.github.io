@@ -35,18 +35,8 @@ function isDark(mode, whiteInDarkMode) {
 }
 
 function TechIcon({tech, mode}) {
-  if (tech.tsIcon != null) {
-    if (tech.whiteInDarkMode != null) {
-      if (tech.tsIcon == "markdown")
-        return <StackIcon name={tech.tsIcon} className={`tech-icon${isDark(mode, tech.whiteInDarkMode) ? " tech-icon-white tech-icon-md" : ""}`} />;
-      else if (tech.tsIcon == "cypress")
-        return <StackIcon name={tech.tsIcon} className={`tech-icon${isDark(mode, tech.whiteInDarkMode) ? " tech-icon-cypress" : ""}`} />;
-      else
-        return <StackIcon name={tech.tsIcon} className={`tech-icon${isDark(mode, tech.whiteInDarkMode) ? " tech-icon-white" : ""}`} />;
-    }
-    else  
-      return <StackIcon name={tech.tsIcon} className="tech-icon" />;
-  }
+  if (tech.tsIcon != null) 
+    return <StackIcon name={tech.tsIcon} className="tech-icon" {...tech.whiteInDarkMode != null && { variant: mode }} />;
   else {
     const SVGComponent = tech.SVGComponent;
     return <SVGComponent className={`tech-icon${isDark(mode, tech.whiteInDarkMode) ? ` tech-icon-${tech.darkModeClass}` : ""}`} />;
@@ -154,12 +144,14 @@ function AboutMe() {
     <main className="about-me container">
       <h1>{t("aboutMe")}</h1>
       <h2>{t("aboutMe_summary")}</h2>
-      <p>
+      <div class="summary">
         <Trans
           i18nKey="aboutMe_text1"
           components={{ 
             LinkTooltip: <LinkTooltip />,
-            Tooltip: <TextTooltip />
+            Tooltip: <TextTooltip />,
+            div: <div />,
+            knowmadmood: <img src="/assets/logos/knowmad_mood.png" />
           }}
           values={{ 
             CFGS_more: t("CFGS_more"),
@@ -169,7 +161,7 @@ function AboutMe() {
             DAW_link: t("DAW_link")
           }}
         />
-      </p>
+      </div>
       <p>{t("aboutMe_text2")}</p>
       {isMobile ?
         <>

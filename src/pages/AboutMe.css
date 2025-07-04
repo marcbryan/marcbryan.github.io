@@ -7,6 +7,10 @@ main.about-me div > p {
   margin-top: 0;
 }
 
+main.about-me div.summary > div.summ-pr-2 {
+  display: inline-block;
+}
+
 main.about-me img.grades {
   max-width: 100%;
   border-radius: 4px;
@@ -24,8 +28,6 @@ main.about-me img.tech-icon {
 main.about-me .tech-icon-white > svg > path,
 main.about-me svg.tech-icon-dot-net > path:first-of-type,
 main.about-me svg.tech-icon-sqlserver > path:last-of-type,
-main.about-me .tech-icon-cypress > svg > path:nth-of-type(3),
-main.about-me .tech-icon-cypress > svg > path:nth-of-type(4),
 main.about-me svg.tech-icon-sonarqube > path:first-of-type {
   fill: white;
 }
@@ -39,10 +41,18 @@ main.about-me div > h4, main.about-me div.social-buttons {
   margin-bottom: 2px;
 }
 
-main.about-me .academics > div > img, main.about-me .additional-training > div > img, main.about-me .experience > div > img {
+main.about-me .academics > div > img,
+main.about-me .additional-training > div > img,
+main.about-me .experience > div > img,
+main.about-me div.summary > div.summ-pr-2 > img {
   width: 24px;
   height: 24px;
   margin-right: 0.25em;
+}
+
+main.about-me div.summary > div.summ-pr-2 > img {
+  margin-right: 0;
+  vertical-align: bottom;
 }
 
 main.about-me .academics:not(:last-child) p,
