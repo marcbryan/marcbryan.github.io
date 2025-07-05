@@ -2,8 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { useTitle } from '../App';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import Link from '@mui/material/Link';
+import { Typography } from '@mui/material';
 import ProjectCard from '../components/ProjectCard';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
@@ -27,11 +26,11 @@ function Portfolio() {
       <h1>{t("portfolio")}</h1>
       <div className="top-container">
         <p>{t("portfolio_text1")}</p>
-        <div className="d-flex">
-          <GitHubIcon fontSize="large" />
-          <Link href="https://github.com/marcbryan?tab=repositories" target="_blank" rel="noopener noreferrer">https://github.com/marcbryan</Link>      
-        </div>
-      </div>      
+        <a className="github-container" href="https://github.com/marcbryan?tab=repositories" target="_blank" rel="noopener noreferrer">
+          <img src="https://avatars.githubusercontent.com/u/39045542?v=4" />
+          <Typography className="gh-username" color="textPrimary">marcbryan</Typography>
+        </a>
+      </div>
       <h2>{t("portfolio_projects")}</h2>
       <Swiper
         slidesPerView={1}

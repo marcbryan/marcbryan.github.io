@@ -7,12 +7,32 @@ main.portfolio > .top-container > p {
   margin-bottom: 0.5em;
 }
 
-main.portfolio > .top-container a {
-  align-self: center;
+main.portfolio > .top-container > .github-container {
+  display: inline-flex;
+  padding: 0.75rem;
+  align-items: center;
+  background-color: #f6f8fa;
+  border: 1px solid #d1d9e0;
+  border-radius: 6px;
+  text-decoration: none;
 }
 
-main.portfolio > .top-container .MuiSvgIcon-root {
-  margin-right: 8px;
+main.portfolio > .top-container > .github-container:hover {
+  background-color: #eff2f5;
+  border-color: #d1d9e0;
+  transition-duration: .1s;
+}
+
+main.portfolio > .top-container > .github-container > img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px #1f232826;
+  margin-right: 0.5em;
+}
+
+main.portfolio > .top-container > .github-container > .gh-username {
+  font-weight: bold;
 }
 
 main.portfolio > h2:first-of-type {
@@ -59,9 +79,13 @@ _::-webkit-full-page-media, _:future, main.portfolio > .swiper > .swiper-paginat
   }
 }
 
-@media (max-width: 424px) {
+@media (max-width: 426px) {
   main.portfolio > .swiper {
     margin: 0;
     margin-left: -1.5px;
+  }
+
+  main.portfolio > .top-container > .github-container {
+    display: flex;
   }
 }

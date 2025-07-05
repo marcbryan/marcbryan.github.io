@@ -79,6 +79,15 @@ body.mode-dark .swiper {
   --swiper-pagination-bullet-inactive-color: white;
 }
 
+body.mode-dark main.portfolio > div.top-container > .github-container {
+  background-color: #181818;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
+  border-color: #181818;
+}
+body.mode-dark main.portfolio > div.top-container > .github-container:hover {
+  background-color: #222;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+}
 
 /* Safari 7.1+ */
 _::-webkit-full-page-media, _:future, :root div.MuiToolbar-root a {
