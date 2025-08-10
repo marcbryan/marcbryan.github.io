@@ -58,8 +58,8 @@ const useImageLoaded = (counterRef) => {
 }
 
 const projectKeys = [
+  "projects.7",
   "groupProjects.6",
-  "groupProjects.2",
   "groupProjects.7"
 ];
 

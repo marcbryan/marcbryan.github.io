@@ -250,6 +250,7 @@
     {
       "name": "FitTrackr",
       "description": "Trabajo de Fin de Grado, Ingeniería Informática. Es una aplicación móvil (Android e iOS) para registrar tus marcas, consultar los ejercicios del gimnasio y ver tu rutina.",
+      "shortDescription": "Trabajo de Fin de Grado",
       "type": ["Móvil", "Backend"],
       "tags": ["React Native", "Spring Boot", "Java", ".NET", "Docker", "TS", "MySQL", "Postgres", "Microservicios"],
       "repository": [
@@ -260,7 +261,7 @@
         "https://github.com/marcbryan/fittrackr-trackr"
       ],
       "imagesFolder": "fittrackr",
-      "imagesExt": ["jpg", "png", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg"],
+      "imagesExt": ["png", "jpg", "png", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg"],
       "webURL": "https://openaccess.uoc.edu/handle/10609/152798"
     }
   ],
