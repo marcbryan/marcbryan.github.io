@@ -144,14 +144,12 @@ function AboutMe() {
     <main className="about-me container">
       <h1>{t("aboutMe")}</h1>
       <h2>{t("aboutMe_summary")}</h2>
-      <div class="summary">
+      <div className="summary">
         <Trans
-          i18nKey="aboutMe_text1"
+          i18nKey="aboutMe_summ_text1"
           components={{ 
             LinkTooltip: <LinkTooltip />,
-            Tooltip: <TextTooltip />,
-            div: <div />,
-            knowmadmood: <img src="/assets/logos/knowmad_mood.png" />
+            Tooltip: <TextTooltip />
           }}
           values={{ 
             CFGS_more: t("CFGS_more"),
@@ -161,8 +159,23 @@ function AboutMe() {
             DAW_link: t("DAW_link")
           }}
         />
+        <div className='summ-pr-2'>
+          <Trans
+            i18nKey="aboutMe_summ_text2"
+            components={{
+              knowmadmood: <img src="/assets/logos/knowmad_mood.png" />
+            }}
+          />
+        </div>
+        <br />
+        <Trans
+          i18nKey="aboutMe_summ_text3"
+          components={{
+            Tooltip: <TextTooltip />,
+          }}
+        />
       </div>
-      <p>{t("aboutMe_text2")}</p>
+      <p>{t("aboutMe_text1")}</p>
       {isMobile ?
         <>
           <img className="grades" src={`/assets/${t("aboutMe_gradesFile")}`} onClick={() => setOpenLightbox(true)} />
@@ -180,7 +193,7 @@ function AboutMe() {
         </>
         : 
         <img className="grades" src={`/assets/${t("aboutMe_gradesFile")}`} />}
-      <p>{t("aboutMe_text3")}</p>
+      <p>{t("aboutMe_text2")}</p>
       <Scroller dataPause="true" onClick={!foundEgg2 ? () => setCountEgg2((countEgg2) => countEgg2 + 1) : undefined} style={{"--_gap": "0.5rem"}}>
         {TECHNOLOGIES.map((tech, i) => (
           <Tooltip key={i} title={tech.name}>
