@@ -93,7 +93,7 @@ export const TECHNOLOGIES = [
   },
   {
     name: "React",
-    tsIcon: "react" 
+    tsIcon: "reactjs" 
   },
   {
     name: "Vite",

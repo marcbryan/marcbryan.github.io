@@ -161,11 +161,11 @@
   ],
   "myLanguages": [
     {
-      "lang": "<span className='fi fi-es'></span>Spanish / <span className='fi fi-es-ct'></span>Catalan",
+      "lang": "<span className='fi fi-es' />Spanish / <span className='fi fi-es-ct' />Catalan",
       "level": "Native"
     },
     {
-      "lang": "<span className='fi fi-gb'></span>English",
+      "lang": "<span className='fi fi-gb' />English",
       "level": "Intermediate"
     }
   ],

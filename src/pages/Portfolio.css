@@ -7,7 +7,7 @@ main.portfolio > .top-container > p {
   margin-bottom: 0.5em;
 }
 
-main.portfolio > .top-container > .github-container {
+main.portfolio > .top-container > .github-card {
   display: inline-flex;
   padding: 0.75rem;
   align-items: center;
@@ -17,13 +17,13 @@ main.portfolio > .top-container > .github-container {
   text-decoration: none;
 }
 
-main.portfolio > .top-container > .github-container:hover {
+main.portfolio > .top-container > .github-card:hover {
   background-color: #eff2f5;
   border-color: #d1d9e0;
   transition-duration: .1s;
 }
 
-main.portfolio > .top-container > .github-container > img {
+main.portfolio > .top-container > .github-card > img {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
@@ -31,7 +31,7 @@ main.portfolio > .top-container > .github-container > img {
   margin-right: 0.5em;
 }
 
-main.portfolio > .top-container > .github-container > .gh-username {
+main.portfolio > .top-container > .github-card > .gh-username {
   font-weight: bold;
 }
 
@@ -85,7 +85,7 @@ _::-webkit-full-page-media, _:future, main.portfolio > .swiper > .swiper-paginat
     margin-left: -1.5px;
   }
 
-  main.portfolio > .top-container > .github-container {
+  main.portfolio > .top-container > .github-card {
     display: flex;
   }
 }

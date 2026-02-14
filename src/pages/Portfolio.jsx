@@ -26,7 +26,7 @@ function Portfolio() {
       <h1>{t("portfolio")}</h1>
       <div className="top-container">
         <p>{t("portfolio_text1")}</p>
-        <a className="github-container" href="https://github.com/marcbryan?tab=repositories" target="_blank" rel="noopener noreferrer">
+        <a className="github-card" href="https://github.com/marcbryan?tab=repositories" target="_blank" rel="noopener noreferrer">
           <img src="https://avatars.githubusercontent.com/u/39045542?v=4" />
           <Typography className="gh-username" color="textPrimary">marcbryan</Typography>
         </a>

@@ -79,12 +79,12 @@ body.mode-dark .swiper {
   --swiper-pagination-bullet-inactive-color: white;
 }
 
-body.mode-dark main.portfolio > div.top-container > .github-container {
+body.mode-dark main.portfolio > div.top-container > .github-card {
   background-color: #181818;
   background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
   border-color: #181818;
 }
-body.mode-dark main.portfolio > div.top-container > .github-container:hover {
+body.mode-dark main.portfolio > div.top-container > .github-card:hover {
   background-color: #222;
   background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
 }
