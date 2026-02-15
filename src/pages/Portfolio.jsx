@@ -13,9 +13,8 @@ import './Portfolio.css';
 
 function combineWithTranslations(projectsData, projectsTexts, typeTexts) {
   let projects = [];
-  for (const project of projectsData) {
+  for (let project of projectsData) {
     const projectTexts = projectsTexts.find(pTxts => pTxts.id == project.id);
-    const combined = { ...projectTexts, ...project }
     
     if (projectTexts.tags != undefined) {   
       if (project.tags.includes("") && project.mlTags == undefined)
@@ -41,7 +40,7 @@ function combineWithTranslations(projectsData, projectsTexts, typeTexts) {
     if (project.type.length > 0)     
       project.typeTxt = project.type.map(ty => typeTexts[ty]);
 
-    projects.push(combined);
+    projects.push({ ...projectTexts, ...project });
   }
   
   return projects.slice().reverse();
