@@ -174,204 +174,104 @@
   ],
   "projects": [
     {
+      "id": 1,
       "name": "Joc de la serp",
       "description": "Joc de la serp amb .NET (Consola).",
-      "type": [],
-      "tags": [".NET", "C#", "Consola"],
-      "repository": "https://github.com/marcbryan/SnakeGame",
-      "imagesFolder": "snake_game",
-      "imagesExt": ["png", "png", "png"],
-      "objectPosition": "left"
+      "tags": ["Consola"]
     },
     {
+      "id": 2,
       "name": "AppHospital",
-      "description": "Aplicació de gestió d'un hospital amb Windows Forms.",
-      "type": [],
-      "tags": [".NET", "C#", "Windows Forms"],
-      "repository": "https://github.com/marcbryan/AppHospital",
-      "imagesFolder": "app_hospital",
-      "imagesExt": ["png", "png", "png"],
-      "objectPosition": "top"
+      "description": "Aplicació de gestió d'un hospital amb Windows Forms."
     },
     {
+      "id": 3,
       "name": "PenjatJS",
-      "description": "Joc del penjat amb Javascript. També amb ASP.NET en aquest <a href='https://github.com/marcbryan/Ahorcado-ASP.NET'>repositori</a>.",
-      "type": ["Frontend"],
-      "tags": ["JS", "HTML", "CSS"],
-      "repository": "https://github.com/marcbryan/AhorcadoJS",
-      "imagesFolder": "ahorcadojs",
-      "imagesExt": ["png"],
-      "objectPosition": "top",
-      "webURL": "https://marcbryan.github.io/AhorcadoJS/"
+      "description": "Joc del penjat amb Javascript. També amb ASP.NET en aquest <a href='https://github.com/marcbryan/Ahorcado-ASP.NET'>repositori</a>."
     },
     {
+      "id": 4,
       "name": "TresEnRatllaJS",
-      "description": "Joc del tres en ratlla amb Javascript.",
-      "type": ["Frontend"],
-      "tags": ["JS", "HTML", "CSS"],
-      "repository": "https://github.com/marcbryan/TresEnRayaJS",
-      "imagesFolder": "tresenrayajs",
-      "imagesExt": ["png"],
-      "objectPosition": "top",
-      "webURL": "https://marcbryan.github.io/TresEnRayaJS/"
+      "description": "Joc del tres en ratlla amb Javascript."
     },
     {
+      "id": 5,
       "name": "Pràctica 1 DED",
-      "description": "Pràctica de l'assignatura \"<a href='https://apps.uoc.edu/PlaDocent/PlaDocent?Semestre=20241&SignatureCode=05.613&Context=3&Locale=ca'>Disseny d'estructures de dades</a>\" on vaig crear diferents <Tooltip title='Tipus abstracte de dades' text='TADs'>TADs</Tooltip> i funcionalitats seguint <a href='https://ca.wikipedia.org/wiki/Desenvolupament_guiat_per_proves'>TDD</a>.",
-      "type": [],
-      "tags": ["Java"],
-      "repository": "https://github.com/marcbryan/23-24-2-PR1",
-      "imagesFolder": "prac1_ded",
-      "imagesExt": ["png", "png"],
-      "objectPosition": "left"
+      "description": "Pràctica de l'assignatura \"<a href='https://apps.uoc.edu/PlaDocent/PlaDocent?Semestre=20241&SignatureCode=05.613&Context=3&Locale=ca'>Disseny d'estructures de dades</a>\" on vaig crear diferents <Tooltip title='Tipus abstracte de dades' text='TADs'>TADs</Tooltip> i funcionalitats seguint <a href='https://ca.wikipedia.org/wiki/Desenvolupament_guiat_per_proves'>TDD</a>."
     },
     {
+      "id": 6,
       "name": "Pràctica 2 DED",
-      "description": "Pràctica de l'assignatura \"<a href='https://apps.uoc.edu/PlaDocent/PlaDocent?Semestre=20241&SignatureCode=05.613&Context=3&Locale=ca'>Disseny d'estructures de dades</a>\" on vaig implementar funcionalitats seguint <a href='https://ca.wikipedia.org/wiki/Desenvolupament_guiat_per_proves'>TDD</a>.",
-      "type": [],
-      "tags": ["Java"],
-      "repository": "https://github.com/marcbryan/23-24-2-PR2",
-      "imagesFolder": "prac2_ded",
-      "imagesExt": ["png", "png", "png"],
-      "objectPosition": "left"
+      "description": "Pràctica de l'assignatura \"<a href='https://apps.uoc.edu/PlaDocent/PlaDocent?Semestre=20241&SignatureCode=05.613&Context=3&Locale=ca'>Disseny d'estructures de dades</a>\" on vaig implementar funcionalitats seguint <a href='https://ca.wikipedia.org/wiki/Desenvolupament_guiat_per_proves'>TDD</a>."
     },
     {
+      "id": 7,
       "name": "Pràctica EPCSD",
       "description": "Pràctica de l'assignatura \"<a href='https://apps.uoc.edu/PlaDocent/PlaDocent?Semestre=20241&SignatureCode=05.587&Context=3&Locale=ca'>Enginyeria del programari de components i sistemes distribuïts</a>\" on vaig desenvolupar les funcionalitats de 3 microserveis.",
-      "type": ["Backend"],
-      "tags": ["Java", "Spring", "Microserveis"],
-      "repository": [
-        "https://github.com/marcbryan/spring-2024-productcatalog",
-        "https://github.com/marcbryan/spring-2024-user",
-        "https://github.com/marcbryan/spring-2024-notification"
-      ],
-      "imagesFolder": "prac_iscsd",
-      "imagesExt": ["png", "png", "png", "png", "png"],
-      "objectPosition": "left"
+      "tags": ["Microserveis"]
     },
     {
+      "id": 8,
       "name": "FitTrackr",
       "description": "Treball de Fi de Grau, Enginyeria Informàtica. És una aplicació mòbil (Android i iOS), registrar les teves marques, consultar els exercicis del gimnàs i veure la teva rutina.",
       "shortDescription": "Treball de Fi de Grau",
-      "type": ["Mòbil", "Backend"],
-      "tags": ["React Native", "Spring Boot", "Java", ".NET", "Docker", "TS", "MySQL", "Postgres", "Microserveis"],
-      "repository": [
-        "https://github.com/marcbryan/FitTrackr",
-        "https://github.com/marcbryan/fittrackr-auth",
-        "https://github.com/marcbryan/fittrackr-docker",
-        "https://github.com/marcbryan/fittrackr-core",
-        "https://github.com/marcbryan/fittrackr-trackr"
-      ],
-      "imagesFolder": "fittrackr",
-      "imagesExt": ["png", "jpg", "png", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg"],
-      "webURL": "https://openaccess.uoc.edu/handle/10609/152798"
+      "tags": ["Microserveis"]
     }
   ],
   "groupProjects": [
     {
+      "id": 1,
       "name": "Configurador de cotxes",
       "description": "Projecte que vaig fer a <LinkTooltip title=\"{{DAM_name}}\" href='{{DAM_link}}' text='DAM'></LinkTooltip>, és una aplicació per configurar un cotxe i comprar-ho.",
-      "moreInfo": "És similar al que faries a una pàgina de qualsevol marca de cotxes.",
-      "type": [],
-      "tags": ["Java", "JavaFX", "XML"],
-      "repository": "https://github.com/asantamans/ams2project",
-      "imagesFolder": "car_configurator",
-      "imagesExt": ["jpg", "png", "png", "png"],
-      "numPersons": 3
+      "moreInfo": "És similar al que faries a una pàgina de qualsevol marca de cotxes."
     },
     {
+      "id": 2,
       "name": "Gestor Scrum",
-      "description": "Projecte que vaig fer a <LinkTooltip title=\"{{DAM_name}}\" href='{{DAM_link}}' text='DAM'></LinkTooltip>, és una aplicació per gestionar les tasques com a un tauler de Scrum.",
-      "type": [],
-      "tags": ["Java", "Hibernate", "JavaFX"],
-      "repository": "https://github.com/marcbryan/Proyecto2_Scrum",
-      "imagesFolder": "scrum_manager",
-      "imagesExt": ["jpg", "jpg", "jpg", "jpg", "jpg"],
-      "numPersons": 3
+      "description": "Projecte que vaig fer a <LinkTooltip title=\"{{DAM_name}}\" href='{{DAM_link}}' text='DAM'></LinkTooltip>, és una aplicació per gestionar les tasques com a un tauler de Scrum."
     },
     {
+      "id": 3,
       "name": "SynergyET",
       "description": "Projecte final de <LinkTooltip title=\"{{DAM_name}}\" href='{{DAM_link}}' text='DAM'></LinkTooltip>, és una aplicació semblant a Moodle però a Android.",
-      "shortDescription": "Projecte final de DAM",
-      "type": ["Mòbil"],
-      "tags": ["Java", "Android", "Firebase"],
-      "repository": "https://github.com/marcbryan/SynergyET",
-      "imagesFolder": "synergy_et",
-      "imagesExt": ["jpg", "jpg", "jpg", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png"],
-      "numPersons": 2
+      "shortDescription": "Projecte final de DAM"
     },
     {
+      "id": 4,
       "name": "Terminal Fallout",
-      "description": "Projecte que vaig fer a <LinkTooltip title=\"{{DAW_name}}\" href='{{DAW_link}}' text='DAW'></LinkTooltip>, és un joc semblant al terminal del joc Fallout.",
-      "type": ["Frontend"],
-      "tags": ["PHP", "JS", "HTML", "CSS"],
-      "repository": "https://github.com/davidencinamartinez/Terminal_Fallout",
-      "imagesFolder": "terminal_fallout",
-      "imagesExt": ["jpg", "jpg"],
-      "numPersons": 3
+      "description": "Projecte que vaig fer a <LinkTooltip title=\"{{DAW_name}}\" href='{{DAW_link}}' text='DAW'></LinkTooltip>, és un joc semblant al terminal del joc Fallout."
     },
     {
+      "id": 5,
       "name": "AJAX Kahoot",
-      "description": "Projecte que vaig fer a <LinkTooltip title=\"{{DAW_name}}\" href='{{DAW_link}}' text='DAW'></LinkTooltip>, és una aplicació per fer qüestionaris com Kahoot.",
-      "type": ["Frontend", "Backend"],
-      "tags": ["PHP", "JS", "HTML", "CSS", "SQL"],
-      "repository": "https://github.com/gooicoo/Ajax-Kahoot",
-      "imagesFolder": "ajax_kahoot",
-      "imagesExt": ["jpg", "png", "png", "png", "png", "png", "png"],
-      "numPersons": 3
+      "description": "Projecte que vaig fer a <LinkTooltip title=\"{{DAW_name}}\" href='{{DAW_link}}' text='DAW'></LinkTooltip>, és una aplicació per fer qüestionaris com Kahoot."
     },
     {
+      "id": 6,
       "name": "Mensakas",
-      "description": "Projecte que vaig fer a <LinkTooltip title=\"{{DAW_name}}\" href='{{DAW_link}}' text='DAW'></LinkTooltip>, és una aplicació per gestionar restaurants i fer comandes (estil Glovo).",
-      "type": ["Frontend", "Backend"],
-      "tags": ["Laravel", "PHP", "HTML", "CSS", "JS"],
-      "repository": "https://github.com/marcbryan/proyecto-mensakas",
-      "imagesFolder": "mensakas",
-      "imagesExt": ["jpg", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png"],
-      "numPersons": 2
+      "description": "Projecte que vaig fer a <LinkTooltip title=\"{{DAW_name}}\" href='{{DAW_link}}' text='DAW'></LinkTooltip>, és una aplicació per gestionar restaurants i fer comandes (estil Glovo)."
     },
     {
+      "id": 7,
       "name": "ProyectoF",
       "description": "Projecte final de <LinkTooltip title=\"{{DAW_name}}\" href='{{DAW_link}}' text='DAW'></LinkTooltip>, és una aplicació per veure esdeveniments i les entrades comprades a l'app Android.",
       "shortDescription": "Projecte final de DAW",
-      "moreInfo": "Els meus dos companys es van encarregar de crear l'<a href='https://github.com/MarcMartinezM/Proyecto-Final-Proyecto-F'>app Android</a>, jo vaig desenvolupar la web i el backend, que servia per proveir les dades a l'app i a la web. El backend compta amb un generador de dades.",
-      "type": ["Frontend", "Backend"],
-      "tags": ["Angular", "NodeJS", "TS", "JS", "HTML", "CSS", "MongoDB"],
-      "repository": "https://github.com/marcbryan/ProyectoF",
-      "imagesFolder": "proyecto_f",
-      "imagesExt": ["jpg", "png", "png", "png", "png", "jpg", "jpg", "png", "png", "jpg", "png", "png", "png"],
-      "numPersons": 3
+      "moreInfo": "Els meus dos companys es van encarregar de crear l'<a href='https://github.com/MarcMartinezM/Proyecto-Final-Proyecto-F'>app Android</a>, jo vaig desenvolupar la web i el backend, que servia per proveir les dades a l'app i a la web. El backend compta amb un generador de dades."
     },
     {
+      "id": 8,
       "name": "EatNow",
       "description": "Projecte final del Bootcamp .NET, és una aplicació per fer reserves i gestionar restaurants.",
-      "shortDescription": "Projecte final del Bootcamp .NET",
-      "type": ["Frontend", "Backend"],
-      "tags": [".NET", "ASP.NET Core MVC", "C#", "HTML", "CSS", "JS", "SQL"],
-      "repository": "https://github.com/Far9554/EatNow",
-      "imagesFolder": "eat_now",
-      "imagesExt": ["jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "png", "png", "jpg", "png", "png", "png", "png", "jpg", "jpg", "png", "png"],
-      "objectPosition": "top",
-      "numPersons": 4
+      "shortDescription": "Projecte final del Bootcamp .NET"
     },
     {
+      "id": 9,
       "name": "Photo&Film4You",
       "description": "Projecte de l'assignatura \"<a href='https://apps.uoc.edu/PlaDocent/PlaDocent?Semestre=20241&SignatureCode=05.588&Context=3&Locale=ca'>Projecte de Desenvolupament del Programari</a>\", és una aplicació per llogar material fotogràfic. L'última assignatura que vaig fer abans del TFG.",
-      "type": ["Frontend", "Backend"],
-      "tags": ["Java", "Spring", "Vue.js", "daisyUI", "Docker", "Microserveis", "JS", "HTML", "CSS", "Cypress", "SonarQube"],
-      "repository": [
-        "https://gitlab.com/marcbryan/epcsd-spring-2024-docker-compose",
-        "https://gitlab.com/marcbryan/epcsd-spring-2024-notification-solution",
-        "https://gitlab.com/marcbryan/epcsd-spring-2024-productcatalog-solution",
-        "https://gitlab.com/marcbryan/epcsd-spring-2024-user-solution",
-        "https://gitlab.com/marcbryan/photo_and_film_4_you_frontend"
-      ],
-      "imagesFolder": "photoandfilm4you",
-      "imagesExt": ["png"],
-      "objectPosition": "top",
-      "numPersons": "6"
+      "tags": ["Microserveis"]
     }
   ],
+  "projectTypes": ["Frontend", "Backend", "Mòbil"],
   "projectStatus": ["Pendent", "En progrés"],
   "easterEggs": [
     {

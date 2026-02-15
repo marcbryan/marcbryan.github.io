@@ -4,18 +4,56 @@ import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { Typography } from '@mui/material';
 import ProjectCard from '../components/ProjectCard';
+import { PROJECTS, GROUP_PROJECTS } from '../constants';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import './Portfolio.css';
 
+function combineWithTranslations(projectsData, projectsTexts, typeTexts) {
+  let projects = [];
+  for (const project of projectsData) {
+    const projectTexts = projectsTexts.find(pTxts => pTxts.id == project.id);
+    const combined = { ...projectTexts, ...project }
+    
+    if (projectTexts.tags != undefined) {   
+      if (project.tags.includes("") && project.mlTags == undefined)
+        project.mlTags = [];
+      
+      let j = 0;
+      project.tags = project.tags.map((tag, i) => {
+        let tagTxt = tag;
+        if (tag == "") {
+          project.mlTags.push(i);
+          tagTxt = projectTexts.tags[j];
+          j++;
+        }
+        else if (project.mlTags != undefined && project.mlTags.includes(i)) {
+          tagTxt = projectTexts.tags[j];
+          j++;
+        }
+        
+        return tagTxt;
+      });
+    }
+
+    if (project.type.length > 0)     
+      project.typeTxt = project.type.map(ty => typeTexts[ty]);
+
+    projects.push(combined);
+  }
+  
+  return projects.slice().reverse();
+}
+
 function Portfolio() {
   const { t } = useTranslation();
   useTitle(`${t("portfolio")} | ${t("title")}`);
 
-  const projects = t("projects", { returnObjects: true }).slice().reverse();
-  const groupProjects = t("groupProjects", { returnObjects: true }).slice().reverse();
+  const projectTypes = t("projectTypes", { returnObjects: true });
+  const projects = combineWithTranslations(PROJECTS, t("projects", { returnObjects: true }), projectTypes);
+  const groupProjects = combineWithTranslations(GROUP_PROJECTS, t("groupProjects", { returnObjects: true }), projectTypes);
 
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));

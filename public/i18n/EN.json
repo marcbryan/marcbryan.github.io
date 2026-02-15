@@ -171,204 +171,104 @@
   ],
   "projects": [
     {
+      "id": 1,
       "name": "Snake game",
       "description": "Snake game on .NET (Console).",
-      "type": [],
-      "tags": [".NET", "C#", "Console"],
-      "repository": "https://github.com/marcbryan/SnakeGame",
-      "imagesFolder": "snake_game",
-      "imagesExt": ["png", "png", "png"],
-      "objectPosition": "left"
+      "tags": ["Console"]
     },
     {
+      "id": 2,
       "name": "HospitalApp",
-      "description": "Hospital management application with Windows Forms.",
-      "type": [],
-      "tags": [".NET", "C#", "Windows Forms"],
-      "repository": "https://github.com/marcbryan/AppHospital",
-      "imagesFolder": "app_hospital",
-      "imagesExt": ["png", "png", "png"],
-      "objectPosition": "top"
+      "description": "Hospital management application with Windows Forms."
     },
     {
+      "id": 3,
       "name": "HangmanJS",
-      "description": "Hangman game in Javascript. Also in ASP.NET in this <a href='https://github.com/marcbryan/Ahorcado-ASP.NET'>repository</a>.",
-      "type": ["Frontend"],
-      "tags": ["JS", "HTML", "CSS"],
-      "repository": "https://github.com/marcbryan/AhorcadoJS",
-      "imagesFolder": "ahorcadojs",
-      "imagesExt": ["png"],
-      "objectPosition": "top",
-      "webURL": "https://marcbryan.github.io/AhorcadoJS/"
+      "description": "Hangman game in Javascript. Also in ASP.NET in this <a href='https://github.com/marcbryan/Ahorcado-ASP.NET'>repository</a>."
     },
     {
+      "id": 4,
       "name": "TicTacToeJS",
-      "description": "Tic-Tac-Toe game in Javascript.",
-      "type": ["Frontend"],
-      "tags": ["JS", "HTML", "CSS"],
-      "repository": "https://github.com/marcbryan/TresEnRayaJS",
-      "imagesFolder": "tresenrayajs",
-      "imagesExt": ["png"],
-      "objectPosition": "top",
-      "webURL": "https://marcbryan.github.io/TresEnRayaJS/"
+      "description": "Tic-Tac-Toe game in Javascript."
     },
     {
+      "id": 5,
       "name": "DSD Practice 1",
-      "description": "Practice of the subject \"Data structures design\" where I had to create some <Tooltip title='Abstract data type' text='ADTs'>ADTs</Tooltip> and functionalities following <a href='https://en.wikipedia.org/wiki/Test-driven_development'>TDD</a>.",
-      "type": [],
-      "tags": ["Java"],
-      "repository": "https://github.com/marcbryan/23-24-2-PR1",
-      "imagesFolder": "prac1_ded",
-      "imagesExt": ["png", "png"],
-      "objectPosition": "left"
+      "description": "Practice of the subject \"Data structures design\" where I had to create some <Tooltip title='Abstract data type' text='ADTs'>ADTs</Tooltip> and functionalities following <a href='https://en.wikipedia.org/wiki/Test-driven_development'>TDD</a>."
     },
     {
+      "id": 6,
       "name": "DSD Practice 2",
-      "description": "Practice of the subject \"Data structures design\" where I had to implement functionalities following <a href='https://en.wikipedia.org/wiki/Test-driven_development'>TDD</a>.",
-      "type": [],
-      "tags": ["Java"],
-      "repository": "https://github.com/marcbryan/23-24-2-PR2",
-      "imagesFolder": "prac2_ded",
-      "imagesExt": ["png", "png", "png"],
-      "objectPosition": "left"
+      "description": "Practice of the subject \"Data structures design\" where I had to implement functionalities following <a href='https://en.wikipedia.org/wiki/Test-driven_development'>TDD</a>."
     },
     {
+      "id": 7,
       "name": "SECDS Practice",
       "description": "Practice of the subject \"Software engineering of components and distributed systems\" where I had to develop the functionalities of 3 microservices.",
-      "type": ["Backend"],
-      "tags": ["Java", "Spring", "Microservices"],
-      "repository": [
-        "https://github.com/marcbryan/spring-2024-productcatalog",
-        "https://github.com/marcbryan/spring-2024-user",
-        "https://github.com/marcbryan/spring-2024-notification"
-      ],
-      "imagesFolder": "prac_iscsd",
-      "imagesExt": ["png", "png", "png", "png", "png"],
-      "objectPosition": "left"
+      "tags": ["Microservices"]
     },
     {
+      "id": 8,
       "name": "FitTrackr",
       "description": "Bachelor's Thesis, Computer Engineering. It's a mobile app (Android & iOS) to record your marks, check gym exercises, and view your routine.",
       "shortDescription": "Bachelor's Thesis",
-      "type": ["Mobile", "Backend"],
-      "tags": ["React Native", "Spring Boot", "Java", ".NET", "Docker", "TS", "MySQL", "Postgres", "Microservices"],
-      "repository": [
-        "https://github.com/marcbryan/FitTrackr",
-        "https://github.com/marcbryan/fittrackr-auth",
-        "https://github.com/marcbryan/fittrackr-docker",
-        "https://github.com/marcbryan/fittrackr-core",
-        "https://github.com/marcbryan/fittrackr-trackr"
-      ],
-      "imagesFolder": "fittrackr",
-      "imagesExt": ["png", "jpg", "png", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg"],
-      "webURL": "https://openaccess.uoc.edu/handle/10609/152798"
+      "tags": ["Microservices"]
     }
   ],
   "groupProjects": [
     {
+      "id": 1,
       "name": "Car configurator",
       "description": "Project that I did in <Tooltip title='{{DAM_name}} {{CFGS_more}}' text='CPAD'>CPAD</Tooltip>, it's an application to configure a car and buy it.",
-      "moreInfo": "It's similar to what you would do in any car brand website.",
-      "type": [],
-      "tags": ["Java", "JavaFX", "XML"],
-      "repository": "https://github.com/asantamans/ams2project",
-      "imagesFolder": "car_configurator",
-      "imagesExt": ["jpg", "png", "png", "png"],
-      "numPersons": 3
+      "moreInfo": "It's similar to what you would do in any car brand website."
     },
     {
+      "id": 2,
       "name": "Scrum manager",
-      "description": "Project that I did in <Tooltip title='{{DAM_name}} {{CFGS_more}}' text='CPAD'>CPAD</Tooltip>, it's an application to manage the tasks like in a Scrum board.",
-      "type": [],
-      "tags": ["Java", "Hibernate", "JavaFX"],
-      "repository": "https://github.com/marcbryan/Proyecto2_Scrum",
-      "imagesFolder": "scrum_manager",
-      "imagesExt": ["jpg", "jpg", "jpg", "jpg", "jpg"],
-      "numPersons": 3
+      "description": "Project that I did in <Tooltip title='{{DAM_name}} {{CFGS_more}}' text='CPAD'>CPAD</Tooltip>, it's an application to manage the tasks like in a Scrum board."
     },
     {
+      "id": 3,
       "name": "SynergyET",
       "description": "Final project of <Tooltip title='{{DAM_name}} {{CFGS_more}}' text='CPAD'>CPAD</Tooltip>, it's an application similar to Moodle but in Android.",
-      "shortDescription": "Final project of CPAD",
-      "type": ["Mobile"],
-      "tags": ["Java", "Android", "Firebase"],
-      "repository": "https://github.com/marcbryan/SynergyET",
-      "imagesFolder": "synergy_et",
-      "imagesExt": ["jpg", "jpg", "jpg", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png"],
-      "numPersons": 2
+      "shortDescription": "Final project of CPAD"
     },
     {
+      "id": 4,
       "name": "Fallout Terminal",
-      "description": "Project that I did in <Tooltip title='{{DAW_name}} {{CFGS_more}}' text='WAD'>WAD</Tooltip>, it's a game that looks like the terminal from the game Fallout.",
-      "type": ["Frontend"],
-      "tags": ["PHP", "JS", "HTML", "CSS"],
-      "repository": "https://github.com/davidencinamartinez/Terminal_Fallout",
-      "imagesFolder": "terminal_fallout",
-      "imagesExt": ["jpg", "jpg"],
-      "numPersons": 3
+      "description": "Project that I did in <Tooltip title='{{DAW_name}} {{CFGS_more}}' text='WAD'>WAD</Tooltip>, it's a game that looks like the terminal from the game Fallout."
     },
     {
+      "id": 5,
       "name": "AJAX Kahoot",
-      "description": "Project that I did in <Tooltip title='{{DAW_name}} {{CFGS_more}}' text='WAD'>WAD</Tooltip>, it's an application to make questionnaires like Kahoot.",
-      "type": ["Frontend", "Backend"],
-      "tags": ["PHP", "JS", "HTML", "CSS", "SQL"],
-      "repository": "https://github.com/gooicoo/Ajax-Kahoot",
-      "imagesFolder": "ajax_kahoot",
-      "imagesExt": ["jpg", "png", "png", "png", "png", "png", "png"],
-      "numPersons": 3
+      "description": "Project that I did in <Tooltip title='{{DAW_name}} {{CFGS_more}}' text='WAD'>WAD</Tooltip>, it's an application to make questionnaires like Kahoot."
     },
     {
+      "id": 6,
       "name": "Mensakas",
-      "description": "Project that I did in <Tooltip title='{{DAW_name}} {{CFGS_more}}' text='WAD'>WAD</Tooltip>, it's an application to manage restaurants and make orders (like Glovo).",
-      "type": ["Frontend", "Backend"],
-      "tags": ["Laravel", "PHP", "HTML", "CSS", "JS"],
-      "repository": "https://github.com/marcbryan/proyecto-mensakas",
-      "imagesFolder": "mensakas",
-      "imagesExt": ["jpg", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png"],
-      "numPersons": 2
+      "description": "Project that I did in <Tooltip title='{{DAW_name}} {{CFGS_more}}' text='WAD'>WAD</Tooltip>, it's an application to manage restaurants and make orders (like Glovo)."
     },
     {
+      "id": 7,
       "name": "ProyectoF",
       "description": "Final project of <Tooltip title='{{DAW_name}} {{CFGS_more}}' text='WAD'>WAD</Tooltip>, it's an application to view events and tickets purchased in the Android app.",
       "shortDescription": "Final project of WAD",
-      "moreInfo": "My two schoolmates developed the <a href='https://github.com/MarcMartinezM/Proyecto-Final-Proyecto-F'>Android app</a>, I developed the website and the backend, which provided the data to the app and the website. The backend has a data generator.",
-      "type": ["Frontend", "Backend"],
-      "tags": ["Angular", "NodeJS", "TS", "JS", "HTML", "CSS", "MongoDB"],
-      "repository": "https://github.com/marcbryan/ProyectoF",
-      "imagesFolder": "proyecto_f",
-      "imagesExt": ["jpg", "png", "png", "png", "png", "jpg", "jpg", "png", "png", "jpg", "png", "png", "png"],
-      "numPersons": 3
+      "moreInfo": "My two schoolmates developed the <a href='https://github.com/MarcMartinezM/Proyecto-Final-Proyecto-F'>Android app</a>, I developed the website and the backend, which provided the data to the app and the website. The backend has a data generator."
     },
     {
+      "id": 8,
       "name": "EatNow",
       "description": "Final project of the .NET Bootcamp, it's an application to make reservations and manage restaurants.",
-      "shortDescription": "Final project of the .NET Bootcamp",
-      "type": ["Frontend", "Backend"],
-      "tags": [".NET", "ASP.NET Core MVC", "C#", "HTML", "CSS", "JS", "SQL"],
-      "repository": "https://github.com/Far9554/EatNow",
-      "imagesFolder": "eat_now",
-      "imagesExt": ["jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "png", "png", "jpg", "png", "png", "png", "png", "jpg", "jpg", "png", "png"],
-      "objectPosition": "top",
-      "numPersons": 4
+      "shortDescription": "Final project of the .NET Bootcamp"
     },
     {
+      "id": 9,
       "name": "Photo&Film4You",
       "description": "Project of the subject \"Software development project\", it's an application to rent photographic equipment. The last subject I did before the Bachelor's Thesis.",
-      "type": ["Frontend", "Backend"],
-      "tags": ["Java", "Spring", "Vue.js", "daisyUI", "Docker", "Microservices", "JS", "HTML", "CSS", "Cypress", "SonarQube"],
-      "repository": [
-        "https://gitlab.com/marcbryan/epcsd-spring-2024-docker-compose",
-        "https://gitlab.com/marcbryan/epcsd-spring-2024-notification-solution",
-        "https://gitlab.com/marcbryan/epcsd-spring-2024-productcatalog-solution",
-        "https://gitlab.com/marcbryan/epcsd-spring-2024-user-solution",
-        "https://gitlab.com/marcbryan/photo_and_film_4_you_frontend"
-      ],
-      "imagesFolder": "photoandfilm4you",
-      "imagesExt": ["png"],
-      "objectPosition": "top",
-      "numPersons": "6"
+      "tags": ["Microservices"]
     }
   ],
+  "projectTypes": ["Frontend", "Backend", "Mobile"],
   "projectStatus": ["Pending", "In progress"],
   "easterEggs": [
     {

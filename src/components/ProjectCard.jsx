@@ -45,7 +45,7 @@ function getTypeObject(type) {
 
 function Type({project, isMobile}) {
   return (
-    project.type.map((type, i) => {
+    project.typeTxt.map((type, i) => {
       const obj = getTypeObject(type);
 
       return isMobile || (project.type.length > 1 && project.name.length > 11) ?

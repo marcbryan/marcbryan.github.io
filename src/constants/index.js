@@ -182,6 +182,185 @@ export const TECHNOLOGIES = [
   }
 ];
 
+export const PROJECTS = [
+  {
+    id: 1,
+    type: [],
+    tags: [".NET", "C#", ""],
+    repository: "https://github.com/marcbryan/SnakeGame",
+    imagesFolder: "snake_game",
+    imagesExt: ["png", "png", "png"],
+    objectPosition: "left"
+  },
+  {
+    id: 2,
+    type: [],
+    tags: [".NET", "C#", "Windows Forms"],
+    repository: "https://github.com/marcbryan/AppHospital",
+    imagesFolder: "app_hospital",
+    imagesExt: ["png", "png", "png"],
+    objectPosition: "top"
+  },
+  {
+    id: 3,
+    type: [0],
+    tags: ["JS", "HTML", "CSS"],
+    repository: "https://github.com/marcbryan/AhorcadoJS",
+    imagesFolder: "ahorcadojs",
+    imagesExt: ["png"],
+    objectPosition: "top",
+    webURL: "https://marcbryan.github.io/AhorcadoJS/"
+  },
+  {
+    id: 4,
+    type: [0],
+    tags: ["JS", "HTML", "CSS"],
+    repository: "https://github.com/marcbryan/TresEnRayaJS",
+    imagesFolder: "tresenrayajs",
+    imagesExt: ["png"],
+    objectPosition: "top",
+    webURL: "https://marcbryan.github.io/TresEnRayaJS/"
+  },
+  {
+    id: 5,
+    type: [],
+    tags: ["Java"],
+    repository: "https://github.com/marcbryan/23-24-2-PR1",
+    imagesFolder: "prac1_ded",
+    imagesExt: ["png", "png"],
+    objectPosition: "left"
+  },
+  {
+    id: 6,
+    type: [],
+    tags: ["Java"],
+    repository: "https://github.com/marcbryan/23-24-2-PR2",
+    imagesFolder: "prac2_ded",
+    imagesExt: ["png", "png", "png"],
+    objectPosition: "left"
+  },
+  {
+    id: 7,
+    type: [1],
+    tags: ["Java", "Spring", ""],
+    repository: [
+      "https://github.com/marcbryan/spring-2024-productcatalog",
+      "https://github.com/marcbryan/spring-2024-user",
+      "https://github.com/marcbryan/spring-2024-notification"
+    ],
+    imagesFolder: "prac_iscsd",
+    imagesExt: ["png", "png", "png", "png", "png"],
+    objectPosition: "left"
+  },
+  {
+    id: 8,
+    type: [2, 1],
+    tags: ["React Native", "Spring Boot", "Java", ".NET", "Docker", "TS", "MySQL", "Postgres", ""],
+    repository: [
+      "https://github.com/marcbryan/FitTrackr",
+      "https://github.com/marcbryan/fittrackr-auth",
+      "https://github.com/marcbryan/fittrackr-docker",
+      "https://github.com/marcbryan/fittrackr-core",
+      "https://github.com/marcbryan/fittrackr-trackr"
+    ],
+    imagesFolder: "fittrackr",
+    imagesExt: ["png", "jpg", "png", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg"],
+    webURL: "https://openaccess.uoc.edu/handle/10609/152798"
+  }
+];
+
+export const GROUP_PROJECTS = [
+  {
+    id: 1,
+    type: [],
+    tags: ["Java", "JavaFX", "XML"],
+    repository: "https://github.com/asantamans/ams2project",
+    imagesFolder: "car_configurator",
+    imagesExt: ["jpg", "png", "png", "png"],
+    numPersons: 3
+  },
+  {
+    id: 2,
+    type: [],
+    tags: ["Java", "Hibernate", "JavaFX"],
+    repository: "https://github.com/marcbryan/Proyecto2_Scrum",
+    imagesFolder: "scrum_manager",
+    imagesExt: ["jpg", "jpg", "jpg", "jpg", "jpg"],
+    numPersons: 3
+  },
+  {
+    id: 3,
+    type: [2],
+    tags: ["Java", "Android", "Firebase"],
+    repository: "https://github.com/marcbryan/SynergyET",
+    imagesFolder: "synergy_et",
+    imagesExt: ["jpg", "jpg", "jpg", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png"],
+    numPersons: 2
+  },
+  {
+    id: 4,
+    type: [0],
+    tags: ["PHP", "JS", "HTML", "CSS"],
+    repository: "https://github.com/davidencinamartinez/Terminal_Fallout",
+    imagesFolder: "terminal_fallout",
+    imagesExt: ["jpg", "jpg"],
+    numPersons: 3
+  },
+  {
+    id: 5,
+    type: [0, 1],
+    tags: ["PHP", "JS", "HTML", "CSS", "SQL"],
+    repository: "https://github.com/gooicoo/Ajax-Kahoot",
+    imagesFolder: "ajax_kahoot",
+    imagesExt: ["jpg", "png", "png", "png", "png", "png", "png"],
+    numPersons: 3
+  },
+  {
+    id: 6,
+    type: [0, 1],
+    tags: ["Laravel", "PHP", "HTML", "CSS", "JS"],
+    repository: "https://github.com/marcbryan/proyecto-mensakas",
+    imagesFolder: "mensakas",
+    imagesExt: ["jpg", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png"],
+    numPersons: 2
+  },
+  {
+    id: 7,
+    type: [0, 1],
+    tags: ["Angular", "NodeJS", "TS", "JS", "HTML", "CSS", "MongoDB"],
+    repository: "https://github.com/marcbryan/ProyectoF",
+    imagesFolder: "proyecto_f",
+    imagesExt: ["jpg", "png", "png", "png", "png", "jpg", "jpg", "png", "png", "jpg", "png", "png", "png"],
+    numPersons: 3
+  },
+  {
+    id: 8,
+    type: [0, 1],
+    tags: [".NET", "ASP.NET Core MVC", "C#", "HTML", "CSS", "JS", "SQL"],
+    repository: "https://github.com/Far9554/EatNow",
+    imagesFolder: "eat_now",
+    imagesExt: ["jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "png", "png", "jpg", "png", "png", "png", "png", "jpg", "jpg", "png", "png"],
+    objectPosition: "top",
+    numPersons: 4
+  },
+  {
+    id: 9,
+    type: [0, 1],
+    tags: ["Java", "Spring", "Vue.js", "daisyUI", "Docker", "", "JS", "HTML", "CSS", "Cypress", "SonarQube"],
+    repository: [
+      "https://gitlab.com/marcbryan/epcsd-spring-2024-docker-compose",
+      "https://gitlab.com/marcbryan/epcsd-spring-2024-notification-solution",
+      "https://gitlab.com/marcbryan/epcsd-spring-2024-productcatalog-solution",
+      "https://gitlab.com/marcbryan/epcsd-spring-2024-user-solution",
+      "https://gitlab.com/marcbryan/photo_and_film_4_you_frontend"
+    ],
+    imagesFolder: "photoandfilm4you",
+    imagesExt: ["png"],
+    objectPosition: "top",
+    numPersons: 6
+  }
+];
+
 export const PORTFOLIOS_IDEAS = [
   "https://www.adhamdannaway.com",
   "https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2023/03/image-49-1024x510.webp",

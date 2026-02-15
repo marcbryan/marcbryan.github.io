@@ -11,7 +11,7 @@ import Divider from '@mui/material/Divider';
 import Grid from '@mui/material/Grid';
 import SmallProjectCard from '../components/SmallProjectCard';
 import useLocalStorage from 'use-local-storage';
-import { EASTER_EGG1 } from '../constants';
+import { EASTER_EGG1, GROUP_PROJECTS, PROJECTS } from '../constants';
 import SimpleSnackbar from '../components/SimpleSnackbar';
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import Realistic from 'react-canvas-confetti/dist/presets/realistic';
@@ -58,9 +58,9 @@ const useImageLoaded = (counterRef) => {
 }
 
 const projectKeys = [
-  "projects.7",
-  "groupProjects.6",
-  "groupProjects.7"
+  { key: "projects.7", data: PROJECTS[7] },
+  { key: "groupProjects.6", data: GROUP_PROJECTS[6] },
+  { key: "groupProjects.7", data: GROUP_PROJECTS[7] }
 ];
 
 function Home({lang}) {
@@ -68,7 +68,9 @@ function Home({lang}) {
   useTitle(`${t("home")} | ${t("title")}`);
   const theme = useTheme();
 
-  const projects = projectKeys.map(project => t(project, { returnObjects: true }));
+  const projects = projectKeys.map(project => {
+    return { ...t(project.key, { returnObjects: true }), ...project.data }
+  });
 
   const [openSnackbar, setOpenSnackbar] = useState(false);
   const [isFirstVisit, setIsFirstVisit] = useLocalStorage("isFirstVisit", true);
