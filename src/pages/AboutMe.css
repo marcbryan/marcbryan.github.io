@@ -1,5 +1,10 @@
-main.about-me > h1 + h2,
+main.about-me > .title-container {
+  justify-content: space-between;
+}
+
+main.about-me > .title-container + h2,
 main.about-me > h2 + p,
+main.about-me > .swiper-achievements .swiper-slide:nth-child(2) > .d-flex > h4,
 main.about-me > h2 + div > .academics:first-of-type > h4,
 main.about-me > h2 + div > h4,
 main.about-me .additional-training > .MuiStack-root > h4,
@@ -7,11 +12,11 @@ main.about-me div > p {
   margin-top: 0;
 }
 
-main.about-me div.summary > div.summ-pr-2 {
+main.about-me div.summary > div.summ-pr-3 {
   display: inline-block;
 }
 
-main.about-me img.grades {
+main.about-me img.uoc-pic {
   max-width: 100%;
   border-radius: 4px;
 }
@@ -37,28 +42,67 @@ main.about-me .tech-icon-md > svg > path:first-of-type {
   stroke: white;
 }
 
-main.about-me div > h4, main.about-me div.social-buttons {
+main.about-me div > h4 {
   margin-bottom: 2px;
+}
+
+main.about-me .icon {
+  width: 24px;
+  height: 24px;
 }
 
 main.about-me .academics > div > img,
 main.about-me .additional-training > div > img,
 main.about-me .experience > div > img,
-main.about-me div.summary > div.summ-pr-2 > img {
-  width: 24px;
-  height: 24px;
+main.about-me div.summary > div.summ-pr-3 > img {
   margin-right: 0.25em;
 }
 
-main.about-me div.summary > div.summ-pr-2 > img {
+main.about-me div.summary > div.summ-pr-3 > img {
   margin-right: 0;
   vertical-align: bottom;
 }
 
+main.about-me > .swiper-achievements .swiper-slide {
+  height: auto;
+}
+
+main.about-me > .swiper-achievements .swiper-slide:nth-child(2) > .d-flex {
+  gap: 8px;
+}
+
+main.about-me > .swiper-achievements .swiper-slide:nth-child(2) > .d-flex > img,
+main.about-me > .swiper-hobbies .swiper-slide > img {
+  border-radius: 4px;
+}
+
+main.about-me > .swiper-achievements .swiper-slide:nth-child(3) > div {
+  flex-direction: column;
+  align-items: center;
+}
+
+main.about-me > .swiper-achievements .swiper-slide:nth-child(4) > div {
+  align-items: center;
+  justify-content: center;
+}
+
+main.about-me > .swiper-achievements .swiper-slide:nth-child(4) div > .uoc-pic {
+  width: 480px;
+  cursor: pointer;
+}
+
+main.about-me > .swiper-achievements .swiper-slide:nth-child(4) div > h4,
+main.about-me > .swiper-hobbies .swiper-slide > h4 {
+  position: absolute;
+  color: white;
+  margin: 0;
+  padding: 8px;
+}
+
+main.about-me > .swiper-achievements .swiper-slide:nth-child(3) p,
 main.about-me .academics:not(:last-child) p,
 main.about-me .additional-training p,
-main.about-me .experience p,
-main.about-me p.relevant-links {
+main.about-me .experience p {
   margin-bottom: 0;
 }
 
@@ -83,17 +127,6 @@ main.about-me > .swiper-hobbies, main.about-me > .swiper-hobbies .swiper-slide >
   max-width: 100%;
 }
 
-main.about-me > .swiper-hobbies .swiper-slide > h4 {
-  position: absolute;
-  color: white;
-  margin: 0;
-  padding: 8px;
-}
-
-main.about-me > .swiper-hobbies .swiper-slide > img {
-  border-radius: 4px;
-}
-
 @media (max-width: 814px) {
   main.about-me > .swiper-hobbies .swiper-slide:last-of-type > h4 {
     background-color: rgba(0,0,0,0.5);
@@ -108,5 +141,31 @@ main.about-me > .swiper-hobbies .swiper-slide > img {
   
   main.about-me img.tech-icon {
     height: 48px;
+  }
+
+  main.about-me > .swiper-achievements .swiper-slide p {
+    margin-bottom: 4px;
+  }
+}
+
+@media (max-width: 380px) {
+  main.about-me > .swiper-achievements .swiper-slide:nth-child(2) img.uoc-pic {
+    margin-bottom: 45px;
+  }
+
+  main.about-me div.social-buttons > a {
+    margin: auto;
+  }
+}
+
+@media (max-width: 355px) {
+  main.about-me > .swiper-achievements .swiper-slide:nth-child(2) img.uoc-pic {
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 346px) {
+  main.about-me div.social-buttons {
+    flex-direction: column;
   }
 }

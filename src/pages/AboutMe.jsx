@@ -6,6 +6,7 @@ import IconButton from '@mui/material/IconButton';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Divider from '@mui/material/Divider';
+import Link from '@mui/material/Link';
 import { TECHNOLOGIES, EASTER_EGG2, EASTER_EGG3, EASTER_EGG4 } from '../constants';
 import useLocalStorage from 'use-local-storage';
 import StackIcon from 'tech-stack-icons';
@@ -43,6 +44,26 @@ function TechIcon({tech, mode}) {
   }
 }
 
+function ImageLightbox({className, src}) {
+  const [openLightbox, setOpenLightbox] = useState(false);
+  return (
+    <>
+      <img className={className} src={src} onClick={() => setOpenLightbox(true)} />
+      <Lightbox
+        plugins={[Zoom]}
+        open={openLightbox}
+        close={() => setOpenLightbox(false)}
+        slides={[{ src: src }]}
+        carousel={{ finite: true }}
+        render={{
+          buttonPrev: () => null,
+          buttonNext: () => null,
+        }}
+      />
+    </>
+  )
+}
+
 function Academics({academics}) {
   return (
     academics.map((academic, i) => (
@@ -51,7 +72,7 @@ function Academics({academics}) {
           <Stack direction="row" alignItems="center" gap={0.5}>
             <h4>{academic.name}</h4>
             <Tooltip
-              title={<><img src={academic.badge} width="128" height="128" /></>}
+              title={<><img src={academic.badge} className="icon" width="128" height="128" /></>}
               slotProps={{
                 tooltip: { sx: { backgroundColor: "transparent" } }
               }}
@@ -62,7 +83,7 @@ function Academics({academics}) {
           :
           <h4>{academic.name}</h4>}
         <div className="d-flex">
-          <img src={academic.src} />
+          <img src={academic.src} className="icon" />
           <p>{academic.school}{ academic.location != null && ` (${academic.location})`} | {academic.years}</p>
         </div>
         {academic.details != null &&
@@ -82,7 +103,7 @@ function ProfessionalExperience({experience}) {
       <div key={i} className="experience">
         <h4>{exp.job}</h4>
         <div className="d-flex">
-          {exp.src && <img src={exp.src} />}
+          {exp.src && <img src={exp.src} className="icon" />}
           <p>{exp.company} | {exp.years}</p>
         </div>
         <ul>
@@ -119,9 +140,9 @@ function AboutMe() {
 
   const { mode } = useThemeContext();
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
+  const isMobile = useMediaQuery(theme.breakpoints.down(376));
 
-  const [openLightbox, setOpenLightbox] = useState(false);
   const [openDialog, setOpenDialog] = useState(false);
 
   const [foundEgg1] = useLocalStorage("foundEgg1", false);
@@ -142,7 +163,21 @@ function AboutMe() {
 
   return (
     <main className="about-me container">
-      <h1>{t("aboutMe")}</h1>
+      <div className="d-flex title-container">
+        <h1>{t("aboutMe")}</h1>
+        <div className={isMobile ? "social-buttons d-flex" : "social-buttons"}>
+          <Tooltip title="LinkedIn">
+            <IconButton component="a" href="https://linkedin.com/in/marc-bryan-boakye-flores" target="_blank" rel="noopener noreferrer">
+              <LinkedInIcon fontSize={isMobile ? "medium" : "large"} />
+            </IconButton>
+          </Tooltip>
+          <Tooltip title="GitHub">
+            <IconButton component="a" href="https://github.com/marcbryan" target="_blank" rel="noopener noreferrer">              
+              <GitHubIcon fontSize={isMobile ? "medium" : "large"} />
+            </IconButton>
+          </Tooltip>
+        </div>
+      </div>
       <h2>{t("aboutMe_summary")}</h2>
       <div className="summary">
         <Trans
@@ -159,41 +194,23 @@ function AboutMe() {
             DAW_link: t("DAW_link")
           }}
         />
-        <div className='summ-pr-2'>
+        <br />
+        <Trans
+          i18nKey="aboutMe_summ_text2"
+          components={{
+            Tooltip: <TextTooltip />
+          }}
+        />
+        <div className="summ-pr-3">
           <Trans
-            i18nKey="aboutMe_summ_text2"
+            i18nKey="aboutMe_summ_text3"
             components={{
-              knowmadmood: <img src="/assets/logos/knowmad_mood.png" />
+              knowmadmood: <img src="/assets/logos/knowmad_mood.png" className="icon" />
             }}
           />
         </div>
-        <br />
-        <Trans
-          i18nKey="aboutMe_summ_text3"
-          components={{
-            Tooltip: <TextTooltip />,
-          }}
-        />
       </div>
-      <p>{t("aboutMe_text1")}</p>
-      {isMobile ?
-        <>
-          <img className="grades" src={`/assets/${t("aboutMe_gradesFile")}`} onClick={() => setOpenLightbox(true)} />
-          <Lightbox
-            plugins={[Zoom]}
-            open={openLightbox}
-            close={() => setOpenLightbox(false)}
-            slides={[{ src: `/assets/${t("aboutMe_gradesFile")}` }]}
-            carousel={{ finite: true }}
-            render={{
-              buttonPrev: () => null,
-              buttonNext: () => null,
-            }}
-          />
-        </>
-        : 
-        <img className="grades" src={`/assets/${t("aboutMe_gradesFile")}`} />}
-      <p>{t("aboutMe_text2")}</p>
+      <p>{t("aboutMe_summ_text4")}</p>
       <Scroller dataPause="true" onClick={!foundEgg2 ? () => setCountEgg2((countEgg2) => countEgg2 + 1) : undefined} style={{"--_gap": "0.5rem"}}>
         {TECHNOLOGIES.map((tech, i) => (
           <Tooltip key={i} title={tech.name}>
@@ -204,19 +221,59 @@ function AboutMe() {
         ))}
       </Scroller>
       {countEgg2 == 3 && <QuestionaryDialog questionObj={EASTER_EGG2} handlerFoundEgg={() => setFoundEgg2(true)} handlerOpen={(bool) => setOpenDialog(bool)} />}
-      <p className="relevant-links">{t("aboutMe_relevantLinks")}</p>
-      <div className="social-buttons">
-        <Tooltip title="LinkedIn">
-          <IconButton component="a" href="https://linkedin.com/in/marc-bryan-boakye-flores" target="_blank" rel="noopener noreferrer">
-            <LinkedInIcon fontSize="large" />
-          </IconButton>
-        </Tooltip>
-        <Tooltip title="GitHub">
-          <IconButton component="a" href="https://github.com/marcbryan" target="_blank" rel="noopener noreferrer">              
-            <GitHubIcon fontSize="large" />
-          </IconButton>
-        </Tooltip>
-      </div>
+      <h2>{t("aboutMe_achievements")}</h2>
+      <Swiper
+        slidesPerView={1}
+        spaceBetween={8}
+        pagination={{clickable: true}}
+        modules={[Pagination]}
+        className="swiper-achievements"
+      > 
+        <SwiperSlide>
+          <p>{t("aboutMe_text1")}</p>
+          {isSmallScreen ?
+            <ImageLightbox className="uoc-pic" src={`/assets/uoc/${t("aboutMe_gradesFile")}`} />
+            : 
+            <img className="uoc-pic" src={`/assets/uoc/${t("aboutMe_gradesFile")}`} />}
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="d-flex">
+            <h4>{t("aboutMe_text2")}</h4>
+            <img src="/assets/projects/fittrackr/img1.png" className="icon" />
+          </div>
+          <p>
+            {t("aboutMe_text3")}
+            <br/>
+            <Trans
+              i18nKey="aboutMe_text4"
+              components={{
+                a: <Link href="https://openaccess.uoc.edu/handle/10609/152798" target="_blank" rel="noopener noreferrer" />
+              }}
+            />
+          </p>
+          {isSmallScreen ?
+            <ImageLightbox className="uoc-pic" src={`/assets/uoc/${t("aboutMe_btGradesFile")}`} />
+            : 
+            <img className="uoc-pic" src={`/assets/uoc/${t("aboutMe_btGradesFile")}`} />}
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="d-flex">
+            {isSmallScreen ?
+              <ImageLightbox className="uoc-pic" src={`/assets/uoc/${t("aboutMe_academicProgressFile")}`} />
+              : 
+              <img className="uoc-pic" src={`/assets/uoc/${t("aboutMe_academicProgressFile")}`} />}
+            <p>{t("aboutMe_text5")} ✅🎓</p>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="d-flex">
+            <div className="d-flex">
+              <h4>{t("aboutMe_text6")}</h4>
+              <ImageLightbox className="uoc-pic" src="/assets/uoc/graduation.jpg" />
+            </div>
+          </div>
+        </SwiperSlide>
+      </Swiper>
       <Divider />
       <h2>{t("aboutMe_academicTraining")}</h2>
       <div>

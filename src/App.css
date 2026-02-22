@@ -8,10 +8,6 @@ div.social-buttons > a {
   color: inherit;
 }
 
-div.social-buttons > a:first-child {
-  margin-left: -11px;
-}
-
 .confetti-emoji {
   font-size: 1rem;
 }

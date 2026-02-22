@@ -34,6 +34,10 @@ main.home .top-container img.profile-pic {
   border-radius: 50%;
 }
 
+main.home div.social-buttons > a:first-child {
+  margin-left: -11px;
+}
+
 main.home .MuiSnackbar-root.initial-message .MuiSnackbarContent-root {
   flex-wrap: nowrap;
 }
