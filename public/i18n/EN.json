@@ -217,8 +217,9 @@
     {
       "id": 8,
       "name": "FitTrackr",
-      "description": "Bachelor's Thesis, Computer Engineering. It's a mobile app (Android & iOS) to record your marks, check gym exercises, and view your routine.",
+      "description": "Bachelor's Thesis, Computer Engineering. It's a mobile app (Android & iOS) to view your routine, check gym exercises and record your marks.",
       "shortDescription": "Bachelor's Thesis",
+      "moreInfo": "I made the design in Figma: <a href='https://www.figma.com/design/jZXpZiM9fssaGiRECKhuoh/Dise%C3%B1o-de-la-app?node-id=0-1&t=0ClXpDsd9j083ZsI-1'>FitTrackr design</a>",
       "tags": ["Microservices"]
     }
   ],

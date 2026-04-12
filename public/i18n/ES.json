@@ -220,8 +220,9 @@
     {
       "id": 8,
       "name": "FitTrackr",
-      "description": "Trabajo de Fin de Grado, Ingeniería Informática. Es una aplicación móvil (Android e iOS) para registrar tus marcas, consultar los ejercicios del gimnasio y ver tu rutina.",
+      "description": "Trabajo de Fin de Grado, Ingeniería Informática. Es una aplicación móvil (Android e iOS) para ver tu rutina, consultar los ejercicios del gimnasio y registrar tus marcas.",
       "shortDescription": "Trabajo de Fin de Grado",
+      "moreInfo": "El diseño lo hice en Figma: <a href='https://www.figma.com/design/jZXpZiM9fssaGiRECKhuoh/Dise%C3%B1o-de-la-app?node-id=0-1&t=0ClXpDsd9j083ZsI-1'>Diseño FitTrackr</a>",
       "tags": ["Microservicios"]
     }
   ],
