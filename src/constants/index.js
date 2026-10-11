@@ -355,7 +355,7 @@ export const GROUP_PROJECTS = [
       "https://gitlab.com/marcbryan/photo_and_film_4_you_frontend"
     ],
     imagesFolder: "photoandfilm4you",
-    imagesExt: ["png"],
+    imagesExt: ["png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png", "png"],
     objectPosition: "top",
     numPersons: 6
   }
